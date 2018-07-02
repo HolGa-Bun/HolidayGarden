@@ -21,7 +21,8 @@ public class SignupActivity extends AppCompatActivity {
 
 
     public void onButton2Clicked (View v){
-        finish();
+            Intent intent = new Intent(this, AddInformationActivity.class);
+            startActivity(intent);
     }
 
 

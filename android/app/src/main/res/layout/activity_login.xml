@@ -16,15 +16,16 @@
         android:layout_weight="3"
         android:layout_gravity="center"
         android:gravity="center">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
-            android:textSize="36dp"
             android:text="로그인"
             android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"/>
+            android:textSize="36dp"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
@@ -131,14 +132,16 @@
             android:textColor="#ffffffff"
             android:textSize="14dp"
             android:textStyle="bold" />
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:background="#009688"
+            android:onClick="onClickedAdd"
             android:text="아이디 / 비밀번호 찾기"
             android:textColor="#ffffffff"
-            android:background="#009688"
-            android:textStyle="bold"
-            android:textSize="14dp" />
+            android:textSize="14dp"
+            android:textStyle="bold" />
     </LinearLayout>
 </LinearLayout>

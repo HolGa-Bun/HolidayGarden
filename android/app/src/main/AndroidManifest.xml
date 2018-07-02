@@ -3,6 +3,7 @@
     package="org.androidtown.holgabun">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -22,9 +23,9 @@
         <activity android:name=".AddInformationActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".GoogleMap" />
-        <activity android:name=".Search"></activity>
-    </application>
+        <activity android:name=".Search" />
+        <activity android:name=".PopupActivity" android:theme="@android:style/Theme.Dialog" />
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    </application>
 
 </manifest>

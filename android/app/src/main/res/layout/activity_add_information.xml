@@ -26,12 +26,13 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_weight="2"
         android:orientation="vertical">
 
         <TextView
+            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:text="주소"
@@ -43,41 +44,49 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="left"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_weight="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:text="시/도"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="16dp"
                     android:textStyle="bold" />
 
                 <Spinner
+                    android:layout_weight="1"
                     android:id="@+id/si_doSpinner"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:paddingBottom="5dp"
+                    android:gravity="center">
 
                 </Spinner>
 
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:text="시/군/구"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="16dp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:text="시/군/구"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="16dp"
@@ -86,6 +95,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
@@ -107,6 +117,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
@@ -126,6 +137,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -140,8 +152,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="34dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_weight="1.5"
         android:gravity="center"
         android:orientation="vertical">
@@ -209,16 +221,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_weight="1"
-        android:gravity="center">
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:paddingBottom="20dp">
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="30dp"
             android:layout_marginRight="10dp"
             android:layout_weight="3"
             android:background="@color/colorPrimaryDark"
+            android:onClick="onClickedToMain"
             android:text="완료"
             android:textColor="#ffffffff"
             android:textSize="20dp"
@@ -231,6 +245,7 @@
             android:layout_marginRight="30dp"
             android:layout_weight="1"
             android:background="#009688"
+            android:onClick="mOnPopupClick"
             android:text="건너뛰기"
             android:textColor="#ffffffff"
             android:textSize="20dp"
