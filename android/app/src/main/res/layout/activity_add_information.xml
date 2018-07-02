@@ -245,7 +245,7 @@
             android:layout_marginRight="30dp"
             android:layout_weight="1"
             android:background="#009688"
-            android:onClick="mOnPopupClick"
+            android:onClick="onClickedPop"
             android:text="건너뛰기"
             android:textColor="#ffffffff"
             android:textSize="20dp"
