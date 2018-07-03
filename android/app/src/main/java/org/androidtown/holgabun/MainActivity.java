@@ -17,28 +17,21 @@ import okhttp3.Response;
 public class MainActivity extends AppCompatActivity {
 
 
-    EditText editText;
-    Button button;
+
     private static final String TAG = "TestActivity";
     private HttpConnection httpConn = HttpConnection.getInstance();
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
 
-
-        button = (Button)findViewById(R.id.su);
-        editText = (EditText)findViewById(R.id.login);
-
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String su = editText.getText().toString();
-                sendData();
-            }
-        });
+    public void onClickedTimeLine(View v){
+        Intent intent = new Intent(this, TimeLine.class);
+        startActivity(intent);
     }
 
     private void sendData() {

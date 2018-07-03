@@ -30,7 +30,7 @@ public class PopupActivity extends Activity {
         txtText.setText(data);
     }
 
-    //확인 버튼 클릭
+    //돌아가기 버튼 클릭
     public void mOnClose(View v){
         //데이터 전달하기
         Intent intent = new Intent();
@@ -39,6 +39,11 @@ public class PopupActivity extends Activity {
 
         //액티비티(팝업) 닫기
         finish();
+    }
+    //건너뛰기 버튼 클릭 ->Main 페이지로 이동
+    public void onClickedToMain(View v){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 
     @Override
@@ -56,7 +61,10 @@ public class PopupActivity extends Activity {
         //안드로이드 백버튼 막기
         return;
     }
-
+    public void onClickedTutorial(View v){
+        Intent intent = new Intent(this, TutorialActivity.class);
+        startActivity(intent);
+    }
 
 }
 

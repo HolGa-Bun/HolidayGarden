@@ -103,14 +103,14 @@
             android:layout_weight="1">
 
             <Button
+                android:id="@+id/su"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
+                android:background="#22B14C"
                 android:text="로그인"
                 android:textColor="#ffffffff"
                 android:textSize="14dp"
-                android:textStyle="bold"
-                android:id="@+id/su"/>
+                android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
 
@@ -137,7 +137,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:background="#009688"
+            android:background="#22B14C"
             android:onClick="onClickedAdd"
             android:text="아이디 / 비밀번호 찾기"
             android:textColor="#ffffffff"

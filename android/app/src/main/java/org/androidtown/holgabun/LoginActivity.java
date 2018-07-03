@@ -73,7 +73,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void onClickedAdd(View v){
-        Intent intent = new Intent(this, AddInformationActivity.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }

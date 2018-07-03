@@ -24,8 +24,12 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".GoogleMap" />
         <activity android:name=".Search" />
-        <activity android:name=".PopupActivity" android:theme="@android:style/Theme.Dialog" />
-
+        <activity
+            android:name=".PopupActivity"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".TimeLine" />
+        <activity android:name=".Like" />
+        <activity android:name=".TutorialActivity"></activity>
     </application>
 
 </manifest>
