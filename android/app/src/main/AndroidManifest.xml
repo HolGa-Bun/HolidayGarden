@@ -7,11 +7,7 @@
 
     <application
         android:allowBackup="true"
-<<<<<<< HEAD
         android:icon="@drawable/icon"
-=======
-        android:icon="@mipmap/ic_launcher"
->>>>>>> 28716ac67cbe9aa2912ea490909f314dc4040185
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
