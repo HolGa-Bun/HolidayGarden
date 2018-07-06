@@ -28,8 +28,8 @@
             android:name=".PopupActivity"
             android:theme="@android:style/Theme.Dialog" />
         <activity android:name=".TimeLine" />
-        <activity android:name=".Like" />
-        <activity android:name=".TutorialActivity"></activity>
+        <activity android:name=".TutorialActivity" />
+        <activity android:name=".WriteActivity"></activity>
     </application>
 
 </manifest>

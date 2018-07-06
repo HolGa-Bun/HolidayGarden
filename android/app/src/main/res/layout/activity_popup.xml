@@ -40,7 +40,8 @@
             android:gravity="center"
             android:text="추가정보를 입력하지 않으면 스토어를 개설할 수 없습니다."
             android:textColor="#000"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            android:visibility="visible" />
     </LinearLayout>
     <!-- Notice -->
 
