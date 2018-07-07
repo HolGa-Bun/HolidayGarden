@@ -59,6 +59,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1">
 
+<<<<<<< HEAD
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -78,6 +79,27 @@
             </RelativeLayout>
 
         </FrameLayout>
+=======
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:id="@+id/notice">
+           </LinearLayout>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/fragment"
+               tools:layout="@layout/fragment_feed">
+           </RelativeLayout>
+
+       </FrameLayout>
+>>>>>>> e932393... 0707 [0707jiyoon/android] develop(2)파일 올림. 로컬에선 삭제함
     </ScrollView>
 
 
