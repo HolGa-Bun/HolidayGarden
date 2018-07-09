@@ -60,6 +60,9 @@
         android:layout_weight="1">
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ebc2413... 0709 [feature/android/writeButton] ProfileFragment.java onCreateView method에 onClick method 생성
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -79,6 +82,7 @@
             </RelativeLayout>
 
         </FrameLayout>
+<<<<<<< HEAD
 =======
        <FrameLayout
            android:layout_width="match_parent"
@@ -100,6 +104,8 @@
 
        </FrameLayout>
 >>>>>>> e932393... 0707 [0707jiyoon/android] develop(2)파일 올림. 로컬에선 삭제함
+=======
+>>>>>>> ebc2413... 0709 [feature/android/writeButton] ProfileFragment.java onCreateView method에 onClick method 생성
     </ScrollView>
 
 

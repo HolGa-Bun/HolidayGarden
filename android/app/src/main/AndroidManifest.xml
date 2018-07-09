@@ -3,8 +3,11 @@
     package="org.androidtown.holgabun">
 
     <uses-permission android:name="android.permission.INTERNET" />
+<<<<<<< HEAD
     <!--WIFI 상태활용시 추가--><uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <!--WIFI 상태활용시 추가--><uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+=======
+>>>>>>> ebc2413... 0709 [feature/android/writeButton] ProfileFragment.java onCreateView method에 onClick method 생성
 
     <application
         android:allowBackup="true"
@@ -13,16 +16,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".LoginActivity">
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".AddInformationActivity" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignupActivity" />
-        <activity android:name=".AddInformationActivity" />
-        <activity android:name=".MainActivity" />
         <activity android:name=".GoogleMap" />
         <activity android:name=".Search" />
         <activity

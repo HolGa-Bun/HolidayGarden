@@ -19,4 +19,33 @@
         <item>경상남도</item>
         <item>제주특별자치도</item>
     </string-array>
+    <string-array name = "not">
+        <item>없음</item>
+
+    </string-array>
+
+    <string-array name = "Gung_si">
+        <item>시흥시</item>
+        <item>광명시</item>
+        <item>이천시</item>
+        <item>양주시</item>
+        <item>의왕시</item>
+        <item>의정부시</item>
+        <item>의왕시</item>
+        <item>하남시</item>
+        <item>과천시</item>
+        <item>고양시</item>
+        <item>남양주시</item>
+        <item>부천시</item>
+        <item>화성시</item>
+        <item>평택시</item>
+        <item>안산시</item>
+        <item>성남시</item>
+        <item>동두천시</item>
+        <item>양주시</item>
+        <item>파주시</item>
+        <item>광명시</item>
+        <item>수원시 권선구</item>
+        <item>수원시 장안구</item>
+    </string-array>
 </resources>
