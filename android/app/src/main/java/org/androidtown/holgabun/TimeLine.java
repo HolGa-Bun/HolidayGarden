@@ -23,6 +23,7 @@ public class TimeLine extends AppCompatActivity {
         setContentView(R.layout.activity_time_line);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         final Button feedButton = (Button) findViewById(R.id.feedButton);
         final Button likeButton = (Button) findViewById(R.id.likeButton);
         final Button profileButton = (Button) findViewById(R.id.profileButton);
@@ -41,6 +42,8 @@ public class TimeLine extends AppCompatActivity {
 
 >>>>>>> 3202c5d... 통신 미구현
 =======
+=======
+>>>>>>> 490ec72... 0709[feature/android] Search_Account, Change_Password
         feedButton = (Button) findViewById(R.id.feedButton);
         likeButton = (Button) findViewById(R.id.likeButton);
         profileButton = (Button) findViewById(R.id.profileButton);
@@ -50,6 +53,7 @@ public class TimeLine extends AppCompatActivity {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.fragment, new FeedFragment());
         fragmentTransaction.commit();
+<<<<<<< HEAD
 
 >>>>>>> ebc2413... 0709 [feature/android/writeButton] ProfileFragment.java onCreateView method에 onClick method 생성
 
@@ -60,10 +64,18 @@ public class TimeLine extends AppCompatActivity {
 =======
             public void onClick(View view) {
 >>>>>>> ebc2413... 0709 [feature/android/writeButton] ProfileFragment.java onCreateView method에 onClick method 생성
+=======
+
+
+        feedButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+>>>>>>> 490ec72... 0709[feature/android] Search_Account, Change_Password
 
                 feedButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
                 likeButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
                 profileButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
+<<<<<<< HEAD
 <<<<<<< HEAD
                 FragmentManager fragmentManager =getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction =fragmentManager.beginTransaction();
@@ -73,6 +85,11 @@ public class TimeLine extends AppCompatActivity {
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fragment, new FeedFragment());
 >>>>>>> ebc2413... 0709 [feature/android/writeButton] ProfileFragment.java onCreateView method에 onClick method 생성
+=======
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragment, new FeedFragment());
+>>>>>>> 490ec72... 0709[feature/android] Search_Account, Change_Password
                 fragmentTransaction.commit();
             }
         });
@@ -80,10 +97,14 @@ public class TimeLine extends AppCompatActivity {
         likeButton.setOnClickListener(new View.OnClickListener() {
             @Override
 <<<<<<< HEAD
+<<<<<<< HEAD
             public void onClick (View view){
 =======
             public void onClick(View view) {
 >>>>>>> ebc2413... 0709 [feature/android/writeButton] ProfileFragment.java onCreateView method에 onClick method 생성
+=======
+            public void onClick(View view) {
+>>>>>>> 490ec72... 0709[feature/android] Search_Account, Change_Password
 
                 feedButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
                 likeButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
@@ -97,10 +118,14 @@ public class TimeLine extends AppCompatActivity {
         profileButton.setOnClickListener(new View.OnClickListener() {
             @Override
 <<<<<<< HEAD
+<<<<<<< HEAD
             public void onClick (View view){
 =======
             public void onClick(View view) {
 >>>>>>> ebc2413... 0709 [feature/android/writeButton] ProfileFragment.java onCreateView method에 onClick method 생성
+=======
+            public void onClick(View view) {
+>>>>>>> 490ec72... 0709[feature/android] Search_Account, Change_Password
 
                 feedButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
                 likeButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));

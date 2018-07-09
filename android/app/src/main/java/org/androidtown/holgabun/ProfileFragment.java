@@ -1,5 +1,6 @@
 package org.androidtown.holgabun;
 
+<<<<<<< HEAD
         import android.app.Activity;
         import android.content.Context;
         import android.content.Intent;
@@ -15,6 +16,22 @@ package org.androidtown.holgabun;
         import android.widget.Button;
         import android.widget.ImageButton;
         import android.widget.LinearLayout;
+=======
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
+>>>>>>> 490ec72... 0709[feature/android] Search_Account, Change_Password
 
 
 /**
@@ -114,8 +131,16 @@ public class ProfileFragment extends Fragment{
         void onFragmentInteraction(Uri uri);
     }
 
+<<<<<<< HEAD
 //    public void onButtonWrite(View v){ //write 페이지로 이동
 //        Intent intent = new Intent(getActivity(), MainActivity.class);
 //        startActivity(intent);
 //    }
 }
+=======
+    public void onButtonWrite(View v){ //write 페이지로 이동
+        Intent intent = new Intent(getActivity(), MainActivity.class);
+        startActivity(intent);
+    }
+}
+>>>>>>> 490ec72... 0709[feature/android] Search_Account, Change_Password

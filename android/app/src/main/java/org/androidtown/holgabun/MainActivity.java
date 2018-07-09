@@ -38,7 +38,11 @@ public class MainActivity extends AppCompatActivity {
     org.androidtown.holgabun.GridAdapter adapter2;
     GridView gridView;
 
+<<<<<<< HEAD
     final int imglist[] = {R.drawable.one, R.drawable.two, R.drawable.three, R.drawable.four};
+=======
+    final int imglist[]={R.drawable.one, R.drawable.two, R.drawable.three, R.drawable.four};
+>>>>>>> 490ec72... 0709[feature/android] Search_Account, Change_Password
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
         Garden.add(new Garden("오렌지",imglist[2],"1000원"));
         Garden.add(new Garden("바나나",imglist[3],"1000원"));
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         gridView = (GridView) findViewById(R.id.grid);
         adapter2 = new GridAdapter(this, Garden);
@@ -69,6 +74,9 @@ public class MainActivity extends AppCompatActivity {
 =======
         gridView.setAdapter(adapter2);
 >>>>>>> ebc2413... 0709 [feature/android/writeButton] ProfileFragment.java onCreateView method에 onClick method 생성
+=======
+        gridView.setAdapter(adapter2);
+>>>>>>> 490ec72... 0709[feature/android] Search_Account, Change_Password
 
         ArrayList<Integer> data = new ArrayList<>(); //이미지 url를 저장하는 arraylist
         data.add(R.drawable.t1);
@@ -131,6 +139,7 @@ public class MainActivity extends AppCompatActivity {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     private void sendData() {
 // 네트워크 통신하는 작업은 무조건 작업스레드를 생성해서 호출 해줄 것!!
         new Thread() {
@@ -159,11 +168,16 @@ public class MainActivity extends AppCompatActivity {
     }
 >>>>>>> 3202c5d... 통신 미구현
 =======
+=======
+>>>>>>> 490ec72... 0709[feature/android] Search_Account, Change_Password
     public void onClickedTimeLine(View v){
         Intent intent = new Intent(this, TimeLine.class);
         startActivity(intent);
     }
+<<<<<<< HEAD
 >>>>>>> ebc2413... 0709 [feature/android/writeButton] ProfileFragment.java onCreateView method에 onClick method 생성
+=======
+>>>>>>> 490ec72... 0709[feature/android] Search_Account, Change_Password
 
 
 }

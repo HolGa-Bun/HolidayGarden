@@ -14,7 +14,48 @@
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:gravity="center"
+<<<<<<< HEAD
         android:orientation="vertical">
+=======
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="#ffffff"
+            android:padding="0dp"
+            android:src="@drawable/ic_menu_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dp"
+            android:paddingLeft="10dp"
+            android:text="홀가분"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/main_search"
+            android:layout_width="5dp"
+            android:layout_height="5dp" />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="#ffffff"
+            android:padding="0dp"
+            android:src="@drawable/ic_home_black_24dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickedTimeLine"
+            android:padding="0dp"
+            android:src="@drawable/main_image" />
+    </LinearLayout>
+>>>>>>> 490ec72... 0709[feature/android] Search_Account, Change_Password
 
         <LinearLayout
             android:layout_width="match_parent"

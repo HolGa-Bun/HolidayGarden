@@ -61,8 +61,11 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ebc2413... 0709 [feature/android/writeButton] ProfileFragment.java onCreateView method에 onClick method 생성
+=======
+>>>>>>> 490ec72... 0709[feature/android] Search_Account, Change_Password
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -82,6 +85,7 @@
             </RelativeLayout>
 
         </FrameLayout>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
        <FrameLayout
@@ -106,6 +110,8 @@
 >>>>>>> e932393... 0707 [0707jiyoon/android] develop(2)파일 올림. 로컬에선 삭제함
 =======
 >>>>>>> ebc2413... 0709 [feature/android/writeButton] ProfileFragment.java onCreateView method에 onClick method 생성
+=======
+>>>>>>> 490ec72... 0709[feature/android] Search_Account, Change_Password
     </ScrollView>
 
 
@@ -138,6 +144,4 @@
             android:background="@color/colorPrimaryDark"
             android:text="PROFILE" />
     </LinearLayout>
-
-
 </LinearLayout>
