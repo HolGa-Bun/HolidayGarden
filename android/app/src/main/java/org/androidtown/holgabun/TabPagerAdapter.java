@@ -1,5 +1,6 @@
 package org.androidtown.holgabun;
 
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
@@ -35,6 +36,18 @@ public class TabPagerAdapter extends FragmentStatePagerAdapter {
     @Override
     public int getCount() {
         return tabCount;
+    }
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+        switch(position){
+            case 0:
+                return "아이디 찾기";
+            case 1:
+                return "비밀번호 찾기";
+            default:
+                return null;
+        }
     }
 }
 
