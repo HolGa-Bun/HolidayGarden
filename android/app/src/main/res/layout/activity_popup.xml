@@ -9,18 +9,19 @@
 
     <!-- 타이틀바 -->
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp">
 
         <TextView
-            android:layout_width="match_parent"
+            android:paddingTop="15dp"
+            android:layout_width="wrap_content"
             android:layout_height="53dp"
-            android:background="#ff7a00"
-            android:gravity="center"
-            android:text="건너뛰시겠습니까?"
-            android:textColor="#fff"
-            android:textSize="20sp" />
+            android:text="계속하시겠습니까?"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="23sp" />
     </LinearLayout>
     <!-- //end 타이틀바 -->
 
@@ -72,7 +73,7 @@
                 android:onClick="mOnClose"
                 android:padding="16dp"
                 android:text="돌아가기"
-                android:textColor="#ff7a00"
+                android:textColor="@android:color/darker_gray"
                 android:textSize="15sp" />
 
             <Button
@@ -83,8 +84,8 @@
                 android:gravity="center"
                 android:onClick="onClickedTutorial"
                 android:padding="16dp"
-                android:text="건너뛰기"
-                android:textColor="#ff7a00"
+                android:text="계속"
+                android:textColor="@color/colorMain"
                 android:textSize="15sp" />
 
         </LinearLayout>

@@ -32,10 +32,17 @@
         <activity android:name=".AddInformationActivity" />
         <activity android:name=".MainActivity"/>
 
+<<<<<<< HEAD
+=======
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+>>>>>>> a10b136... 0710[feature/android]Search_Account
         <activity android:name=".GoogleMap" />
         <activity android:name=".Search" />
         <activity
             android:name=".PopupActivity"
+<<<<<<< HEAD
             android:theme="@android:style/Theme.Dialog" />
         <activity android:name=".TimeLine" />
         <activity android:name=".TutorialActivity">
@@ -68,6 +75,20 @@
         <activity android:name=".BackPopupActivity" />
         <activity android:name=".TutorialViewPagerTutorial"></activity>
 >>>>>>> 85581eb... 0713 [feature/android/tutorial]생성
+=======
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name=".SignupSuccess"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name=".TimeLine" />
+        <activity android:name=".TutorialActivity" />
+        <activity android:name=".WriteActivity" />
+        <activity android:name=".Search_Account" />
+        <activity android:name=".Tab_fragment1_Search_Account" />
+        <activity android:name=".Tab_fragment2_Search_Account" />
+        <activity android:name=".Change_Password"
+            android:theme="@android:style/Theme.Dialog"></activity>
+>>>>>>> a10b136... 0710[feature/android]Search_Account
     </application>
 
 </manifest>

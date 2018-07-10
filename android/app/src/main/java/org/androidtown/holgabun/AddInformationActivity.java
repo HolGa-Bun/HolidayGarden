@@ -31,17 +31,18 @@ public class AddInformationActivity extends AppCompatActivity {
         spinner.setAdapter(adapter);
     }
 
-    public void onClickedToMain(View v){
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+    public void onClicekedSuccessPop(View v){
+        Intent intent = new Intent(this, SignupSuccess.class);
+        intent.putExtra("data", "회원가입이 완료되었습니다.");
+        startActivityForResult(intent, 1);
     }
-
 
     //버튼
     public void onClickedPop(View v) {
         //데이터 담아서 팝업(액티비티) 호출
         Intent intent = new Intent(this, PopupActivity.class);
-        intent.putExtra("data", "Test Popup");
+        intent.putExtra("data", "추가정보를 입력하지 않으면  + " +
+                        "스토어를 개설할 수 없습니다.");
         startActivityForResult(intent, 1);
 
     }

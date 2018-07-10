@@ -41,7 +41,7 @@ public class Search_Password_Popup extends Activity {
     }
     //건너뛰기 버튼 클릭 ->Main 페이지로 이동
     public void onClickedToMain(View v){
-        Intent intent = new Intent(this, Change_Password.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 
