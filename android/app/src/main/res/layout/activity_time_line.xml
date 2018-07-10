@@ -59,24 +59,25 @@
         android:layout_height="match_parent"
         android:layout_weight="1">
 
-       <FrameLayout
-           android:layout_width="match_parent"
-           android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-           <LinearLayout
-               android:layout_width="match_parent"
-               android:layout_height="match_parent"
-               android:orientation="vertical"
-               android:id="@+id/notice">
-           </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/notice">
+            </LinearLayout>
 
-           <RelativeLayout
-               android:layout_width="match_parent"
-               android:layout_height="match_parent"
-               android:id="@+id/fragment">
-           </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/fragment"
+                tools:layout="@layout/fragment_feed">
+            </RelativeLayout>
 
-       </FrameLayout>
+        </FrameLayout>
     </ScrollView>
 
 
@@ -99,8 +100,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/colorPrimaryDark"
-            android:text="LIKE"
-            android:textColor="@color/colorPrimary"/>
+            android:text="LIKE" />
 
         <Button
             android:id="@+id/profileButton"
@@ -108,8 +108,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/colorPrimaryDark"
-            android:text="PROFILE"
-            android:textColor="@color/colorPrimary"/>
+            android:text="PROFILE" />
     </LinearLayout>
 
 

@@ -46,12 +46,7 @@ public class LoginActivity extends AppCompatActivity {
     }
     private void sendData() {
 // 네트워크 통신하는 작업은 무조건 작업스레드를 생성해서 호출 해줄 것!!
-        new Thread() {
-            public void run() {
-// 파라미터 2개와 미리정의해논 콜백함수를 매개변수로 전달하여 호출
-                httpConn.requestWebServer("10","데이터2", callback);
-            }
-        }.start();;
+
     }
 
     private final Callback callback = new Callback() {

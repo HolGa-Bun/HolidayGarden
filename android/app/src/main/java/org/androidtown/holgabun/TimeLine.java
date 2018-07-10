@@ -20,14 +20,32 @@ public class TimeLine extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_time_line);
+<<<<<<< HEAD
         final Button feedButton = (Button) findViewById(R.id.feedButton);
         final Button likeButton = (Button) findViewById(R.id.likeButton);
         final Button profileButton = (Button) findViewById(R.id.profileButton);
         final LinearLayout notice =(LinearLayout) findViewById(R.id.notice);
+=======
+        feedButton = (Button) findViewById(R.id.feedButton);
+        likeButton = (Button) findViewById(R.id.likeButton);
+        profileButton = (Button) findViewById(R.id.profileButton);
+         notice =(LinearLayout) findViewById(R.id.notice);
+        notice.setVisibility(View.GONE);
+        FragmentManager fragmentManager =getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction =fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.fragment,new FeedFragment());
+        fragmentTransaction.commit();
+
+
+>>>>>>> 3202c5d... 통신 미구현
 
         feedButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View view){
+
+                feedButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                likeButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
+                profileButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
                 FragmentManager fragmentManager =getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction =fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fragment,new FeedFragment());
@@ -38,7 +56,7 @@ public class TimeLine extends AppCompatActivity {
         likeButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View view){
-                notice.setVisibility(View.GONE);
+
                 feedButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
                 likeButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
                 profileButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
@@ -51,7 +69,7 @@ public class TimeLine extends AppCompatActivity {
         profileButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View view){
-                notice.setVisibility(View.GONE);
+
                 feedButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
                 likeButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
                 profileButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));

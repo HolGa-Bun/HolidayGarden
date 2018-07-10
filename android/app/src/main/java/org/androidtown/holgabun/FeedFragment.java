@@ -39,7 +39,7 @@ public class FeedFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment FeedFragment.
+     * @return A new instance of fragment Feed.
      */
     // TODO: Rename and change types and number of parameters
     public static FeedFragment newInstance(String param1, String param2) {
@@ -74,16 +74,6 @@ public class FeedFragment extends Fragment {
         }
     }
 
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        if (context instanceof OnFragmentInteractionListener) {
-            mListener = (OnFragmentInteractionListener) context;
-        } else {
-            throw new RuntimeException(context.toString()
-                    + " must implement OnFragmentInteractionListener");
-        }
-    }
 
     @Override
     public void onDetach() {
