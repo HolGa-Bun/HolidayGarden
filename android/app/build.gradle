@@ -35,6 +35,4 @@ dependencies {
     implementation 'com.naver.maps.open:naver-map-api:2.1.2@aar'
 
 
-
-
 }

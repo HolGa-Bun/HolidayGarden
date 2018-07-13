@@ -32,6 +32,10 @@ public class TimeLine extends AppCompatActivity {
         feedButton = (Button) findViewById(R.id.feedButton);
         likeButton = (Button) findViewById(R.id.likeButton);
         profileButton = (Button) findViewById(R.id.profileButton);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9837d2f... [7/13]feature/가든 상세정보창 구현
          notice =(LinearLayout) findViewById(R.id.notice);
         notice.setVisibility(View.GONE);
         FragmentManager fragmentManager =getSupportFragmentManager();
@@ -40,6 +44,7 @@ public class TimeLine extends AppCompatActivity {
         fragmentTransaction.commit();
 
 
+<<<<<<< HEAD
 >>>>>>> 3202c5d... 통신 미구현
 =======
 =======
@@ -56,11 +61,13 @@ public class TimeLine extends AppCompatActivity {
 <<<<<<< HEAD
 
 >>>>>>> ebc2413... 0709 [feature/android/writeButton] ProfileFragment.java onCreateView method에 onClick method 생성
+=======
+>>>>>>> 9837d2f... [7/13]feature/가든 상세정보창 구현
 
         feedButton.setOnClickListener(new View.OnClickListener() {
             @Override
-<<<<<<< HEAD
             public void onClick (View view){
+<<<<<<< HEAD
 =======
             public void onClick(View view) {
 >>>>>>> ebc2413... 0709 [feature/android/writeButton] ProfileFragment.java onCreateView method에 onClick method 생성
@@ -71,10 +78,13 @@ public class TimeLine extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 >>>>>>> 490ec72... 0709[feature/android] Search_Account, Change_Password
+=======
+>>>>>>> 9837d2f... [7/13]feature/가든 상세정보창 구현
 
                 feedButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
                 likeButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
                 profileButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 FragmentManager fragmentManager =getSupportFragmentManager();
@@ -90,12 +100,19 @@ public class TimeLine extends AppCompatActivity {
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fragment, new FeedFragment());
 >>>>>>> 490ec72... 0709[feature/android] Search_Account, Change_Password
+=======
+                FragmentManager fragmentManager =getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction =fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragment,new FeedFragment());
+
+>>>>>>> 9837d2f... [7/13]feature/가든 상세정보창 구현
                 fragmentTransaction.commit();
             }
         });
 
         likeButton.setOnClickListener(new View.OnClickListener() {
             @Override
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             public void onClick (View view){
@@ -105,6 +122,10 @@ public class TimeLine extends AppCompatActivity {
 =======
             public void onClick(View view) {
 >>>>>>> 490ec72... 0709[feature/android] Search_Account, Change_Password
+=======
+
+            public void onClick (View view){
+>>>>>>> 9837d2f... [7/13]feature/가든 상세정보창 구현
 
                 feedButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
                 likeButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
@@ -119,6 +140,7 @@ public class TimeLine extends AppCompatActivity {
             @Override
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             public void onClick (View view){
 =======
             public void onClick(View view) {
@@ -126,6 +148,10 @@ public class TimeLine extends AppCompatActivity {
 =======
             public void onClick(View view) {
 >>>>>>> 490ec72... 0709[feature/android] Search_Account, Change_Password
+=======
+            public void onClick (View view){
+
+>>>>>>> 9837d2f... [7/13]feature/가든 상세정보창 구현
 
                 feedButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
                 likeButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));

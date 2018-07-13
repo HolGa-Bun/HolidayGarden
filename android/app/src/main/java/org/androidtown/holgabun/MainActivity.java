@@ -2,6 +2,7 @@ package org.androidtown.holgabun;
 
 
 import android.content.Intent;
+import android.graphics.BitmapFactory;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -28,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private ArrayAdapter adapter;
     private Spinner spinner;
     private static final String TAG = "TestActivity";
-    private HttpConnection httpConn = HttpConnection.getInstance();
+
     AutoScrollViewPager autoViewPager;
     Button button;
     EditText editText;
@@ -39,10 +40,14 @@ public class MainActivity extends AppCompatActivity {
     GridView gridView;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     final int imglist[] = {R.drawable.one, R.drawable.two, R.drawable.three, R.drawable.four};
 =======
     final int imglist[]={R.drawable.one, R.drawable.two, R.drawable.three, R.drawable.four};
 >>>>>>> 490ec72... 0709[feature/android] Search_Account, Change_Password
+=======
+
+>>>>>>> 9837d2f... [7/13]feature/가든 상세정보창 구현
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
         setTitle("Garden Information");
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         gridView = (GridView)findViewById(R.id.grid);
         adapter2 = new GridAdapter(this, Garden);
@@ -75,6 +81,18 @@ public class MainActivity extends AppCompatActivity {
         gridView.setAdapter(adapter2);
 >>>>>>> ebc2413... 0709 [feature/android/writeButton] ProfileFragment.java onCreateView method에 onClick method 생성
 =======
+=======
+
+        gridView = (GridView)findViewById(R.id.grid);
+        adapter2 = new GridAdapter(this, Garden);
+
+        Garden.add(new Garden("아보카도", BitmapFactory.decodeResource(getResources(),R.drawable.icon),"1000원"));
+        Garden.add(new Garden("수박",BitmapFactory.decodeResource(getResources(),R.drawable.icon),"1000원"));
+        Garden.add(new Garden("오렌지",BitmapFactory.decodeResource(getResources(),R.drawable.icon),"1000원"));
+        Garden.add(new Garden("바나나",BitmapFactory.decodeResource(getResources(),R.drawable.icon),"1000원"));
+
+
+>>>>>>> 9837d2f... [7/13]feature/가든 상세정보창 구현
         gridView.setAdapter(adapter2);
 >>>>>>> 490ec72... 0709[feature/android] Search_Account, Change_Password
 
@@ -140,6 +158,7 @@ public class MainActivity extends AppCompatActivity {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     private void sendData() {
 // 네트워크 통신하는 작업은 무조건 작업스레드를 생성해서 호출 해줄 것!!
         new Thread() {
@@ -170,14 +189,26 @@ public class MainActivity extends AppCompatActivity {
 =======
 =======
 >>>>>>> 490ec72... 0709[feature/android] Search_Account, Change_Password
+=======
+
+>>>>>>> 9837d2f... [7/13]feature/가든 상세정보창 구현
     public void onClickedTimeLine(View v){
         Intent intent = new Intent(this, TimeLine.class);
         startActivity(intent);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> ebc2413... 0709 [feature/android/writeButton] ProfileFragment.java onCreateView method에 onClick method 생성
 =======
 >>>>>>> 490ec72... 0709[feature/android] Search_Account, Change_Password
+=======
+
+    public void onClickedLogin(View v){
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
+
+>>>>>>> 9837d2f... [7/13]feature/가든 상세정보창 구현
 
 
 }

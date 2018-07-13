@@ -24,7 +24,7 @@ public class LoginActivity extends AppCompatActivity {
     EditText editText;
     Button button;
     private static final String TAG = "TestActivity";
-    private HttpConnection httpConn = HttpConnection.getInstance();
+
 
 
 
@@ -49,18 +49,7 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-    private final Callback callback = new Callback() {
-        @Override
-        public void onFailure(Call call, IOException e) {
-            Log.d(TAG, "콜백오류:" + e.getMessage());
-        }
 
-        @Override
-        public void onResponse(Call call, Response response) throws IOException {
-            String body = response.body().string();
-            Log.d(TAG, "서버에서 응답한 Body:" + body);
-        }
-    };
 
     public void onButton1Clicked(View v){
         Intent intent = new Intent(this, SignupActivity.class);

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment"
+    android:id="@+id/scrollview">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#d8dfea">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="4dp"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1.5">
+
+                <ImageView
+                    android:id="@+id/img_profile"
+                    android:layout_width="100dp"
+                    android:layout_height="85dp"
+                    android:src="@drawable/icon"
+                   />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="#111111"
+                    android:textSize="15sp"
+                    tools:text="홀가분농장" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="13sp"
+                    tools:text="충청남도 광암리 114-4" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+
+                    <Button
+                        android:id="@+id/request"
+                        android:layout_gravity="right"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:text="구매 요청"
+                        android:textSize="13dp"
+
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:background="@color/colorMain" />
+
+                    <Button
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:text="전화 걸기"
+                        android:textSize="13dp"
+                        android:id="@+id/phone"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:background="@color/colorMain"
+                        android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="4dp"
+            android:orientation="vertical">
+
+       <com.nhn.android.maps.NMapView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/mymap"
+           android:layout_margin="8dp"></com.nhn.android.maps.NMapView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#111111"
+                    android:textStyle="bold"
+                    android:text="상세 정보"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#aaaaaa"></View>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+               <TableLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginTop="5dp"
+                   android:layout_marginLeft="30dp"
+                   android:layout_marginRight="30dp"
+                   android:layout_marginBottom="10dp"
+                   android:stretchColumns="0,1">
+
+
+                   <TableRow>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textSize="16sp"
+                           android:textStyle="bold"
+                           android:gravity="center"
+                           android:layout_marginBottom="10dp"
+                           android:textColor="#111111"
+                           android:text="운영 주체"/>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textSize="16sp"
+                           android:id="@+id/owner"
+                           android:gravity="center"
+                           android:textColor="#111111"
+                           android:text="실제 전체면적"/>
+
+                   </TableRow>
+                   <TableRow>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textSize="16sp"
+                           android:textStyle="bold"
+                           android:gravity="center"
+                           android:layout_marginBottom="10dp"
+                           android:textColor="#111111"
+                           android:text="실제 전체면적"/>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textSize="16sp"
+                           android:id="@+id/real_area"
+                           android:gravity="center"
+                           android:textColor="#111111"
+                           android:text="실제 전체면적"/>
+
+                   </TableRow>
+
+                   <TableRow>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textSize="16sp"
+                           android:textStyle="bold"
+                           android:gravity="center"
+                           android:textColor="#111111"
+                           android:layout_marginBottom="10dp"
+                           android:text="분양 전체면적"/>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textSize="16sp"
+                           android:id="@+id/sell_area"
+                           android:gravity="center"
+                           android:textColor="#111111"
+                           android:text="실제 전체면적"/>
+
+                   </TableRow>
+
+                   <TableRow>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textSize="16sp"
+                           android:textStyle="bold"
+                           android:gravity="center"
+                           android:layout_marginBottom="10dp"
+                           android:textColor="#111111"
+                           android:text="분양 가격"/>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textSize="16sp"
+                           android:id="@+id/price"
+                           android:gravity="center"
+                           android:textColor="#111111"
+                           android:text="실제 전체면적"/>
+
+                   </TableRow>
+
+
+                   <TableRow>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textSize="16sp"
+                           android:textStyle="bold"
+                           android:gravity="center"
+                           android:layout_marginBottom="10dp"
+                           android:textColor="#111111"
+                           android:text="모집 기간"/>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textSize="16sp"
+                           android:id="@+id/apply_time"
+                           android:gravity="center"
+                           android:textColor="#111111"
+                           android:text="실제 전체면적"/>
+
+                   </TableRow>
+
+
+
+                   <TableRow>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textSize="16sp"
+                           android:textStyle="bold"
+                           android:gravity="center"
+                           android:layout_marginBottom="10dp"
+                           android:textColor="#111111"
+                           android:text="부대 시설"/>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textSize="16sp"
+                           android:id="@+id/office"
+                           android:gravity="center"
+                           android:textColor="#111111"
+                           android:text="실제 전체면적"/>
+
+                   </TableRow>
+               </TableLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:id="@+id/apply"
+                    android:textColor="#111111"
+                    android:textStyle="bold"
+                    android:text="신청방법"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#aaaaaa"></View>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/howtoapply"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

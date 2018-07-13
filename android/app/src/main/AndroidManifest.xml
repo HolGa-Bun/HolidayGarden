@@ -5,12 +5,20 @@
     <uses-permission android:name="android.permission.INTERNET" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <!--WIFI 상태활용시 추가--><uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <!--WIFI 상태활용시 추가--><uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
 =======
 >>>>>>> ebc2413... 0709 [feature/android/writeButton] ProfileFragment.java onCreateView method에 onClick method 생성
 =======
 >>>>>>> 490ec72... 0709[feature/android] Search_Account, Change_Password
+=======
+
+    <!-- WIFI 상태활용시 추가 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- WIFI 상태활용시 추가 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+>>>>>>> 9837d2f... [7/13]feature/가든 상세정보창 구현
 
     <application
         android:allowBackup="true"
@@ -38,6 +46,7 @@
         <activity android:name=".TutorialActivity" />
         <activity android:name=".WriteActivity" />
 <<<<<<< HEAD
+<<<<<<< HEAD
         <activity android:name=".BackPopupActivity"></activity>
 =======
         <activity android:name=".activity_search_account" />
@@ -48,6 +57,11 @@
         <activity android:name=".Tab_fragment2_Search_Account" />
         <activity android:name=".Change_Password"></activity>
 >>>>>>> 490ec72... 0709[feature/android] Search_Account, Change_Password
+=======
+        <activity android:name=".Search_Account" />
+        <activity android:name=".Change_Password" />
+        <activity android:name=".Garden_IM"></activity>
+>>>>>>> 9837d2f... [7/13]feature/가든 상세정보창 구현
     </application>
 
 </manifest>

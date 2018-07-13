@@ -1,6 +1,8 @@
 package org.androidtown.holgabun;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.provider.ContactsContract;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -45,7 +47,7 @@ public class GridAdapter extends BaseAdapter{
 
             holder.tv = (TextView)convertView.findViewById(R.id.tv1);
             holder.tv2 = (TextView)convertView.findViewById(R.id.tv2);
-            holder.iv = (ImageView)convertView.findViewById(R.id.img1);
+            holder.image = (ImageView)convertView.findViewById(R.id.img1);
 
             convertView.setTag(holder);
         }
@@ -56,13 +58,13 @@ public class GridAdapter extends BaseAdapter{
         
         holder.tv.setText(garden.get(position).getName());
         holder.tv2.setText(garden.get(position).getAddress());
-        holder.iv.setImageResource(garden.get(position).getImgno());
+        holder.image.setImageBitmap(garden.get(position).getImgno());
 
         return convertView;
     }
     static class GridItem{
         public TextView tv;
-        public ImageView iv;
+        public ImageView image;
         public TextView tv2;
     }
 }

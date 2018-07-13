@@ -93,7 +93,7 @@ public class WriteActivity extends AppCompatActivity {
         public void setData(Garden one) {
             tv.setText(one.getName());
             tv2.setText(one.getAddress());
-            iv.setImageResource(one.getImgno());
+            iv.setImageBitmap(one.getImgno());
         }
     }
     public void MainClicked(View v){ //메인페이지로 이동
