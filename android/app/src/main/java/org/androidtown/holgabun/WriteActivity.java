@@ -1,5 +1,6 @@
 package org.androidtown.holgabun;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
@@ -9,6 +10,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -35,6 +38,16 @@ public class WriteActivity extends AppCompatActivity {
                                 "Select Picture"), SELECT_PICTURE);
                     }
                 });
+        final EditText edittext=(EditText)findViewById(R.id.edittext);
+        Button button=(Button)findViewById(R.id.checkButton);
+        @SuppressLint("WrongViewCast") final TextView textView=(TextView)findViewById(R.id.textview);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                textView.setText(edittext.getText());
+            }
+        });
+
     }
 
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -107,7 +120,7 @@ public class WriteActivity extends AppCompatActivity {
     public void onClickedBackPopup(View v) {
         //데이터 담아서 팝업(액티비티) 호출
         Intent intent = new Intent(this, BackPopupActivity.class);
-        intent.putExtra("data", "Test Popup");
+        intent.putExtra("data", "돌아가면 내용이 지워집니다. 그래도 돌아가시겠습니까?");
         startActivityForResult(intent, 1);
 
     }

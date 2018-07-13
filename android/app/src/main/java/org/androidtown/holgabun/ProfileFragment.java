@@ -14,8 +14,10 @@ package org.androidtown.holgabun;
         import android.view.View;
         import android.view.ViewGroup;
         import android.widget.Button;
+        import android.widget.EditText;
         import android.widget.ImageButton;
         import android.widget.LinearLayout;
+<<<<<<< HEAD
 =======
 import android.app.Activity;
 import android.content.Context;
@@ -32,6 +34,12 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 >>>>>>> 490ec72... 0709[feature/android] Search_Account, Change_Password
+=======
+        import android.widget.TextView;
+
+        import java.text.SimpleDateFormat;
+        import java.util.Date;
+>>>>>>> 85581eb... 0713 [feature/android/tutorial]생성
 
 
 /**

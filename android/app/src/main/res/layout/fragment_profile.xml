@@ -69,14 +69,14 @@
 
                     <ImageButton
                         android:id="@+id/diary"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@android:drawable/ic_menu_mapmode" />
 
                     <ImageButton
                         android:id="@+id/store"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:src="@android:drawable/ic_menu_mapmode" />
@@ -147,21 +147,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
                         android:text="TextView"
-                        android:textSize="14dp"
-                        tools:text="캄자 캄자 왕캄자~djsdksjkf~~" />
-
-                    <EditText
-                        android:id="@+id/login"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:gravity="left"
-                        android:hint="아이디"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textColorHint="@color/colorPrimaryDark"
-                        android:textSize="14dp"
-                        android:textStyle="bold" />
+                        android:textSize="14dp" />
 
                 </LinearLayout>
 
