@@ -43,6 +43,7 @@
         <activity
             android:name=".PopupActivity"
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:theme="@android:style/Theme.Dialog" />
         <activity android:name=".TimeLine" />
         <activity android:name=".TutorialActivity">
@@ -77,18 +78,28 @@
 >>>>>>> 85581eb... 0713 [feature/android/tutorial]생성
 =======
             android:theme="@android:style/Theme.Dialog"/>
+=======
+            android:theme="@android:style/Theme.Dialog" />
+>>>>>>> 94887fb... 0713[feature/android]
         <activity
             android:name=".SignupSuccess"
-            android:theme="@android:style/Theme.Dialog"/>
+            android:theme="@android:style/Theme.Dialog" />
         <activity android:name=".TimeLine" />
         <activity android:name=".TutorialActivity" />
         <activity android:name=".WriteActivity" />
         <activity android:name=".Search_Account" />
         <activity android:name=".Tab_fragment1_Search_Account" />
         <activity android:name=".Tab_fragment2_Search_Account" />
+<<<<<<< HEAD
         <activity android:name=".Change_Password"
             android:theme="@android:style/Theme.Dialog"></activity>
 >>>>>>> a10b136... 0710[feature/android]Search_Account
+=======
+        <activity
+            android:name=".Change_Password"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".Search_ID_Fail"></activity>
+>>>>>>> 94887fb... 0713[feature/android]
     </application>
 
 </manifest>

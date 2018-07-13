@@ -39,7 +39,10 @@ public class MainActivity extends AppCompatActivity {
     private ArrayAdapter adapter;
     private Spinner spinner;
     private static final String TAG = "TestActivity";
+<<<<<<< HEAD
 
+=======
+>>>>>>> 94887fb... 0713[feature/android]
     AutoScrollViewPager autoViewPager;
     Button button;
     EditText editText;

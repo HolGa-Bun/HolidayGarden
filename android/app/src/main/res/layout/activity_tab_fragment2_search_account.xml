@@ -52,6 +52,7 @@
                 android:textStyle="bold"
                 android:textColor="@color/colorPrimaryDark"/>
             <EditText
+                android:id="@+id/id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -173,6 +174,7 @@
             android:textStyle="bold" />
 
         <Button
+            android:id="@+id/su"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/colorMain"
@@ -183,6 +185,7 @@
             android:text="인증메일 보내기"
             android:textColor="@color/colorPrimary"
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:onClick="onClickedChangePassword"/>
     </LinearLayout>
 </LinearLayout>

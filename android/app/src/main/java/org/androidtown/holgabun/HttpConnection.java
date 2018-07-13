@@ -59,13 +59,21 @@ public class HttpConnection extends AsyncTask<String, Void, String>
 
 {
     final static String openWeatherURL = "http://211.237.50.150:7080/openapi/abf160159dcc1880ee2a7c68af142681cc72667378a51204b6d47167fd28add6/json/Grid_20171122000000000552_1/1/5";
+<<<<<<< HEAD
+=======
+    String Server_url = "http://ec2-13-209-68-163.ap-northeast-2.compute.amazonaws.com/";
+>>>>>>> 94887fb... 0713[feature/android]
     @Override
     public String doInBackground(String... params) {
 
         /* url통신 규칙 String 첫번째 :무슨 통신인지 명시 ex)경기도 전체이면 ->AREA_LCD
 
 
+<<<<<<< HEAD
 */
+=======
+         */
+>>>>>>> 94887fb... 0713[feature/android]
 
 
 
@@ -88,6 +96,15 @@ public class HttpConnection extends AsyncTask<String, Void, String>
             }else if(params[0].equals("Garden"))
             {
                 urlString=urlString+"?FARM_NM="+URLEncoder.encode(params[1], "UTF-8");
+<<<<<<< HEAD
+=======
+            }else if(params[0].equals("check"))
+            {
+                urlString=Server_url+"checkId.php?ID="+params[1];
+            }else if(params[0].equals("suid"))
+            {
+                urlString=Server_url+"checkId.php?ID="+params[1];
+>>>>>>> 94887fb... 0713[feature/android]
             }
 
             URL url = new URL(urlString);
@@ -156,4 +173,7 @@ public class HttpConnection extends AsyncTask<String, Void, String>
 
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 94887fb... 0713[feature/android]

@@ -75,17 +75,20 @@
             android:orientation="vertical">
 
             <EditText
+                android:id="@+id/id"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:hint="아이디" />
 
             <EditText
+                android:id="@+id/pw_1"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:hint="비밀번호"
                 android:inputType="textPassword" />
 
             <EditText
+                android:id="@+id/pw_2"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:hint="비밀번호"
@@ -150,11 +153,13 @@
             android:orientation="vertical">
 
             <EditText
+                android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:hint="이름" />
 
             <EditText
+                android:id="@+id/nickname"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:hint="닉네임" />
@@ -165,6 +170,7 @@
                 android:orientation="horizontal">
 
                 <EditText
+                    android:id="@+id/mail_id"
                     android:layout_weight="1"
                     android:layout_width="110dp"
                     android:layout_height="40dp" />
@@ -178,6 +184,7 @@
                     android:textColor="@color/colorPrimaryDark"/>
 
                 <EditText
+                    android:id="@+id/mail_address"
                     android:layout_weight="1"
                     android:layout_width="110dp"
                     android:layout_height="40dp" />
@@ -206,6 +213,7 @@
                 android:textStyle="bold"/>
 
             <EditText
+                android:id="@+id/p_1"
                 android:inputType="phone"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
@@ -214,6 +222,7 @@
                 android:layout_marginLeft="5dp"/>
 
             <EditText
+                android:id="@+id/p_2"
                 android:inputType="phone"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
@@ -222,6 +231,7 @@
                 android:layout_marginLeft="5dp"/>
 
             <EditText
+                android:id="@+id/p_3"
                 android:inputType="phone"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
@@ -286,6 +296,7 @@
         android:layout_marginRight="20dp">
 
         <Button
+            android:id="@+id/su"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
