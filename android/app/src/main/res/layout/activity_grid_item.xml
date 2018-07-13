@@ -23,6 +23,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="서울 농장"
+        android:singleLine="true"
+        android:textColor="#111111"
         android:layout_marginTop="10dp"
         android:id="@+id/tv1"/>
 
@@ -31,6 +33,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="서울특별시 양천구 목동"
+        android:singleLine="true"
+        android:textSize="13sp"
+        android:textColor="#111111"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:id="@+id/tv2"/>

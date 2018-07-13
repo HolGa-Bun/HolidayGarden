@@ -85,7 +85,7 @@ public class HttpConnection extends AsyncTask<String, Void, String>
                 urlString = urlString + "?AREA_LNM=" + URLEncoder.encode(params[1], "UTF-8");
                 if(!params.equals("없음"))
                     urlString=urlString+"&AREA_MNM="+URLEncoder.encode(params[2], "UTF-8");
-            }else
+            }else if(params[0].equals("Garden"))
             {
                 urlString=urlString+"?FARM_NM="+URLEncoder.encode(params[1], "UTF-8");
             }

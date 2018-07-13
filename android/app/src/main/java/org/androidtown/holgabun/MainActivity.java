@@ -14,9 +14,19 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.nhn.android.maps.overlay.NMapPOIdata;
+import com.nhn.android.mapviewer.overlay.NMapPOIdataOverlay;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.concurrent.ExecutionException;
 
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -86,15 +96,33 @@ public class MainActivity extends AppCompatActivity {
         gridView = (GridView)findViewById(R.id.grid);
         adapter2 = new GridAdapter(this, Garden);
 
-        Garden.add(new Garden("아보카도", BitmapFactory.decodeResource(getResources(),R.drawable.icon),"1000원"));
-        Garden.add(new Garden("수박",BitmapFactory.decodeResource(getResources(),R.drawable.icon),"1000원"));
-        Garden.add(new Garden("오렌지",BitmapFactory.decodeResource(getResources(),R.drawable.icon),"1000원"));
-        Garden.add(new Garden("바나나",BitmapFactory.decodeResource(getResources(),R.drawable.icon),"1000원"));
 
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        sendtoData();
+                    }
+                });
+            }
+        }).start();
 
 >>>>>>> 9837d2f... [7/13]feature/가든 상세정보창 구현
         gridView.setAdapter(adapter2);
 >>>>>>> 490ec72... 0709[feature/android] Search_Account, Change_Password
+
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
+                Garden item = (Garden) parent.getItemAtPosition(position) ;
+
+                Intent Serch_i=new Intent(MainActivity.this,Garden_IM.class);
+                Serch_i.putExtra("name",item.getName());
+                startActivity(Serch_i);
+            }
+        });
 
         ArrayList<Integer> data = new ArrayList<>(); //이미지 url를 저장하는 arraylist
         data.add(R.drawable.t1);
@@ -209,6 +237,46 @@ public class MainActivity extends AppCompatActivity {
     }
 
 >>>>>>> 9837d2f... [7/13]feature/가든 상세정보창 구현
+
+    public void sendtoData() {
+
+        HttpConnection h = new HttpConnection();
+        String body = null;
+
+        try {
+            int markerId = NMapPOIflagType.PIN;
+            body = h.execute("Random").get();
+            // String 으로 들어온 값 JSONObject 로 1차 파싱
+            JSONObject wrapObject = new JSONObject(body);
+            wrapObject = new JSONObject(wrapObject.getString("Grid_20171122000000000552_1"));
+            Log.d(TAG, body);
+            // JSONObject 의 키 "list" 의 값들을 JSONArray 형태로 변환
+            JSONArray jsonArray = new JSONArray(wrapObject.getString("row"));
+
+
+            // set POI data
+
+            for (int i = 0; i <4; i++) {
+                // Array 에서 하나의 JSONObject 를 추출
+                JSONObject dataJsonObject = jsonArray.getJSONObject(i);
+                // 추출한 Object 에서 필요한 데이터를 표시할 방법을 정해서 화면에 표시
+
+                Garden.add(new Garden(dataJsonObject.getString("FARM_NM"), BitmapFactory.decodeResource(getResources(),R.drawable.icon),dataJsonObject.getString("ADDRESS1")));
+
+            }
+
+
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        } catch (NumberFormatException e) {
+            e.printStackTrace();
+        }
+    }
+
 
 
 }
