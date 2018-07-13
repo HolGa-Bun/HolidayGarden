@@ -54,7 +54,7 @@
 
     </LinearLayout>
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1">
@@ -87,6 +87,7 @@
         </FrameLayout>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
        <FrameLayout
            android:layout_width="match_parent"
@@ -113,6 +114,9 @@
 =======
 >>>>>>> 490ec72... 0709[feature/android] Search_Account, Change_Password
     </ScrollView>
+=======
+    </LinearLayout>
+>>>>>>> 301d1f1... 0713 [feature/android]생성
 
 
     <LinearLayout

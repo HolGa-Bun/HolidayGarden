@@ -28,7 +28,7 @@ import java.util.HashMap;
 
 public class WriteActivity extends AppCompatActivity implements View.OnClickListener{
     private static final int SELECT_PICTURE = 1;
-
+    TextView textView;
     private String selectedImagePath;
     private Bitmap bitmap;
     private Uri selectedImageUri;
@@ -57,9 +57,21 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
                                 "Select Picture"), SELECT_PICTURE);
                     }
                 });
+<<<<<<< HEAD
         edittext=(EditText)findViewById(R.id.edittext);
         image=(ImageView)findViewById(R.id.img_date2);
         RequestURL.setOnClickListener(this);
+=======
+        final EditText edittext=(EditText)findViewById(R.id.edittext);
+        Button button=(Button)findViewById(R.id.checkButton);
+        textView=(TextView)findViewById(R.id.textView);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                textView.setText(edittext.getText());
+            }
+        });
+>>>>>>> 301d1f1... 0713 [feature/android]생성
 
 
 
