@@ -85,30 +85,8 @@ public class WriteActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public static class GridItem extends LinearLayout {
 
-        TextView tv;
-        ImageView iv;
-        TextView tv2;
 
-        public GridItem(Context context) {
-            super(context);
-            init(context);
-        }
-
-        public void init(Context context) {
-            View view = LayoutInflater.from(context).inflate(R.layout.activity_grid_item, this);
-            tv = (TextView) findViewById(R.id.tv1);
-            tv2 = (TextView) findViewById(R.id.tv2);
-            iv = (ImageView) findViewById(R.id.img1);
-        }
-
-        public void setData(Garden one) {
-            tv.setText(one.getName());
-            tv2.setText(one.getAddress());
-            iv.setImageBitmap(one.getImgno());
-        }
-    }
     public void MainClicked(View v){ //메인페이지로 이동
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
