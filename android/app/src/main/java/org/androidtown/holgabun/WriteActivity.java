@@ -21,6 +21,7 @@ public class WriteActivity extends AppCompatActivity {
 
     private String selectedImagePath;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
