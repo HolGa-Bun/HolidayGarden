@@ -90,7 +90,7 @@ public class SignupActivity extends AppCompatActivity {
 
                 HashMap<String,String> data = new HashMap<>();
 
-          
+
                 String result = rh.sendPostRequest("http://ec2-13-209-68-163.ap-northeast-2.compute.amazonaws.com/requestLogin.php",data);
 
                 return result;
