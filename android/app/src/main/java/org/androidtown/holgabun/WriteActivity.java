@@ -129,7 +129,7 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
                 HashMap<String,String> data = new HashMap<>();
 
                 data.put("image", uploadImage);//php에서 POST값으로 들어감
-              //  data.put("mean",edittext.getText().toString());
+               data.put("mean",edittext.getText().toString());
                 String result = rh.sendPostRequest("http://ec2-13-209-68-163.ap-northeast-2.compute.amazonaws.com/PhotoUpload/upload.php",data);
 
                 return result;

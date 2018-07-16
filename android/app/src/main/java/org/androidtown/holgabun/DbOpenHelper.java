@@ -46,7 +46,7 @@ public class DbOpenHelper {
         this.mCtx = context;
     }
 
-    public int returnOnOff()
+    public int returnOnOff()d
     {
         Cursor cursor= mDB.rawQuery("select onoff from Log",null);
 
