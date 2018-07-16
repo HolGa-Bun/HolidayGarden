@@ -47,13 +47,12 @@
             android:padding="0dp"
             android:src="@drawable/ic_home_green_24dp" />
 
-        <ImageButton
+        <Button
             android:id="@+id/timeline_img"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="TimeLineClicked"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:padding="0dp"
-            android:src="@drawable/main_image" />
+            android:background="@drawable/main_image" />
 
     </LinearLayout>
 
@@ -72,22 +71,23 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:gravity="center">
 
                 <ImageView
                     android:id="@+id/img_date2"
-                    android:layout_width="match_parent"
-                    android:layout_height="300dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="300dp"
+                    android:maxWidth="300dp"
                     android:layout_marginBottom="10dp"
-                    android:layout_weight="1"
                     android:src="@drawable/icon" />
 
                 <ImageButton
                     android:id="@+id/browsePictureButton"
-                    android:layout_width="100dp"
+                    android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:layout_weight="1"
                     app:srcCompat="@android:drawable/ic_input_add" />
 
             </LinearLayout>
@@ -126,12 +126,12 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@color/colorMain"
-                    android:onClick="onButtonFeed"
                     android:text="확인"
                     android:textColor="@color/colorPrimary"
                     android:textSize="14dp" />
 
             </LinearLayout>
+<<<<<<< HEAD
 
             <TextView
                 android:id="@+id/textView"
@@ -140,6 +140,8 @@
                 android:layout_weight="1"
                 android:text="TextView" />
 
+=======
+>>>>>>> 6fa82f6... 이미지 업로드 완성
         </LinearLayout>
     </ScrollView>
 

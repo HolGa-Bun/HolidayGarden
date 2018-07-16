@@ -30,6 +30,7 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".SignupActivity" />
         <activity android:name=".AddInformationActivity" />
+<<<<<<< HEAD
         <activity android:name=".MainActivity"/>
 
 <<<<<<< HEAD
@@ -39,6 +40,9 @@
         </activity>
 >>>>>>> a10b136... 0710[feature/android]Search_Account
         <activity android:name=".GoogleMap" />
+=======
+        <activity android:name=".MainActivity" />
+>>>>>>> 6fa82f6... 이미지 업로드 완성
         <activity android:name=".Search" />
         <activity
             android:name=".PopupActivity"
