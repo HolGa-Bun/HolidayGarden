@@ -1,5 +1,6 @@
 package org.androidtown.holgabun;
 
+import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.util.Log;
 
@@ -37,6 +38,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 
 import java.net.URL;
+import java.util.HashMap;
 
 
 /**
@@ -65,7 +67,11 @@ public class HttpConnection extends AsyncTask<String, Void, String>
 >>>>>>> 94887fb... 0713[feature/android]
 =======
 
+<<<<<<< HEAD
 >>>>>>> 2f4fd62... http 오류 잡음
+=======
+
+>>>>>>> 5df8494... test
     @Override
     public String doInBackground(String... params) {
 
@@ -111,11 +117,15 @@ public class HttpConnection extends AsyncTask<String, Void, String>
             {
                 urlString=Server_url+"checkId.php?ID="+params[1];
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 94887fb... 0713[feature/android]
 =======
 
 >>>>>>> 2f4fd62... http 오류 잡음
+=======
+>>>>>>> 5df8494... test
             }
+
 
             URL url = new URL(urlString);
 

@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.ViewUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -68,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         setTitle("Garden Information");
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -95,6 +97,16 @@ public class MainActivity extends AppCompatActivity {
 >>>>>>> ebc2413... 0709 [feature/android/writeButton] ProfileFragment.java onCreateView method에 onClick method 생성
 =======
 =======
+=======
+        button=(Button)findViewById(R.id.home);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                HttpConnection h=new HttpConnection();
+                h.execute("login","minuk","12","12,","hi","bye");
+            }
+        });
+>>>>>>> 5df8494... test
 
         gridView = (GridView)findViewById(R.id.grid);
         adapter2 = new GridAdapter(this, Garden);

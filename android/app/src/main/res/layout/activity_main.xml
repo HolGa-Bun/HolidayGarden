@@ -84,12 +84,12 @@
 
 
 
-            <ImageButton
+            <Button
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:background="#ffffff"
                 android:padding="0dp"
-                android:src="@drawable/ic_home_black_24dp" />
+                android:id="@+id/home"
+                android:background="@drawable/ic_home_black_24dp" />
 
             <Button
                 android:layout_width="50dp"

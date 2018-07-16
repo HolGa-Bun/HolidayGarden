@@ -28,7 +28,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".LoginActivity" />
-        <activity android:name=".SignupActivity" />
+
         <activity android:name=".AddInformationActivity" />
 <<<<<<< HEAD
         <activity android:name=".MainActivity"/>
@@ -50,7 +50,7 @@
 <<<<<<< HEAD
             android:theme="@android:style/Theme.Dialog" />
         <activity android:name=".TimeLine" />
-        <activity android:name=".TutorialActivity">
+        <activity android:name=".SignupActivity">
             <intent-filter>
         <action android:name="android.intent.action.MAIN" />
 
