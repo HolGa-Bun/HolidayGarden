@@ -4,8 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     tools:context=".Tab_fragment1_Search_Account"
     android:orientation="vertical">
+=======
+    android:orientation="vertical"
+    tools:context=".Search_ID_Fail">
+>>>>>>> dadf8b2... test
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,7 +36,11 @@
         android:layout_height="40dp"
         android:orientation="horizontal">
 
+<<<<<<< HEAD
         <TextView
+=======
+        <Button
+>>>>>>> dadf8b2... test
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
@@ -44,7 +53,11 @@
             android:textSize="14dp"
             android:textStyle="bold" />
 
+<<<<<<< HEAD
         <TextView
+=======
+        <Button
+>>>>>>> dadf8b2... test
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"

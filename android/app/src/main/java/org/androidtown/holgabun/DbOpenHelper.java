@@ -46,19 +46,31 @@ public class DbOpenHelper {
         this.mCtx = context;
     }
 
+<<<<<<< HEAD
     public int returnOnOff()d
+=======
+    public int returnOnOff()
+>>>>>>> dadf8b2... test
     {
         Cursor cursor= mDB.rawQuery("select onoff from Log",null);
 
         while(cursor.moveToNext()){
+<<<<<<< HEAD
                 return cursor.getInt(0);
+=======
+            return cursor.getInt(0);
+>>>>>>> dadf8b2... test
         }
         return -1;
     }
 
     public void automaticLogin()
     {
+<<<<<<< HEAD
          mDB.execSQL("UPDATE Log set onOff=" + 1 + ";");
+=======
+        mDB.execSQL("UPDATE Log set onOff=" + 1 + ";");
+>>>>>>> dadf8b2... test
     }
 
     public void logOut()

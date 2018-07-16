@@ -12,10 +12,13 @@ import android.widget.Button;
 
 public class Search_ID_Fail extends AppCompatActivity {
 
+<<<<<<< HEAD
     public void onClickedMain(View v) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
+=======
+>>>>>>> dadf8b2... test
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,4 +26,18 @@ public class Search_ID_Fail extends AppCompatActivity {
         setContentView(R.layout.activity_search_id_fail);
 
     }
+<<<<<<< HEAD
+=======
+
+    public void onClickedMain(View v) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+
+    public void onClickedSearchID(View v) {
+        Intent intent = new Intent(this,Tab_fragment1_Search_Account.class);
+        startActivity(intent);
+    }
+>>>>>>> dadf8b2... test
 }
