@@ -45,7 +45,11 @@
             android:background="@drawable/ic_home_green_24dp" />
 
         <Button
+<<<<<<< HEAD
             android:layout_width="60dp"
+=======
+            android:layout_width="50dp"
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
             android:layout_height="50dp"
             android:padding="0dp"
             android:background="@drawable/icon" />

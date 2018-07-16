@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 
@@ -14,4 +15,22 @@
             <solid android:color="#ffffff" />
         </shape>
     </item>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Lower rectangle (border color) -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#d8dfea" />
+        </shape>
+    </item>
+
+    <!-- Upper rectangle (background color) -->
+    <item android:top="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#ffffff" />
+        </shape>
+    </item>
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 </layer-list>

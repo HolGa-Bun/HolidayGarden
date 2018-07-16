@@ -1,6 +1,10 @@
 package org.androidtown.holgabun;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
         import android.app.Activity;
         import android.app.ProgressDialog;
         import android.content.Context;
@@ -68,6 +72,7 @@ import android.widget.LinearLayout;
 =======
         import java.util.HashMap;
 >>>>>>> 1f118c6...  게시글 내려받기 성공
+
 
 
 /**
@@ -321,6 +326,10 @@ public class ProfileFragment extends Fragment{
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 //    public void onButtonWrite(View v){ //write 페이지로 이동
 //        Intent intent = new Intent(getActivity(), MainActivity.class);
 //        startActivity(intent);

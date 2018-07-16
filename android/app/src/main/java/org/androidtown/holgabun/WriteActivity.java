@@ -24,8 +24,11 @@ import android.widget.Toast;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+<<<<<<< HEAD
 import java.text.SimpleDateFormat;
 import java.util.Date;
+=======
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 import java.util.HashMap;
 
 public class WriteActivity extends AppCompatActivity implements View.OnClickListener{
@@ -38,19 +41,26 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
     private Button RequestURL;
     private Button TimelineButton;
     private EditText edittext;
+<<<<<<< HEAD
     DbOpenHelper h;
     String sql_id;
+=======
+
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_write);
 
+<<<<<<< HEAD
         DbOpenHelper h=new DbOpenHelper(this);
         h.open();
 
         sql_id=h.returnId();
 
+=======
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
         RequestURL=(Button)findViewById(R.id.checkButton);
         TimelineButton=(Button)findViewById(R.id.timeline_img);
         findViewById(R.id.browsePictureButton)
@@ -65,6 +75,7 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
                                 "Select Picture"), SELECT_PICTURE);
                     }
                 });
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         edittext=(EditText)findViewById(R.id.edittext);
@@ -88,6 +99,16 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
 
 
 
+=======
+
+        edittext=(EditText)findViewById(R.id.edittext);
+        image=(ImageView)findViewById(R.id.img_date2);
+        RequestURL.setOnClickListener(this);
+
+
+
+
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
     }
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {//선택한 사진 가져오기
@@ -124,7 +145,11 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
             @Override
             protected void onPreExecute() {
                 super.onPreExecute();
+<<<<<<< HEAD
                loading = ProgressDialog.show(WriteActivity.this, "Uploading...", null,true,true);
+=======
+                loading = ProgressDialog.show(WriteActivity.this, "Uploading...", null,true,true);
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
             }
 
             @Override
@@ -132,13 +157,17 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
                 super.onPostExecute(s);
                 loading.dismiss();
                 Toast.makeText(getApplicationContext(),s, Toast.LENGTH_LONG).show();
+<<<<<<< HEAD
                 finish();
+=======
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
             }
 
             @Override
             protected String doInBackground(Bitmap... params) {
                 Bitmap bitmap = params[0];
                 String uploadImage = getStringImage(bitmap);
+<<<<<<< HEAD
 
                 HashMap<String,String> data = new HashMap<>();
 
@@ -160,6 +189,14 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
 
                 data.put("time",sdf.format(date));
                 String result = rh.sendPostRequest("http://ec2-13-209-68-163.ap-northeast-2.compute.amazonaws.com/upload.php",data);
+=======
+
+                HashMap<String,String> data = new HashMap<>();
+
+                data.put("image", uploadImage);//php에서 POST값으로 들어감
+                data.put("mean",edittext.getText().toString());
+                String result = rh.sendPostRequest("http://ec2-13-209-68-163.ap-northeast-2.compute.amazonaws.com/PhotoUpload/upload.php",data);
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 
                 return result;
             }

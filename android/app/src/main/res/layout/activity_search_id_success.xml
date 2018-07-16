@@ -32,10 +32,14 @@
         android:orientation="horizontal">
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         <TextView
 =======
         <Button
 >>>>>>> dadf8b2... test
+=======
+        <TextView
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
@@ -49,10 +53,14 @@
             android:textStyle="bold" />
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         <TextView
 =======
         <Button
 >>>>>>> dadf8b2... test
+=======
+        <TextView
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"

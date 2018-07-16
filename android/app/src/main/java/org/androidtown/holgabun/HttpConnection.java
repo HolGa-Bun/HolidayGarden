@@ -60,6 +60,7 @@ import java.util.HashMap;
 public class HttpConnection extends AsyncTask<String, Void, String>
 
 {
+<<<<<<< HEAD
     final static String openWeatherURL = "http://211.237.50.150:7080/openapi/abf160159dcc1880ee2a7c68af142681cc72667378a51204b6d47167fd28add6/json/Grid_20171122000000000552_1/1/10";
 
     String Server_url = "http://ec2-13-209-68-163.ap-northeast-2.compute.amazonaws.com/";
@@ -72,6 +73,13 @@ public class HttpConnection extends AsyncTask<String, Void, String>
 =======
 
 >>>>>>> 5df8494... test
+=======
+    final static String openWeatherURL = "http://211.237.50.150:7080/openapi/abf160159dcc1880ee2a7c68af142681cc72667378a51204b6d47167fd28add6/json/Grid_20171122000000000552_1/1/5";
+
+    String Server_url = "http://ec2-13-209-68-163.ap-northeast-2.compute.amazonaws.com/";
+
+
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
     @Override
     public String doInBackground(String... params) {
 
@@ -81,12 +89,16 @@ public class HttpConnection extends AsyncTask<String, Void, String>
 
 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
          */
 >>>>>>> 94887fb... 0713[feature/android]
 =======
 
 >>>>>>> 2f4fd62... http 오류 잡음
+=======
+
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 
 
 
@@ -118,12 +130,15 @@ public class HttpConnection extends AsyncTask<String, Void, String>
                 urlString=Server_url+"checkId.php?ID="+params[1];
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 94887fb... 0713[feature/android]
 =======
 
 >>>>>>> 2f4fd62... http 오류 잡음
 =======
 >>>>>>> 5df8494... test
+=======
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
             }
 
 
@@ -193,6 +208,7 @@ public class HttpConnection extends AsyncTask<String, Void, String>
 
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 <<<<<<< HEAD
@@ -202,3 +218,7 @@ public class HttpConnection extends AsyncTask<String, Void, String>
 >>>>>>> 2f4fd62... http 오류 잡음
 =======
 >>>>>>> 1f118c6...  게시글 내려받기 성공
+=======
+
+
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 package org.androidtown.holgabun;
 
 import android.support.v4.view.PagerAdapter;
@@ -73,6 +74,9 @@ public class ViewPagerAdapter extends PagerAdapter {
 
 }
 =======
+=======
+
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 package org.androidtown.holgabun;
 
 import android.support.v4.view.PagerAdapter;
@@ -146,4 +150,8 @@ public class ViewPagerAdapter extends PagerAdapter {
     }
 
 }
+<<<<<<< HEAD
 >>>>>>> ab02795... 0716 [feature/android/0716jiyoon]
+=======
+
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]

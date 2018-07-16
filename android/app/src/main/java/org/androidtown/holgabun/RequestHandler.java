@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 package org.androidtown.holgabun;
 
 import java.io.BufferedReader;
@@ -87,6 +88,12 @@ import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStream;
+=======
+package org.androidtown.holgabun;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
@@ -109,7 +116,11 @@ public class RequestHandler {
                                   HashMap<String, String> postDataParams) {
 
         URL url;
+<<<<<<< HEAD
         BufferedReader br = null;
+=======
+
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
         StringBuilder sb = new StringBuilder();
         try {
             url = new URL(requestURL);
@@ -133,6 +144,7 @@ public class RequestHandler {
             int responseCode = conn.getResponseCode();
 
             if (responseCode == HttpsURLConnection.HTTP_OK) {
+<<<<<<< HEAD
 
                 InputStream in = new BufferedInputStream(conn.getInputStream());
 
@@ -142,6 +154,13 @@ public class RequestHandler {
 
                     sb.append(line);
 
+=======
+                BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+                sb = new StringBuilder();
+                String response;
+                while ((response = br.readLine()) != null){
+                    sb.append(response);
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
                 }
             }
 
@@ -168,4 +187,7 @@ public class RequestHandler {
         return result.toString();
     }
 }
+<<<<<<< HEAD
 >>>>>>> dadf8b2... test
+=======
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]

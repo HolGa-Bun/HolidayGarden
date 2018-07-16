@@ -21,7 +21,10 @@ import org.json.JSONObject;
 import android.util.Log;
 
 import java.io.IOException;
+<<<<<<< HEAD
 import java.util.HashMap;
+=======
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 import java.util.concurrent.ExecutionException;
 
 import okhttp3.Call;
@@ -36,6 +39,7 @@ public class LoginActivity extends AppCompatActivity {
     private static final String TAG = "TestActivity";
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
@@ -43,6 +47,8 @@ public class LoginActivity extends AppCompatActivity {
 =======
     DbOpenHelper h;
 >>>>>>> 15adacd... feature/내부sql구현 메인이미지
+=======
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 
 
     @Override
@@ -52,6 +58,7 @@ public class LoginActivity extends AppCompatActivity {
 
         button = (Button) findViewById(R.id.su);
         editText = (EditText) findViewById(R.id.login);
+<<<<<<< HEAD
 
         h=new DbOpenHelper(this);
         h.open();
@@ -80,18 +87,37 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
+=======
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+<<<<<<< HEAD
 
 
             loginFunc();
 
+=======
+                String su = editText.getText().toString();
+
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                sendtoData();
+                            }
+                        });
+                    }
+                }).start();
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
             }
         });
 <<<<<<< HEAD
     }
+<<<<<<< HEAD
     private void sendData() {
 // 네트워크 통신하는 작업은 무조건 작업스레드를 생성해서 호출 해줄 것!!
 
@@ -126,11 +152,16 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
+=======
+
+
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
     public void onButton1Clicked(View v) {
         Intent intent = new Intent(this, SignupActivity.class);
         startActivity(intent);
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     public void onClickedAdd(View v){
         Intent intent = new Intent(this, MainActivity.class);
@@ -212,4 +243,48 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 
+=======
+    public void onClickedAdd(View v) {
+        Intent intent = new Intent(this, Tab_fragment1_Search_Account.class);
+        startActivity(intent);
+    }
+
+    public void sendtoData() {
+
+        HttpConnection h = new HttpConnection();
+        String body = null;
+
+        try {
+
+            body = h.execute("check",editText.getText().toString()).get();
+
+            // String 으로 들어온 값 JSONObject 로 1차 파싱
+           /* JSONObject wrapObject = new JSONObject(body);
+            wrapObject = new JSONObject(wrapObject.getString("Grid_20171122000000000552_1"));
+            Log.d(TAG, body);
+            // JSONObject 의 키 "list" 의 값들을 JSONArray 형태로 변환
+            JSONArray jsonArray = new JSONArray(wrapObject.getString("row"));
+
+
+            // set POI data
+
+            for (int i = 0; i <4; i++) {
+                // Array 에서 하나의 JSONObject 를 추출
+                JSONObject dataJsonObject = jsonArray.getJSONObject(i);
+                // 추출한 Object 에서 필요한 데이터를 표시할 방법을 정해서 화면에 표시
+            }
+            */
+
+           Toast.makeText(this,body,Toast.LENGTH_LONG).show();
+
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        } catch (NumberFormatException e) {
+            e.printStackTrace();
+        }
+
+    }
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 }

@@ -51,7 +51,14 @@ public class SignupActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+<<<<<<< HEAD
                 singupFunc();
+=======
+                String su = editText.getText().toString();
+                singup();
+
+
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
             }
         });
 
@@ -62,8 +69,13 @@ public class SignupActivity extends AppCompatActivity {
     }
 
 
+<<<<<<< HEAD
     private void singupFunc(){
         class SingupAsync extends AsyncTask<String,Void,String> {
+=======
+    private void singup(){
+        class UploadImage extends AsyncTask<String,Void,String> {
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 
             ProgressDialog loading;
             RequestHandler rh = new RequestHandler();
@@ -71,25 +83,34 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             protected void onPreExecute() {
                 super.onPreExecute();
+<<<<<<< HEAD
                loading = ProgressDialog.show(SignupActivity.this, "Uploading...", null,true,true);
+=======
+                loading = ProgressDialog.show(SignupActivity.this, "Uploading...", null,true,true);
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
             }
 
             @Override
             protected void onPostExecute(String s) {
                 super.onPostExecute(s);
                 loading.dismiss();
+<<<<<<< HEAD
                if(s.equals("login success!"))
                {
                     Intent intent =new Intent(SignupActivity.this,LoginActivity.class);
                     startActivity(intent);
                     finish();
                }
+=======
+                Toast.makeText(getApplicationContext(),s, Toast.LENGTH_LONG).show();
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
             }
 
             @Override
             protected String doInBackground(String... params) {
 
 
+<<<<<<< HEAD
 
                 HashMap<String,String> data = new HashMap<>();
                 editText=(EditText)findViewById(R.id.ids);
@@ -101,6 +122,10 @@ public class SignupActivity extends AppCompatActivity {
                 data.put("QUEST",spinner.getSelectedItem().toString());
                 editText=(EditText)findViewById(R.id.answer);
                 data.put("ASW",editText.getText().toString());
+=======
+                HashMap<String,String> data = new HashMap<>();
+
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 
                 String result = rh.sendPostRequest("http://ec2-13-209-68-163.ap-northeast-2.compute.amazonaws.com/requestLogin.php",data);
 
@@ -108,7 +133,11 @@ public class SignupActivity extends AppCompatActivity {
             }
         }
 
+<<<<<<< HEAD
         SingupAsync ui = new SingupAsync();
+=======
+        UploadImage ui = new UploadImage();
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
         ui.execute("");
     }
 }

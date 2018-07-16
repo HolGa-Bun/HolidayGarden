@@ -52,11 +52,12 @@ public class TimeLine extends AppCompatActivity {
         feedButton = (Button) findViewById(R.id.feedButton);
         likeButton = (Button) findViewById(R.id.likeButton);
         profileButton = (Button) findViewById(R.id.profileButton);
-        notice = (LinearLayout) findViewById(R.id.notice);
+
+         notice =(LinearLayout) findViewById(R.id.notice);
         notice.setVisibility(View.GONE);
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.fragment, new FeedFragment());
+        FragmentManager fragmentManager =getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction =fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.fragment,new FeedFragment());
         fragmentTransaction.commit();
 <<<<<<< HEAD
 
@@ -64,9 +65,11 @@ public class TimeLine extends AppCompatActivity {
 =======
 >>>>>>> 9837d2f... [7/13]feature/가든 상세정보창 구현
 
+
         feedButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View view){
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             public void onClick(View view) {
@@ -80,6 +83,8 @@ public class TimeLine extends AppCompatActivity {
 >>>>>>> 490ec72... 0709[feature/android] Search_Account, Change_Password
 =======
 >>>>>>> 9837d2f... [7/13]feature/가든 상세정보창 구현
+=======
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 
                 feedButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
                 likeButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
@@ -87,6 +92,7 @@ public class TimeLine extends AppCompatActivity {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 FragmentManager fragmentManager =getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction =fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fragment,new FeedFragment());
@@ -101,11 +107,16 @@ public class TimeLine extends AppCompatActivity {
                 fragmentTransaction.replace(R.id.fragment, new FeedFragment());
 >>>>>>> 490ec72... 0709[feature/android] Search_Account, Change_Password
 =======
+=======
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
                 FragmentManager fragmentManager =getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction =fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fragment,new FeedFragment());
 
+<<<<<<< HEAD
 >>>>>>> 9837d2f... [7/13]feature/가든 상세정보창 구현
+=======
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
                 fragmentTransaction.commit();
             }
         });
@@ -115,6 +126,7 @@ public class TimeLine extends AppCompatActivity {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             public void onClick (View view){
 =======
             public void onClick(View view) {
@@ -126,6 +138,10 @@ public class TimeLine extends AppCompatActivity {
 
             public void onClick (View view){
 >>>>>>> 9837d2f... [7/13]feature/가든 상세정보창 구현
+=======
+
+            public void onClick (View view){
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 
                 feedButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
                 likeButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
@@ -141,6 +157,7 @@ public class TimeLine extends AppCompatActivity {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             public void onClick (View view){
 =======
             public void onClick(View view) {
@@ -152,6 +169,10 @@ public class TimeLine extends AppCompatActivity {
             public void onClick (View view){
 
 >>>>>>> 9837d2f... [7/13]feature/가든 상세정보창 구현
+=======
+            public void onClick (View view){
+
+>>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 
                 feedButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
                 likeButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
