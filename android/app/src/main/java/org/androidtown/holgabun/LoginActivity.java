@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -34,10 +35,14 @@ public class LoginActivity extends AppCompatActivity {
     Button button;
     private static final String TAG = "TestActivity";
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
 >>>>>>> 94887fb... 0713[feature/android]
+=======
+    DbOpenHelper h;
+>>>>>>> 15adacd... feature/내부sql구현 메인이미지
 
 
     @Override
@@ -48,9 +53,31 @@ public class LoginActivity extends AppCompatActivity {
         button = (Button) findViewById(R.id.su);
         editText = (EditText) findViewById(R.id.login);
 
+        h=new DbOpenHelper(this);
+        h.open();
+
+        findViewById(R.id.auto_login).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(((CheckBox)v).isChecked())
+                ((CheckBox) findViewById(R.id.id_save)).setChecked(false);
+
+            }
+        });
+
+        findViewById(R.id.id_save).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(((CheckBox)v).isChecked())
+                    ((CheckBox) findViewById(R.id.auto_login)).setChecked(false);
+
+            }
+        });
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
 
             loginFunc();
 
@@ -68,6 +95,28 @@ public class LoginActivity extends AppCompatActivity {
     }
 >>>>>>> 94887fb... 0713[feature/android]
 
+    public void Checked()
+    {
+
+        CheckBox option1=(CheckBox)findViewById(R.id.id_save);
+        String result;
+
+        CheckBox option2=(CheckBox)findViewById(R.id.auto_login);
+
+        if(option2.isChecked()) {
+
+            h.automaticLogin();
+        }
+        if(option1.isChecked())
+        {
+            h.ID_Save();
+        }
+        else{
+            h.N_ID_Save();
+        }
+
+
+    }
 
     public void onButton1Clicked(View v) {
         Intent intent = new Intent(this, SignupActivity.class);
@@ -101,6 +150,13 @@ public class LoginActivity extends AppCompatActivity {
                 loading.dismiss();
 
                     if(s.equals("true")) {
+                        String p;
+                        editText=(EditText)findViewById(R.id.login);
+                        p=editText.getText().toString();
+                        editText=(EditText)findViewById(R.id.pw);
+                        h.login(p,editText.getText().toString());
+
+                        Checked();
                         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                         startActivity(intent);
                         finish();

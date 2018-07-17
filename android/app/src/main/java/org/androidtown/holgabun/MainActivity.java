@@ -1,8 +1,10 @@
 package org.androidtown.holgabun;
 
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.ViewUtils;
@@ -142,9 +144,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         ArrayList<Integer> data = new ArrayList<>(); //이미지 url를 저장하는 arraylist
-        data.add(R.drawable.t1);
-        data.add(R.drawable.t2);
-        data.add(R.drawable.t3);
+        data.add(R.drawable.main_image1);
+        data.add(R.drawable.main_image2);
 
 
         autoViewPager = (AutoScrollViewPager) findViewById(R.id.view_pager);
@@ -333,8 +334,17 @@ public class MainActivity extends AppCompatActivity {
 
 >>>>>>> 9837d2f... [7/13]feature/가든 상세정보창 구현
     public void onClickedTimeLine(View v){
-        Intent intent = new Intent(this, TimeLine.class);
-        startActivity(intent);
+
+        DbOpenHelper h=new DbOpenHelper(this);
+        h.open();
+
+        if(h.returnOnOff()==1) {
+            Intent intent = new Intent(this, TimeLine.class);
+            startActivity(intent);
+        }
+        else{
+            show();
+        }
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -343,9 +353,26 @@ public class MainActivity extends AppCompatActivity {
 >>>>>>> 490ec72... 0709[feature/android] Search_Account, Change_Password
 =======
 
-    public void onClickedLogin(View v){
-        Intent intent = new Intent(this, LoginActivity.class);
-        startActivity(intent);
+    void show()
+    {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("주의");
+        builder.setMessage("SNS를 사용하시려면 로그인이 필요합니다. 로그인 하시겠습니까?");
+        builder.setPositiveButton("예",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent intent= new Intent(MainActivity.this,LoginActivity.class);
+                        startActivity(intent);
+                        finish();
+                    }
+                });
+        builder.setNegativeButton("아니오",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        Toast.makeText(getApplicationContext(),"아니오를 선택했습니다.",Toast.LENGTH_LONG).show();
+                    }
+                });
+        builder.show();
     }
 
 >>>>>>> 9837d2f... [7/13]feature/가든 상세정보창 구현

@@ -42,10 +42,6 @@ public class Search extends AppCompatActivity {
     ListView listview ;
 
 
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,17 +68,24 @@ public class Search extends AppCompatActivity {
             }
         }) ;
 
-        new Thread(new Runnable() {
+        button=(Button)findViewById(R.id.gotoHome);
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void run() {
-                runOnUiThread(new Runnable(){
-                    @Override
-                    public void run() {
-                        sendtoData();
-                    }
-                });
+            public void onClick(View v) {
+                Intent intent=new Intent(Search.this,MainActivity.class);
+                startActivity(intent);
+                finish();
             }
-        }).start();
+        });
+        button=(Button)findViewById(R.id.gotoTime);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Search.this,TimeLine.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
 
         button=(Button)findViewById(R.id.search_bun);
@@ -323,6 +326,15 @@ public class Search extends AppCompatActivity {
 
         //-----------------위치 검색
 
+        Runnable a=new Runnable() {
+            @Override
+            public void run() {
+                sendtoData();
+            }
+        };
+
+        a.run();
+
 
     }//oncrete
 
@@ -335,7 +347,12 @@ public class Search extends AppCompatActivity {
 
         try {
 
-            body = h.execute("Search",spinner_si.getSelectedItem().toString(),spinner_gu.getSelectedItem().toString()).get();
+            if(editText.getText().toString().equals(""))
+            {
+                body = h.execute("Search",spinner_si.getSelectedItem().toString(),spinner_gu.getSelectedItem().toString()).get();}
+            else{
+                body=h.execute("Garden",editText.getText().toString()).get();
+            }
             // String 으로 들어온 값 JSONObject 로 1차 파싱
             JSONObject wrapObject = new JSONObject(body);
             wrapObject= new JSONObject(wrapObject.getString("Grid_20171122000000000552_1"));

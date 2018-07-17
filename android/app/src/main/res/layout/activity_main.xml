@@ -113,7 +113,10 @@
             <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
                 android:id="@+id/view_pager"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"></cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager>
+                android:layout_height="230dp"
+                android:layout_marginBottom="20dp">
+
+            </cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager>
         </LinearLayout>
 
         <LinearLayout
@@ -128,7 +131,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="0.5"
                 android:orientation="vertical">
 
                 <LinearLayout

@@ -24,8 +24,8 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:background="#ffffff"
                 android:padding="0dp"
                 android:src="@drawable/ic_menu_black_24dp" />
@@ -37,7 +37,7 @@
                 android:paddingLeft="10dp"
                 android:text="홀가분"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="30dp"
+                android:textSize="26sp"
                 android:textStyle="bold" />
 
             <Button
@@ -45,18 +45,19 @@
                 android:layout_width="5dp"
                 android:layout_height="5dp" />
 
-            <ImageButton
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:background="#ffffff"
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/gotoHome"
                 android:padding="0dp"
-                android:src="@drawable/ic_home_black_24dp" />
+                android:background="@drawable/ic_home_green_24dp" />
 
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:padding="0dp"
-                android:src="@drawable/main_image" />
+                android:id="@+id/gotoTime"
+                android:background="@drawable/main_image" />
         </LinearLayout>
 
 
@@ -118,7 +119,7 @@
                         android:layout_marginLeft="30dp"
                         android:background="@null"
                         android:id="@+id/search_tutname"
-                        android:hint="생략"
+                        android:hint="이름으로 검색"
                         android:paddingLeft="20dp" />
 
 

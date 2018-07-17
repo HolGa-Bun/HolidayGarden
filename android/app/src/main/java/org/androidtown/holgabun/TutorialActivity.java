@@ -26,7 +26,7 @@ public class TutorialActivity extends AppCompatActivity {
         buttonMain= (Button) findViewById(R.id.buttonMain);
 
         for (int i = 0; i < 3; i++) {
-            arrayList.add(R.drawable.t1 + i);
+            arrayList.add(R.drawable.main_image + i);
         }
         viewPager = (ViewPager) findViewById(R.id.viewpager);
         viewPagerAdapter = new org.androidtown.holgabun.ViewPagerAdapter(getLayoutInflater(), arrayList);

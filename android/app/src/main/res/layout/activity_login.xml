@@ -99,12 +99,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="50dp"
-                        android:text="아이디 저장" />
+                        android:text="아이디 저장"
+                        android:id="@+id/id_save"/>
 
                     <CheckBox
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="50dp"
+                        android:id="@+id/auto_login"
                         android:text="자동 로그인" />
                 </LinearLayout>
 
