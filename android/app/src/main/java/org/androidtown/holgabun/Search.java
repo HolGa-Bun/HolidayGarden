@@ -1,5 +1,7 @@
 package org.androidtown.holgabun;
 
+
+import android.app.ProgressDialog;
 import android.content.Intent;
 
 import android.graphics.BitmapFactory;
@@ -10,8 +12,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 
+import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Spinner;
 import org.json.JSONArray;
@@ -31,10 +35,12 @@ public class Search extends AppCompatActivity {
     EditText editText;
 
     private final String CLIENT_ID = "eE9eLsg6dk9r3z8mqjKr";
+    Button button;
+
 
     private static final String TAG = "TestActivity";
     ListView listview ;
-    ListViewAdapter adapter1;
+
 
 
 
@@ -46,11 +52,10 @@ public class Search extends AppCompatActivity {
         setContentView(R.layout.activity_search);
 
 
-        adapter1 = new ListViewAdapter() ;
 
         // 리스트뷰 참조 및 Adapter달기
         listview = (ListView) findViewById(R.id.List_garden);
-        listview.setAdapter(adapter1);
+
 
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -80,6 +85,29 @@ public class Search extends AppCompatActivity {
         }).start();
 
 
+        button=(Button)findViewById(R.id.search_bun);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+
+                        runOnUiThread(new Runnable(){
+                            @Override
+                            public void run() {
+                                sendtoData();
+                            }
+                        });
+                    }
+                }).start();
+            }
+        });
+
+
 
 
 
@@ -95,28 +123,195 @@ public class Search extends AppCompatActivity {
         adapter = ArrayAdapter.createFromResource(this, R.array.si_do, android.R.layout.simple_spinner_dropdown_item);
         spinner_si.setAdapter(adapter);
         spinner_si.setSelection(intent.getIntExtra("si", 0));
-        if (intent.getIntExtra("si", 0) == 8) {
-            adapter = ArrayAdapter.createFromResource(Search.this, R.array.Gung_si, android.R.layout.simple_spinner_dropdown_item);
-            spinner_gu.setAdapter(adapter);
-            spinner_gu.setSelection(intent.getIntExtra("gu", 0));
+
+
+        switch (intent.getIntExtra("gu",16)) {
+            case 0:
+                spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                adapter = ArrayAdapter.createFromResource(Search.this, R.array.Seo_si, android.R.layout.simple_spinner_dropdown_item);
+                spinner_gu.setAdapter(adapter);
+                break;
+            case 1:
+                spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                adapter = ArrayAdapter.createFromResource(Search.this, R.array.Bu_si, android.R.layout.simple_spinner_dropdown_item);
+                spinner_gu.setAdapter(adapter);
+                break;
+            case 2:
+                spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                adapter = ArrayAdapter.createFromResource(Search.this, R.array.Degu_si, android.R.layout.simple_spinner_dropdown_item);
+                spinner_gu.setAdapter(adapter);
+                break;
+            case 3:
+                spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                adapter = ArrayAdapter.createFromResource(Search.this, R.array.Inchean_si, android.R.layout.simple_spinner_dropdown_item);
+                spinner_gu.setAdapter(adapter);
+                break;
+            case 4:
+                spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                adapter = ArrayAdapter.createFromResource(Search.this, R.array.Kang_si, android.R.layout.simple_spinner_dropdown_item);
+                spinner_gu.setAdapter(adapter);
+                break;
+            case 5:
+                spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                adapter = ArrayAdapter.createFromResource(Search.this, R.array.De_si, android.R.layout.simple_spinner_dropdown_item);
+                spinner_gu.setAdapter(adapter);
+                break;
+            case 6:
+                spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                adapter = ArrayAdapter.createFromResource(Search.this, R.array.Ul_si, android.R.layout.simple_spinner_dropdown_item);
+                spinner_gu.setAdapter(adapter);
+                break;
+            case 7:
+                spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                adapter = ArrayAdapter.createFromResource(Search.this, R.array.Se_si, android.R.layout.simple_spinner_dropdown_item);
+                spinner_gu.setAdapter(adapter);
+                break;
+            case 8:
+                spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                adapter = ArrayAdapter.createFromResource(Search.this, R.array.Gung_si, android.R.layout.simple_spinner_dropdown_item);
+                spinner_gu.setAdapter(adapter);
+                break;
+            case 9:
+                spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                adapter = ArrayAdapter.createFromResource(Search.this, R.array.Gang_si, android.R.layout.simple_spinner_dropdown_item);
+                spinner_gu.setAdapter(adapter);
+                break;
+            case 10:
+                spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                adapter = ArrayAdapter.createFromResource(Search.this, R.array.ChungBuk_si, android.R.layout.simple_spinner_dropdown_item);
+                spinner_gu.setAdapter(adapter);
+                break;
+            case 11:
+                spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                adapter = ArrayAdapter.createFromResource(Search.this, R.array.ChungNam_si, android.R.layout.simple_spinner_dropdown_item);
+                spinner_gu.setAdapter(adapter);
+                break;
+
+            case 12:
+                spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                adapter = ArrayAdapter.createFromResource(Search.this, R.array.JunlabUK_si, android.R.layout.simple_spinner_dropdown_item);
+                spinner_gu.setAdapter(adapter);
+                break;
+            case 13:
+                spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                adapter = ArrayAdapter.createFromResource(Search.this, R.array.JunlaNAM_si, android.R.layout.simple_spinner_dropdown_item);
+                spinner_gu.setAdapter(adapter);
+                break;
+            case 14:
+                spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                adapter = ArrayAdapter.createFromResource(Search.this, R.array.GuengBuk_si, android.R.layout.simple_spinner_dropdown_item);
+                spinner_gu.setAdapter(adapter);
+                break;
+            case 15:
+                spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                adapter = ArrayAdapter.createFromResource(Search.this, R.array.GuengNam_si, android.R.layout.simple_spinner_dropdown_item);
+                spinner_gu.setAdapter(adapter);
+                break;
+
+            default:
+                spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                adapter = ArrayAdapter.createFromResource(Search.this, R.array.not, android.R.layout.simple_spinner_dropdown_item);
+                spinner_gu.setAdapter(adapter);
+
 
         }
+
+
         spinner_si.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
+                    case 0:
+                        spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                        adapter = ArrayAdapter.createFromResource(Search.this, R.array.Seo_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 1:
+                        spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                        adapter = ArrayAdapter.createFromResource(Search.this, R.array.Bu_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 2:
+                        spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                        adapter = ArrayAdapter.createFromResource(Search.this, R.array.Degu_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 3:
+                        spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                        adapter = ArrayAdapter.createFromResource(Search.this, R.array.Inchean_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 4:
+                        spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                        adapter = ArrayAdapter.createFromResource(Search.this, R.array.Kang_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 5:
+                        spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                        adapter = ArrayAdapter.createFromResource(Search.this, R.array.De_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 6:
+                        spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                        adapter = ArrayAdapter.createFromResource(Search.this, R.array.Ul_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 7:
+                        spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                        adapter = ArrayAdapter.createFromResource(Search.this, R.array.Se_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
                     case 8:
-
+                        spinner_gu = (Spinner) findViewById(R.id.search_gu);
                         adapter = ArrayAdapter.createFromResource(Search.this, R.array.Gung_si, android.R.layout.simple_spinner_dropdown_item);
                         spinner_gu.setAdapter(adapter);
                         break;
-                    default:
+                    case 9:
+                        spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                        adapter = ArrayAdapter.createFromResource(Search.this, R.array.Gang_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 10:
+                        spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                        adapter = ArrayAdapter.createFromResource(Search.this, R.array.ChungBuk_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 11:
+                        spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                        adapter = ArrayAdapter.createFromResource(Search.this, R.array.ChungNam_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
 
+                    case 12:
+                        spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                        adapter = ArrayAdapter.createFromResource(Search.this, R.array.JunlabUK_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 13:
+                        spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                        adapter = ArrayAdapter.createFromResource(Search.this, R.array.JunlaNAM_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 14:
+                        spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                        adapter = ArrayAdapter.createFromResource(Search.this, R.array.GuengBuk_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 15:
+                        spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                        adapter = ArrayAdapter.createFromResource(Search.this, R.array.GuengNam_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+
+                    default:
+                        spinner_gu = (Spinner) findViewById(R.id.search_gu);
                         adapter = ArrayAdapter.createFromResource(Search.this, R.array.not, android.R.layout.simple_spinner_dropdown_item);
                         spinner_gu.setAdapter(adapter);
 
 
                 }
+
+
             }
 
             @Override
@@ -137,7 +332,9 @@ public class Search extends AppCompatActivity {
         HttpConnection h=new HttpConnection();
         String body = null;
 
+
         try {
+
             body = h.execute("Search",spinner_si.getSelectedItem().toString(),spinner_gu.getSelectedItem().toString()).get();
             // String 으로 들어온 값 JSONObject 로 1차 파싱
             JSONObject wrapObject = new JSONObject(body);
@@ -145,6 +342,10 @@ public class Search extends AppCompatActivity {
             Log.d(TAG,body);
             // JSONObject 의 키 "list" 의 값들을 JSONArray 형태로 변환
             JSONArray jsonArray = new JSONArray(wrapObject.getString("row"));
+
+            listview.setAdapter(null);
+
+            ListViewAdapter reload =new ListViewAdapter();
 
 
             // set POI data
@@ -154,10 +355,12 @@ public class Search extends AppCompatActivity {
                 JSONObject dataJsonObject = jsonArray.getJSONObject(i);
                 // 추출한 Object 에서 필요한 데이터를 표시할 방법을 정해서 화면에 표시
 
-                    adapter1.addItem(BitmapFactory.decodeResource(getResources(),R.drawable.icon),
+                    reload.addItem(BitmapFactory.decodeResource(getResources(),R.drawable.icon),
                             dataJsonObject.getString("FARM_NM"), dataJsonObject.getString("ADDRESS1")) ;
 
             }
+            listview.setAdapter(reload);
+
 
 
           // NMapPOIdata poiData = new NMapPOIdata(test.size(), nMapResourceProvider);

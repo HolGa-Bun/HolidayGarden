@@ -82,26 +82,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:gravity="center"
                     android:paddingBottom="5dp"
                     android:paddingLeft="40dp"
                     android:paddingTop="10dp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="텃밭 위치"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
 
                     <Spinner
                         android:id="@+id/search_si"
-                        android:layout_width="100dp"
+                        android:layout_width="120dp"
                         android:layout_height="30dp"
-                        android:layout_marginLeft="30dp"></Spinner>
+                       ></Spinner>
 
                     <Spinner
                         android:id="@+id/search_gu"
-                        android:layout_width="100dp"
+                        android:layout_width="130dp"
                         android:layout_height="30dp"
                         android:layout_marginLeft="20dp">
 
@@ -116,12 +111,6 @@
                     android:paddingBottom="8dp"
                     android:paddingLeft="40dp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="텃밭명"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
 
                     <EditText
                         android:layout_width="200dp"
@@ -145,7 +134,7 @@
                         android:layout_width="80dp"
                         android:layout_height="35dp"
                         android:layout_marginRight="30dp"
-                        android:background="@color/colorPrimary"
+                        android:background="@color/colorMain"
                         android:text="검색"
                         android:textColor="#ffff"
                         android:textSize="17sp"
@@ -164,12 +153,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_margin="20dp"
             >
             <ListView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/List_garden"></ListView>
+                android:id="@+id/List_garden"
+                android:dividerHeight="5dp"></ListView>
 
         </LinearLayout>
     </LinearLayout>

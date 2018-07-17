@@ -83,8 +83,10 @@ public class RequestHandler {
 =======
 package org.androidtown.holgabun;
 
+import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
@@ -107,7 +109,7 @@ public class RequestHandler {
                                   HashMap<String, String> postDataParams) {
 
         URL url;
-
+        BufferedReader br = null;
         StringBuilder sb = new StringBuilder();
         try {
             url = new URL(requestURL);
@@ -131,11 +133,15 @@ public class RequestHandler {
             int responseCode = conn.getResponseCode();
 
             if (responseCode == HttpsURLConnection.HTTP_OK) {
-                BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
-                sb = new StringBuilder();
-                String response;
-                while ((response = br.readLine()) != null){
-                    sb.append(response);
+
+                InputStream in = new BufferedInputStream(conn.getInputStream());
+
+                br = new BufferedReader(new InputStreamReader(in));
+                String line;
+                while ((line = br.readLine()) != null) {
+
+                    sb.append(line);
+
                 }
             }
 

@@ -47,8 +47,17 @@ public class DbOpenHelper {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public int returnOnOff()d
 =======
+=======
+
+
+    public void Insert(String id,String pwd)
+    {
+        mDB.execSQL("INSERT INTO Log VALUES("+id+","+pwd+","+0+")");
+    }
+>>>>>>> 9418ce1... Main Search 수정
     public int returnOnOff()
 >>>>>>> dadf8b2... test
     {

@@ -38,7 +38,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     private ArrayAdapter adapter;
-    private Spinner spinner;
+    private Spinner spinner_gu;
+    private Spinner spinner_si;
     private static final String TAG = "TestActivity";
 <<<<<<< HEAD
 
@@ -47,7 +48,8 @@ public class MainActivity extends AppCompatActivity {
     AutoScrollViewPager autoViewPager;
     Button button;
     EditText editText;
-    int check;
+    int check_si;
+    int check_gu;
     ArrayList<Garden> Garden = new ArrayList<>();
 
     org.androidtown.holgabun.GridAdapter adapter2;
@@ -151,23 +153,101 @@ public class MainActivity extends AppCompatActivity {
         autoViewPager.setInterval(5000); // 페이지 넘어갈 시간 간격 설정
         autoViewPager.startAutoScroll(); //Auto Scroll 시작
 
-        spinner = (Spinner) findViewById(R.id.si);
+        spinner_si = (Spinner) findViewById(R.id.si);
         adapter = ArrayAdapter.createFromResource(this, R.array.si_do, android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        spinner_si.setAdapter(adapter);
+        spinner_gu=(Spinner)findViewById(R.id.gu);
+        spinner_si.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                check = position;
+                check_si = position;
                 switch (position) {
-                    case 8:
-                        spinner = (Spinner) findViewById(R.id.gu);
-                        adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.Gung_si, android.R.layout.simple_spinner_dropdown_item);
-                        spinner.setAdapter(adapter);
+                    case 0:
+                        spinner_gu = (Spinner) findViewById(R.id.gu);
+                        adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.Seo_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
                         break;
+                    case 1:
+                        spinner_gu = (Spinner) findViewById(R.id.gu);
+                        adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.Bu_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 2:
+                        spinner_gu = (Spinner) findViewById(R.id.gu);
+                        adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.Degu_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 3:
+                        spinner_gu = (Spinner) findViewById(R.id.gu);
+                        adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.Inchean_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 4:
+                        spinner_gu = (Spinner) findViewById(R.id.gu);
+                        adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.Kang_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 5:
+                        spinner_gu = (Spinner) findViewById(R.id.gu);
+                        adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.De_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 6:
+                        spinner_gu = (Spinner) findViewById(R.id.gu);
+                        adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.Ul_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 7:
+                        spinner_gu = (Spinner) findViewById(R.id.gu);
+                        adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.Se_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 8:
+                        spinner_gu = (Spinner) findViewById(R.id.gu);
+                        adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.Gung_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 9:
+                        spinner_gu = (Spinner) findViewById(R.id.gu);
+                        adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.Gang_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 10:
+                        spinner_gu = (Spinner) findViewById(R.id.gu);
+                        adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.ChungBuk_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 11:
+                        spinner_gu = (Spinner) findViewById(R.id.gu);
+                        adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.ChungNam_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+
+                    case 12:
+                        spinner_gu = (Spinner) findViewById(R.id.gu);
+                        adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.JunlabUK_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 13:
+                        spinner_gu = (Spinner) findViewById(R.id.gu);
+                        adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.JunlaNAM_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 14:
+                        spinner_gu = (Spinner) findViewById(R.id.gu);
+                        adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.GuengBuk_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 15:
+                        spinner_gu = (Spinner) findViewById(R.id.gu);
+                        adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.GuengNam_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+
                     default:
-                        spinner = (Spinner) findViewById(R.id.gu);
+                        spinner_gu = (Spinner) findViewById(R.id.gu);
                         adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.not, android.R.layout.simple_spinner_dropdown_item);
-                        spinner.setAdapter(adapter);
+                        spinner_gu.setAdapter(adapter);
 
 
                 }
@@ -176,6 +256,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
 
+                check_si=0;
+            }
+        });
+
+        spinner_gu.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                check_gu=position;
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+                check_gu=0;
             }
         });
 
@@ -183,8 +277,10 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent intent = new Intent(MainActivity.this, Search.class);
-                intent.putExtra("si", check);
+                intent.putExtra("si", check_si);
+                intent.putExtra("gu",check_gu);
                 editText = (EditText) findViewById(R.id.tutname);
                 try {
                     intent.putExtra("name", editText.getText().toString());
@@ -192,6 +288,7 @@ public class MainActivity extends AppCompatActivity {
                     intent.putExtra("name", "없음");
                 }
                 startActivity(intent);
+                finish();
             }
         });
 

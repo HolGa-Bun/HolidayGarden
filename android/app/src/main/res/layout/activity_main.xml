@@ -88,15 +88,20 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:padding="0dp"
+                android:layout_marginRight="10dp"
                 android:id="@+id/home"
                 android:background="@drawable/ic_home_black_24dp" />
 
             <Button
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:padding="0dp"
+<<<<<<< HEAD
 
                 android:src="@drawable/icon"
+=======
+                android:background="@drawable/icon_grey"
+>>>>>>> 9418ce1... Main Search 수정
                 android:onClick="onClickedTimeLine"/>
         </LinearLayout>
 
@@ -119,30 +124,6 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:layout_marginTop="20dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="오늘의 꿀정보"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:textSize="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:textStyle="bold" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="2dp"
-                    android:layout_margin="30dp"
-                    android:background="@color/colorPrimaryDark"></View>
-
-            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -186,22 +167,16 @@
                         android:paddingTop="30dp"
                         android:paddingLeft="40dp">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="텃밭 위치"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
 
                         <Spinner
                             android:id="@+id/si"
-                            android:layout_width="100dp"
+                            android:layout_width="150dp"
                             android:layout_height="30dp"
-                            android:layout_marginLeft="30dp"></Spinner>
+                            ></Spinner>
 
                         <Spinner
                             android:id="@+id/gu"
-                            android:layout_width="100dp"
+                            android:layout_width="130dp"
                             android:layout_height="30dp"
                             android:layout_marginLeft="20dp">
 
@@ -215,13 +190,6 @@
                         android:layout_weight="1"
                         android:paddingBottom="8dp"
                         android:paddingLeft="40dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="텃밭명"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
 
                         <EditText
                             android:layout_width="200dp"

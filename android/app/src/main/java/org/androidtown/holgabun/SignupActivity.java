@@ -80,7 +80,9 @@ public class SignupActivity extends AppCompatActivity {
                 loading.dismiss();
                if(s.equals("login success!"))
                {
-
+                    Intent intent =new Intent(SignupActivity.this,LoginActivity.class);
+                    startActivity(intent);
+                    finish();
                }
             }
 
@@ -90,6 +92,7 @@ public class SignupActivity extends AppCompatActivity {
 
 
                 HashMap<String,String> data = new HashMap<>();
+                editText=(EditText)findViewById(R.id.ids);
                 data.put("ID",editText.getText().toString());
                 editText=(EditText)findViewById(R.id.pw_1);
                 data.put("PWD",editText.getText().toString());

@@ -17,11 +17,148 @@
         <item>전라남도</item>
         <item>경상북도</item>
         <item>경상남도</item>
-        <item>제주특별자치도</item>
+   =
     </string-array>
     <string-array name = "not">
         <item>없음</item>
 
+    </string-array>
+
+    <string-array name = "Gang_si">
+        <item>춘천시</item>
+        <item>삼척시</item>
+        <item>동해시</item>
+
+    </string-array>
+
+
+    <string-array name = "Ul_si">
+        <item>남구</item>
+
+
+    </string-array>
+
+    <string-array name = "De_si">
+        <item>동구</item>
+        <item>유성구</item>
+        <item>중구</item>
+        <item>서구</item>
+        <item>대덕구</item>
+
+
+    </string-array>
+
+    <string-array name = "Kang_si">
+        <item>동구</item>
+        <item>서구</item>
+        <item>남구</item>
+        <item>북구</item>
+        <item>광산구</item>
+
+
+
+    </string-array>
+
+    <string-array name = "Inchean_si">
+        <item>남동구</item>
+        <item>서구</item>
+        <item>남구</item>
+        <item>연수구</item>
+        <item>부평구</item>
+
+
+
+    </string-array>
+
+    <string-array name = "Degu_si">
+        <item>동구</item>
+        <item>달성군</item>
+        <item>수성구</item>
+        <item>달서구</item>
+        <item>남구</item>
+
+
+
+    </string-array>
+
+    <string-array name = "Bu_si">
+        <item>강서구</item>
+        <item>금정구</item>
+        <item>북구</item>
+        <item>기장군</item>
+
+    </string-array>
+
+
+    <string-array name =  "Se_si">
+        <item>세종특별자치시</item>
+
+
+    </string-array>
+
+    <string-array name =  "ChungBuk_si">
+
+        <item>천안시</item>
+    </string-array>
+
+    <string-array name =  "ChungNam_si">
+
+        <item>천안시</item>
+
+    </string-array>
+
+    <string-array name =  "JunlabUK_si">
+        <item>전주시 덕진구</item>
+        <item>전주시 완산구</item>
+        <item>완주군</item>
+
+    </string-array>
+
+
+    <string-array name =  "JunlaNAM_si">
+        <item>순천시</item>
+        <item>목포시</item>
+        <item>여수시</item>
+        <item>장성군</item>
+        <item>나주시</item>
+
+
+    </string-array>
+
+    <string-array name =  "GuengBuk_si">
+        <item>포항시 북구</item>
+        <item>김천시</item>
+        <item>예천군</item>
+        <item>구미시</item>
+
+
+    </string-array>
+
+    <string-array name =  "GuengNam_si">
+        <item>창원시</item>
+        <item>양산시</item>
+        <item>진주시</item>
+        <item>사천시</item>
+        <item>거제시</item>
+
+    </string-array>
+
+    <string-array name =  "Seo_si">
+        <item>도봉구</item>
+        <item>마포구</item>
+        <item>성동구</item>
+        <item>강서구</item>
+        <item>동작구</item>
+        <item>관악구</item>
+        <item>송파구</item>
+        <item>강남구</item>
+        <item>중랑구</item>
+        <item>광진구</item>
+        <item>강동구</item>
+        <item>양천구</item>
+        <item>용산구</item>
+        <item>은평구</item>
+        <item>서초구</item>
     </string-array>
 
     <string-array name = "Gung_si">
@@ -48,8 +185,5 @@
         <item>수원시 권선구</item>
         <item>수원시 장안구</item>
     </string-array>
-    <string-array name = "Question">
-        <item>당신의 고향은 어딘가요?</item>
-        <item>당신의 애완동물의 이름은 무엇인가요?</item>
-    </string-array>
+
 </resources>
