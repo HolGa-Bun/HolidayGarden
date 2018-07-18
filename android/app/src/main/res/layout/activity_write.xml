@@ -93,7 +93,7 @@
                 app:srcCompat="@android:drawable/ic_input_add" />
 
             <EditText
-                android:id="@+id/edittext"
+                android:id="@+id/write"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
                 android:layout_gravity="center"

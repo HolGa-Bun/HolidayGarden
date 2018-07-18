@@ -24,6 +24,8 @@ import android.widget.Toast;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 
 public class WriteActivity extends AppCompatActivity implements View.OnClickListener{
@@ -36,12 +38,18 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
     private Button RequestURL;
     private Button TimelineButton;
     private EditText edittext;
-
+    DbOpenHelper h;
+    String sql_id;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_write);
+
+        DbOpenHelper h=new DbOpenHelper(this);
+        h.open();
+
+        sql_id=h.returnId();
 
         RequestURL=(Button)findViewById(R.id.checkButton);
         TimelineButton=(Button)findViewById(R.id.timeline_img);
@@ -58,7 +66,12 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
                     }
                 });
 <<<<<<< HEAD
+<<<<<<< HEAD
         edittext=(EditText)findViewById(R.id.edittext);
+=======
+
+        edittext=(EditText)findViewById(R.id.write);
+>>>>>>> 85cc7df... 내부 sql 정비 게시글 올리기 성공
         image=(ImageView)findViewById(R.id.img_date2);
         RequestURL.setOnClickListener(this);
 =======
@@ -111,7 +124,7 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
             @Override
             protected void onPreExecute() {
                 super.onPreExecute();
-                loading = ProgressDialog.show(WriteActivity.this, "Uploading...", null,true,true);
+               loading = ProgressDialog.show(WriteActivity.this, "Uploading...", null,true,true);
             }
 
             @Override
@@ -129,8 +142,23 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
                 HashMap<String,String> data = new HashMap<>();
 
                 data.put("image", uploadImage);//php에서 POST값으로 들어감
-               data.put("mean",edittext.getText().toString());
-                String result = rh.sendPostRequest("http://ec2-13-209-68-163.ap-northeast-2.compute.amazonaws.com/PhotoUpload/upload.php",data);
+               data.put("text",edittext.getText().toString());
+
+               try{
+                   data.put("id",sql_id);
+               }catch (NullPointerException e)
+               {
+                   data.put("id","test");
+                   e.printStackTrace();
+
+               }
+
+               long now=System.currentTimeMillis();
+               Date date=new Date(now);
+                SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:ss");
+
+                data.put("time",sdf.format(date));
+                String result = rh.sendPostRequest("http://ec2-13-209-68-163.ap-northeast-2.compute.amazonaws.com/upload.php",data);
 
                 return result;
             }

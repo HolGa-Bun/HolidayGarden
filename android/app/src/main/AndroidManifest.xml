@@ -28,8 +28,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".SignupActivity" />
-
         <activity android:name=".AddInformationActivity" />
+<<<<<<< HEAD
 <<<<<<< HEAD
         <activity android:name=".MainActivity"/>
 
@@ -43,6 +43,9 @@
 =======
         <activity android:name=".MainActivity" />
 >>>>>>> 6fa82f6... 이미지 업로드 완성
+=======
+        <activity android:name=".LoginActivity" />
+>>>>>>> 85cc7df... 내부 sql 정비 게시글 올리기 성공
         <activity android:name=".Search" />
         <activity
             android:name=".PopupActivity"
@@ -50,7 +53,7 @@
 <<<<<<< HEAD
             android:theme="@android:style/Theme.Dialog" />
         <activity android:name=".TimeLine" />
-        <activity android:name=".LoginActivity">
+        <activity android:name=".Loading">
             <intent-filter>
         <action android:name="android.intent.action.MAIN" />
 
@@ -58,6 +61,7 @@
     </intent-filter>
     </activity>
         <activity android:name=".WriteActivity" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -85,6 +89,11 @@
 =======
             android:theme="@android:style/Theme.Dialog" />
 >>>>>>> 94887fb... 0713[feature/android]
+=======
+        <activity android:name=".Search_Account" />
+        <activity android:name=".Garden_IM" />
+        <activity android:name=".BackPopupActivity" />
+>>>>>>> 85cc7df... 내부 sql 정비 게시글 올리기 성공
         <activity
             android:name=".SignupSuccess"
             android:theme="@android:style/Theme.Dialog" />
@@ -93,6 +102,7 @@
         <activity android:name=".WriteActivity" />
         <activity android:name=".Search_Account" />
         <activity android:name=".Tab_fragment1_Search_Account" />
+<<<<<<< HEAD
         <activity android:name=".Tab_fragment2_Search_Account" />
 <<<<<<< HEAD
         <activity android:name=".Change_Password"
@@ -104,6 +114,13 @@
             android:theme="@android:style/Theme.Dialog" />
         <activity android:name=".Search_ID_Fail"></activity>
 >>>>>>> 94887fb... 0713[feature/android]
+=======
+        <activity
+            android:name=".Change_Password"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".Search_ID_Fail" />
+        <activity android:name=".MainActivity"></activity>
+>>>>>>> 85cc7df... 내부 sql 정비 게시글 올리기 성공
     </application>
 
 </manifest>

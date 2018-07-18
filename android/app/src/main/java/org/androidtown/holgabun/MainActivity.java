@@ -116,6 +116,7 @@ public class MainActivity extends AppCompatActivity {
         adapter2 = new GridAdapter(this, Garden);
 
 
+
         new Thread(new Runnable() {
             @Override
             public void run() {

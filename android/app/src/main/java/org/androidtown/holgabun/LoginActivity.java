@@ -56,6 +56,12 @@ public class LoginActivity extends AppCompatActivity {
         h=new DbOpenHelper(this);
         h.open();
 
+        if(h.returnIDSAVE()==1)
+        {
+            editText.setText(h.returnId());
+        }
+
+
         findViewById(R.id.auto_login).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -68,8 +74,9 @@ public class LoginActivity extends AppCompatActivity {
         findViewById(R.id.id_save).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(((CheckBox)v).isChecked())
+                if(((CheckBox)v).isChecked()) {
                     ((CheckBox) findViewById(R.id.auto_login)).setChecked(false);
+                }
 
             }
         });
@@ -155,6 +162,8 @@ public class LoginActivity extends AppCompatActivity {
                         p=editText.getText().toString();
                         editText=(EditText)findViewById(R.id.pw);
                         h.login(p,editText.getText().toString());
+
+                        h.close();
 
                         Checked();
                         Intent intent = new Intent(LoginActivity.this, MainActivity.class);

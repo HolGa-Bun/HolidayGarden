@@ -175,13 +175,15 @@
                             android:id="@+id/si"
                             android:layout_width="150dp"
                             android:layout_height="30dp"
+                            android:background="@drawable/outline"
                             ></Spinner>
 
                         <Spinner
                             android:id="@+id/gu"
                             android:layout_width="130dp"
                             android:layout_height="30dp"
-                            android:layout_marginLeft="20dp">
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/outline">
 
                         </Spinner>
                     </LinearLayout>
@@ -195,10 +197,10 @@
                         android:paddingLeft="40dp">
 
                         <EditText
-                            android:layout_width="200dp"
+                            android:layout_width="230dp"
                             android:layout_height="40dp"
                             android:layout_marginLeft="50dp"
-                            android:background="@drawable/border"
+                            android:background="@drawable/outline"
                             android:id="@+id/tutname"
                             android:hint="생략"
                             android:paddingLeft="20dp" />
@@ -249,7 +251,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 
-                    android:text="새로운 분양!"
+                    android:text="새로운 분양"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="20dp"
                     android:textStyle="bold"

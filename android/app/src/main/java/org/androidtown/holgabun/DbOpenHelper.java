@@ -61,7 +61,7 @@ public class DbOpenHelper {
         }catch(NullPointerException e){
             e.printStackTrace();
         }
-            mDB.execSQL("INSERT INTO Log VALUES('"+id+"','"+pwd+"',"+0+","+0+");");
+            mDB.execSQL("INSERT INTO Log VALUES('"+id+"','"+pwd+"',"+2+","+0+");");
 
 
     }
@@ -139,12 +139,13 @@ public class DbOpenHelper {
     public String returnId() {
 
         try {
-            Cursor cursor = mDB.rawQuery("select id from Log", null);
+            Cursor cursor = mDB.rawQuery("select * from Log", null);
 
-            while (cursor.moveToNext()) {
+          while (cursor.moveToNext()) {
                 return cursor.getString(0);
             }
-            return "";
+
+            return "a";
         }catch(NullPointerException e){
             return "not";
         }
