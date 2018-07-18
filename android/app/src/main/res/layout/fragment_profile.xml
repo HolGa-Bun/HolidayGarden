@@ -7,9 +7,7 @@
     tools:context=".ProfileFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -17,71 +15,77 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:orientation="horizontal">
-
-            <ImageButton
-                android:id="@+id/img_profile"
-                android:layout_width="300dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/colorPrimary"
-                android:src="@drawable/icon" />
+            android:orientation="horizontal"
+            android:layout_gravity="center">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
+                android:layout_height="match_parent"
+                android:layout_weight="4">
+                <ImageView
+                android:id="@+id/img_profile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/icon" />
 
-                <TextView
-                    android:id="@+id/id_profile"
-                    android:layout_width="100dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="ID"
-                    android:textSize="20dp"
-                    tools:text="id" />
+            </LinearLayout>
 
-                <TextView
-                    android:id="@+id/introduce_profile"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="자기소개를 작성하세요."
-                    android:textSize="15dp"
-                    tools:text="자기소개를 작성하시오." />
-
-                <Button
-                    android:id="@+id/profile_edit"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="PROFILE EDIT"
-                    tools:text="profile edit" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                >
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
+                    android:layout_weight="1">
+                <TextView
+                    android:id="@+id/nickname_profile"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="nickname"
+                    android:textSize="26sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    tools:text="id" />
 
-                    <ImageButton
-                        android:id="@+id/diary"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:src="@android:drawable/ic_menu_mapmode" />
 
-                    <ImageButton
-                        android:id="@+id/store"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:src="@android:drawable/ic_menu_mapmode" />
-                </LinearLayout>
+                    </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:orientation="horizontal">
+
+               <Button
+                   android:layout_width="80dp"
+                   android:layout_height= "30dp"
+                   android:background="@color/colorMain"
+                   android:textColor="#ffff"
+                   android:text="알림"
+                   android:id="@+id/alert"
+                   android:textSize="16sp"/>
+
+               <Button
+                   android:layout_width="80dp"
+                   android:layout_height= "30dp"
+                   android:background="@color/colorMain"
+                   android:textColor="#ffff"
+                   android:layout_marginLeft="40dp"
+                   android:text="로그 아웃"
+                   android:id="@+id/logout"
+                   android:textSize="16sp"/>
+
+
+           </LinearLayout>
+
+
 
             </LinearLayout>
 
@@ -89,8 +93,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <FrameLayout
@@ -99,55 +102,49 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:background="#dedfea"
                     android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="right"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:background="#ffff"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="4dp"
                         android:orientation="vertical">
 
                         <Button
                             android:id="@+id/write"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="right"
-                            android:background="@color/colorMain"
-                            android:text="WRITE"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:background="@android:drawable/ic_input_add"
                             android:textColor="@color/colorPrimary"
                             android:textSize="14dp" />
                     </LinearLayout>
 
-                    <EditText
-                        android:id="@+id/date"
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
-                        android:layout_marginTop="5dp"
-                        android:ems="10"
-                        android:inputType="date"
-                        android:text="2018.06.01"
-                        android:textSize="20dp" />
+                        android:layout_marginTop="4dp"
+                        android:background="#ffff">
 
-                    <ImageView
-                        android:id="@+id/img_date"
-                        android:layout_width="match_parent"
-                        android:layout_height="300dp"
-                        android:layout_marginBottom="10dp"
-                        android:layout_weight="1"
-                        android:src="@drawable/icon" />
+                        <ListView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/myfeed"
+                            android:dividerHeight="6dp">
 
-                    <TextView
-                        android:id="@+id/date_text"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
-                        android:text="TextView"
-                        android:textSize="14dp" />
+                        </ListView>
+                    </LinearLayout>
+
+
 
                 </LinearLayout>
 
@@ -157,5 +154,5 @@
 
     </LinearLayout>
 
-    </ScrollView>
+
 </FrameLayout>

@@ -132,6 +132,7 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
                 super.onPostExecute(s);
                 loading.dismiss();
                 Toast.makeText(getApplicationContext(),s, Toast.LENGTH_LONG).show();
+                finish();
             }
 
             @Override
@@ -155,7 +156,7 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
 
                long now=System.currentTimeMillis();
                Date date=new Date(now);
-                SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:ss");
+                SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm");
 
                 data.put("time",sdf.format(date));
                 String result = rh.sendPostRequest("http://ec2-13-209-68-163.ap-northeast-2.compute.amazonaws.com/upload.php",data);

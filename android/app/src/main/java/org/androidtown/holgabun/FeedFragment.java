@@ -1,14 +1,22 @@
 package org.androidtown.holgabun;
 
+import android.app.ProgressDialog;
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.Toast;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.HashMap;
 
 
 /**
@@ -33,6 +41,7 @@ public class FeedFragment extends Fragment {
 
     ListView listView;
     FeedAdapter feedAdapter;
+    String feed_id;
 
     public FeedFragment() {
         // Required empty public constructor
@@ -75,14 +84,58 @@ public class FeedFragment extends Fragment {
          listView=(ListView)view.findViewById(R.id.feed);
          listView.setAdapter(feedAdapter);
 
+         DbOpenHelper h=new DbOpenHelper(getActivity());
+
+         h.open();
 
 
+         feed_id=h.returnId();
+//feedAdapter.addItem(BitmapFactory.decodeResource(getResources(),R.drawable.icon),"test",BitmapFactory.decodeResource(getResources(),R.drawable.icon),"ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt");
 
-         feedAdapter.addItem(BitmapFactory.decodeResource(getResources(),R.drawable.icon),"test",BitmapFactory.decodeResource(getResources(),R.drawable.icon),"ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt");
-        feedAdapter.addItem(BitmapFactory.decodeResource(getResources(),R.drawable.icon),"test",BitmapFactory.decodeResource(getResources(),R.drawable.icon),"ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt"); feedAdapter.addItem(BitmapFactory.decodeResource(getResources(),R.drawable.icon),"test",BitmapFactory.decodeResource(getResources(),R.drawable.icon),"ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt");
 
          return view;
     }
+
+    private void List(){
+        class ListSaw extends AsyncTask<String,Void,String> {
+
+            ProgressDialog loading;
+            RequestHandler rh = new RequestHandler();
+
+            @Override
+            protected void onPreExecute() {
+                super.onPreExecute();
+                loading = ProgressDialog.show(getContext(), "Uploading...", null,true,true);
+            }
+
+            @Override
+            protected void onPostExecute(String s) {
+                super.onPostExecute(s);
+                loading.dismiss();
+
+
+            }
+
+            @Override
+            protected String doInBackground(String... params) {
+
+
+
+                HashMap<String,String> data = new HashMap<>();
+
+
+                data.put("id",feed_id);
+
+                String result = rh.sendPostRequest("http://ec2-13-209-68-163.ap-northeast-2.compute.amazonaws.com/AllBolder.php",data);
+
+                return result;
+            }
+        }
+
+        ListSaw ui = new ListSaw();
+        ui.execute("");
+    }
+
 
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {

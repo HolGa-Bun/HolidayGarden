@@ -192,6 +192,7 @@ public class HttpConnection extends AsyncTask<String, Void, String>
 
 
 }
+<<<<<<< HEAD
 
 
 <<<<<<< HEAD
@@ -199,3 +200,5 @@ public class HttpConnection extends AsyncTask<String, Void, String>
 >>>>>>> 94887fb... 0713[feature/android]
 =======
 >>>>>>> 2f4fd62... http 오류 잡음
+=======
+>>>>>>> 1f118c6...  게시글 내려받기 성공

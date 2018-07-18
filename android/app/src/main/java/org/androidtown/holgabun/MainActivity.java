@@ -339,7 +339,7 @@ public class MainActivity extends AppCompatActivity {
         DbOpenHelper h=new DbOpenHelper(this);
         h.open();
 
-        if(h.returnOnOff()==1) {
+        if(h.returnOnOff()==1 ||h.returnOnOff()==2) {
             Intent intent = new Intent(this, TimeLine.class);
             startActivity(intent);
         }

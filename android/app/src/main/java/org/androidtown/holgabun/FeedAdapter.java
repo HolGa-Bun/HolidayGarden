@@ -42,10 +42,11 @@ public class FeedAdapter extends BaseAdapter {
 
             holder=new GridItem();
 
-            holder.feed_id_image = (ImageView)convertView.findViewById(R.id.feed_id_image);
-            holder.feed_id = (TextView)convertView.findViewById(R.id.feed_id);
-            holder.feed_image = (ImageView)convertView.findViewById(R.id.feed_image);
-            holder.feed_text = (TextView)convertView.findViewById(R.id.feed_text);
+            holder.feed_id_image = (ImageView)convertView.findViewById(R.id.login_img);
+            holder.feed_id = (TextView)convertView.findViewById(R.id.bolder_id);
+            holder.feed_image = (ImageView)convertView.findViewById(R.id.bolder_img);
+            holder.feed_text = (TextView)convertView.findViewById(R.id.bolder_text);
+            holder.feed_time=(TextView)convertView.findViewById(R.id.bolder_time);
 
 
             convertView.setTag(holder);
@@ -62,6 +63,7 @@ public class FeedAdapter extends BaseAdapter {
         holder.feed_id.setText(FeedItem.getFeedId());
         holder.feed_image.setImageBitmap(FeedItem.getFeedImage());
         holder.feed_text.setText(FeedItem.getFeedText());
+        holder.feed_time.setText(FeedItem.getFeedTime());
 
         return convertView;
     }
@@ -79,8 +81,8 @@ public class FeedAdapter extends BaseAdapter {
     }
 
     // 아이템 데이터 추가를 위한 함수. 개발자가 원하는대로 작성 가능.
-    public void addItem(Bitmap feed_id_image,String feed_id,Bitmap feed_image, String feed_text){
-        FeedItem ITEM=new FeedItem(feed_id_image,feed_id,feed_image,feed_text);
+    public void addItem(Bitmap feed_id_image,String feed_id,Bitmap feed_image, String feed_text,String boldernum,String feedtime){
+        FeedItem ITEM=new FeedItem(feed_id_image,feed_id,feed_image,feed_text,boldernum,feedtime);
         FeedItemList.add(ITEM);
     }
 
@@ -89,6 +91,7 @@ public class FeedAdapter extends BaseAdapter {
         public TextView feed_id;
         public ImageView feed_image;
         public TextView feed_text;
+        public TextView feed_time;
 
     }
 }
