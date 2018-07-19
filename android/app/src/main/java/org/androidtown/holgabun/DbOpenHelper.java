@@ -49,11 +49,14 @@ public class DbOpenHelper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public int returnOnOff()d
 =======
 =======
 =======
 >>>>>>> ddd2025... 색변경
+=======
+>>>>>>> d7162a6... 0719 jiyoon
 
 
     public void login(String id,String pwd)
@@ -70,12 +73,15 @@ public class DbOpenHelper {
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 9418ce1... Main Search 수정
     public int returnOnOff()
 >>>>>>> dadf8b2... test
 =======
 =======
 >>>>>>> ddd2025... 색변경
+=======
+>>>>>>> d7162a6... 0719 jiyoon
 
     public int returnIDSAVE(){
         try {
@@ -93,6 +99,7 @@ public class DbOpenHelper {
         }
     }
     public int returnOnOff()
+<<<<<<< HEAD
 >>>>>>> 15adacd... feature/내부sql구현 메인이미지
     {
         try {
@@ -116,6 +123,15 @@ public class DbOpenHelper {
 
                 return cursor.getInt(0);
 >>>>>>> ddd2025... 색변경
+=======
+    {
+        try {
+            Cursor cursor = mDB.rawQuery("select onoff from Log", null);
+
+            while (cursor.moveToNext()) {
+
+                return cursor.getInt(0);
+>>>>>>> d7162a6... 0719 jiyoon
 
             }
             return -1;
@@ -123,14 +139,18 @@ public class DbOpenHelper {
         {
             return -1;
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 15adacd... feature/내부sql구현 메인이미지
 =======
 >>>>>>> ddd2025... 색변경
+=======
+>>>>>>> d7162a6... 0719 jiyoon
         }
     }
 
     public void automaticLogin()
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
          mDB.execSQL("UPDATE Log set onOff=" + 1 + ";");
@@ -142,6 +162,11 @@ public class DbOpenHelper {
         mDB.execSQL("UPDATE Log set onOff=" + 1 + ";");
 
 >>>>>>> ddd2025... 색변경
+=======
+
+        mDB.execSQL("UPDATE Log set onOff=" + 1 + ";");
+
+>>>>>>> d7162a6... 0719 jiyoon
     }
 
     public void logOut()

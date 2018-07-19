@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 package org.androidtown.holgabun;
 
 /*
@@ -531,6 +532,8 @@ public class NMapViewerResourceProvider extends NMapResourceProvider implements
         return resourceId;
     }
 =======
+=======
+>>>>>>> d7162a6... 0719 jiyoon
 package org.androidtown.holgabun;
 
 /*
@@ -1062,5 +1065,8 @@ public class NMapViewerResourceProvider extends NMapResourceProvider implements
 
         return resourceId;
     }
+<<<<<<< HEAD
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+>>>>>>> d7162a6... 0719 jiyoon
 }

@@ -2,6 +2,7 @@ package org.androidtown.holgabun;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import org.androidtown.holgabun.R;
 =======
 import android.graphics.Bitmap;
@@ -9,6 +10,9 @@ import android.graphics.Bitmap;
 =======
 import android.graphics.Bitmap;
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+import android.graphics.Bitmap;
+>>>>>>> d7162a6... 0719 jiyoon
 
 public class Garden {
     String name;
@@ -16,11 +20,14 @@ public class Garden {
     String address;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     final static int imalist[] = {R.drawable.one,R.drawable.two,R.drawable.three,R.drawable.four};
 =======
 >>>>>>> 9837d2f... [7/13]feature/가든 상세정보창 구현
 =======
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+>>>>>>> d7162a6... 0719 jiyoon
 
 
     public Garden (String name, Bitmap imgno, String address){

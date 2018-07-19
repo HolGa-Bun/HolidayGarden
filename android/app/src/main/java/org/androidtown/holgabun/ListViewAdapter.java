@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 package org.androidtown.holgabun;
 
 import android.content.Context;
@@ -91,6 +92,8 @@ public class ListViewAdapter extends BaseAdapter {
 }
 
 =======
+=======
+>>>>>>> d7162a6... 0719 jiyoon
 package org.androidtown.holgabun;
 
 import android.content.Context;
@@ -182,4 +185,7 @@ public class ListViewAdapter extends BaseAdapter {
     }
 }
 
+<<<<<<< HEAD
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+>>>>>>> d7162a6... 0719 jiyoon

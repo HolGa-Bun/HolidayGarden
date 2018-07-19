@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 package org.androidtown.holgabun;
 
 import android.content.Intent;
@@ -218,6 +219,8 @@ public class Garden_IM extends NMapActivity {
     }
 }
 =======
+=======
+>>>>>>> d7162a6... 0719 jiyoon
 package org.androidtown.holgabun;
 
 import android.content.Intent;
@@ -436,4 +439,7 @@ public class Garden_IM extends NMapActivity {
         }
     }
 }
+<<<<<<< HEAD
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+>>>>>>> d7162a6... 0719 jiyoon

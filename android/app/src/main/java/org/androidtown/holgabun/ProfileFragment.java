@@ -2,9 +2,13 @@ package org.androidtown.holgabun;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+
+>>>>>>> d7162a6... 0719 jiyoon
         import android.app.Activity;
         import android.app.ProgressDialog;
         import android.content.Context;
@@ -33,6 +37,7 @@ package org.androidtown.holgabun;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import android.app.Activity;
 import android.content.Context;
@@ -56,6 +61,9 @@ import android.widget.LinearLayout;
 =======
         import android.widget.ListView;
 >>>>>>> ddd2025... 색변경
+=======
+        import android.widget.ListView;
+>>>>>>> d7162a6... 0719 jiyoon
         import android.widget.TextView;
         import android.widget.Toast;
 
@@ -73,6 +81,7 @@ import android.widget.LinearLayout;
         import java.util.Date;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 85581eb... 0713 [feature/android/tutorial]생성
 =======
         import java.util.HashMap;
@@ -81,6 +90,9 @@ import android.widget.LinearLayout;
 =======
         import java.util.HashMap;
 >>>>>>> ddd2025... 색변경
+=======
+        import java.util.HashMap;
+>>>>>>> d7162a6... 0719 jiyoon
 
 
 /**
@@ -110,9 +122,13 @@ public class ProfileFragment extends Fragment{
 
     ImageView img;
 <<<<<<< HEAD
+<<<<<<< HEAD
     Button b;
 =======
 >>>>>>> ddd2025... 색변경
+=======
+    Button b;
+>>>>>>> d7162a6... 0719 jiyoon
     private OnFragmentInteractionListener mListener;
 
     public ProfileFragment() {
@@ -160,6 +176,9 @@ public class ProfileFragment extends Fragment{
         });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d7162a6... 0719 jiyoon
         b=(Button)view.findViewById(R.id.logout);
 
         b.setOnClickListener(new View.OnClickListener() {
@@ -189,8 +208,11 @@ public class ProfileFragment extends Fragment{
             }
         });
 
+<<<<<<< HEAD
 =======
 >>>>>>> ddd2025... 색변경
+=======
+>>>>>>> d7162a6... 0719 jiyoon
 
         listView=(ListView)view.findViewById(R.id.myfeed);
 
@@ -341,14 +363,19 @@ public class ProfileFragment extends Fragment{
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+
+>>>>>>> d7162a6... 0719 jiyoon
 //    public void onButtonWrite(View v){ //write 페이지로 이동
 //        Intent intent = new Intent(getActivity(), MainActivity.class);
 //        startActivity(intent);
 //    }
 }
+<<<<<<< HEAD
 =======
     public void onButtonWrite(View v){ //write 페이지로 이동
         Intent intent = new Intent(getActivity(), MainActivity.class);
@@ -356,3 +383,5 @@ public class ProfileFragment extends Fragment{
     }
 }
 >>>>>>> 490ec72... 0709[feature/android] Search_Account, Change_Password
+=======
+>>>>>>> d7162a6... 0719 jiyoon

@@ -14,6 +14,7 @@
         android:focusableInTouchMode="true"
         android:gravity="center"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:orientation="vertical">
 =======
         android:orientation="horizontal">
@@ -55,6 +56,9 @@
             android:src="@drawable/main_image" />
     </LinearLayout>
 >>>>>>> 490ec72... 0709[feature/android] Search_Account, Change_Password
+=======
+        android:orientation="vertical">
+>>>>>>> d7162a6... 0719 jiyoon
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -90,16 +94,21 @@
                 android:padding="0dp"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 android:layout_marginRight="10dp"
 =======
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 =======
                 android:layout_marginRight="10dp"
 >>>>>>> ddd2025... 색변경
+=======
+                android:layout_marginRight="10dp"
+>>>>>>> d7162a6... 0719 jiyoon
                 android:id="@+id/home"
                 android:background="@drawable/ic_home_black_24dp" />
 
             <Button
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 android:layout_width="40dp"
@@ -123,6 +132,12 @@
                 android:padding="0dp"
                 android:background="@drawable/icon_grey"
 >>>>>>> ddd2025... 색변경
+=======
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="0dp"
+                android:background="@drawable/icon_grey"
+>>>>>>> d7162a6... 0719 jiyoon
                 android:onClick="onClickedTimeLine"/>
         </LinearLayout>
 
@@ -150,6 +165,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -162,12 +178,17 @@
                 android:layout_weight="1"
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 =======
+=======
+>>>>>>> d7162a6... 0719 jiyoon
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
+<<<<<<< HEAD
 >>>>>>> ddd2025... 색변경
+=======
+>>>>>>> d7162a6... 0719 jiyoon
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -188,6 +209,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <LinearLayout
 =======
 
@@ -197,6 +219,10 @@
 
                  <LinearLayout
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+
+                 <LinearLayout
+>>>>>>> d7162a6... 0719 jiyoon
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -213,6 +239,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                         <TextView
                             android:layout_width="wrap_content"
@@ -224,6 +251,8 @@
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 =======
 >>>>>>> ddd2025... 색변경
+=======
+>>>>>>> d7162a6... 0719 jiyoon
 
                         <Spinner
                             android:id="@+id/si"
@@ -231,12 +260,16 @@
                             android:layout_height="30dp"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d7162a6... 0719 jiyoon
                             android:background="@drawable/outline"
                             ></Spinner>
 
                         <Spinner
                             android:id="@+id/gu"
                             android:layout_width="130dp"
+<<<<<<< HEAD
 =======
                             android:layout_marginLeft="10dp"></Spinner>
 
@@ -252,6 +285,8 @@
                             android:id="@+id/gu"
                             android:layout_width="130dp"
 >>>>>>> ddd2025... 색변경
+=======
+>>>>>>> d7162a6... 0719 jiyoon
                             android:layout_height="30dp"
                             android:layout_marginLeft="20dp"
                             android:background="@drawable/outline">
@@ -264,6 +299,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+<<<<<<< HEAD
 <<<<<<< HEAD
                         android:orientation="horizontal"
                         android:layout_marginTop="10dp">
@@ -290,6 +326,8 @@
                             android:background="@drawable/border"
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 =======
+=======
+>>>>>>> d7162a6... 0719 jiyoon
                         android:paddingBottom="8dp"
                         android:paddingLeft="40dp">
 
@@ -298,7 +336,10 @@
                             android:layout_height="40dp"
                             android:layout_marginLeft="50dp"
                             android:background="@drawable/outline"
+<<<<<<< HEAD
 >>>>>>> ddd2025... 색변경
+=======
+>>>>>>> d7162a6... 0719 jiyoon
                             android:id="@+id/tutname"
                             android:hint="생략"
                             android:paddingLeft="20dp" />
@@ -373,6 +414,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 </ScrollView>
 =======
 </ScrollView>
@@ -380,3 +422,6 @@
 =======
 </ScrollView>
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+</ScrollView>
+>>>>>>> d7162a6... 0719 jiyoon

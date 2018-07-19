@@ -34,6 +34,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <TextView
 =======
         <Button
@@ -46,6 +47,11 @@
         <Button
 
 >>>>>>> ddd2025... 색변경
+=======
+
+        <Button
+
+>>>>>>> d7162a6... 0719 jiyoon
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
@@ -61,6 +67,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <TextView
 =======
         <Button
@@ -73,6 +80,11 @@
         <Button
 
 >>>>>>> ddd2025... 색변경
+=======
+
+        <Button
+
+>>>>>>> d7162a6... 0719 jiyoon
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"

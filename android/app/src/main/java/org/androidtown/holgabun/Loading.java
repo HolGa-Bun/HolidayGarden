@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 package org.androidtown.holgabun;
 
 import android.content.Intent;
@@ -28,6 +29,8 @@ public class Loading extends AppCompatActivity {
     }
 }
 =======
+=======
+>>>>>>> d7162a6... 0719 jiyoon
 package org.androidtown.holgabun;
 
 import android.content.Intent;
@@ -56,4 +59,7 @@ public class Loading extends AppCompatActivity {
         finish();
     }
 }
+<<<<<<< HEAD
 >>>>>>> ddd2025... 색변경
+=======
+>>>>>>> d7162a6... 0719 jiyoon

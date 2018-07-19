@@ -23,12 +23,16 @@ import android.util.Log;
 import java.io.IOException;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.util.HashMap;
 =======
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 =======
 import java.util.HashMap;
 >>>>>>> ddd2025... 색변경
+=======
+import java.util.HashMap;
+>>>>>>> d7162a6... 0719 jiyoon
 import java.util.concurrent.ExecutionException;
 
 import okhttp3.Call;
@@ -45,6 +49,7 @@ public class LoginActivity extends AppCompatActivity {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
@@ -57,6 +62,9 @@ public class LoginActivity extends AppCompatActivity {
 =======
     DbOpenHelper h;
 >>>>>>> ddd2025... 색변경
+=======
+    DbOpenHelper h;
+>>>>>>> d7162a6... 0719 jiyoon
 
 
     @Override
@@ -66,6 +74,7 @@ public class LoginActivity extends AppCompatActivity {
 
         button = (Button) findViewById(R.id.su);
         editText = (EditText) findViewById(R.id.login);
+<<<<<<< HEAD
 <<<<<<< HEAD
 
         h=new DbOpenHelper(this);
@@ -97,6 +106,8 @@ public class LoginActivity extends AppCompatActivity {
         });
 =======
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+>>>>>>> d7162a6... 0719 jiyoon
 
         h=new DbOpenHelper(this);
         h.open();
@@ -131,12 +142,16 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ddd2025... 색변경
+=======
+>>>>>>> d7162a6... 0719 jiyoon
 
 
             loginFunc();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
                 String su = editText.getText().toString();
@@ -170,6 +185,12 @@ public class LoginActivity extends AppCompatActivity {
     }
 >>>>>>> 94887fb... 0713[feature/android]
 
+=======
+            }
+        });
+    }
+
+>>>>>>> d7162a6... 0719 jiyoon
     public void Checked()
     {
 
@@ -189,6 +210,7 @@ public class LoginActivity extends AppCompatActivity {
         else{
             h.N_ID_Save();
         }
+<<<<<<< HEAD
 
         h.close();
 
@@ -220,11 +242,19 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+        h.close();
+
+
+    }
+
+>>>>>>> d7162a6... 0719 jiyoon
     public void onButton1Clicked(View v) {
         Intent intent = new Intent(this, SignupActivity.class);
         startActivity(intent);
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     public void onClickedAdd(View v){
@@ -233,6 +263,10 @@ public class LoginActivity extends AppCompatActivity {
     public void onClickedAdd(View v) {
         Intent intent = new Intent(this, Tab_fragment1_Search_Account.class);
 >>>>>>> 94887fb... 0713[feature/android]
+=======
+    public void onClickedAdd(View v) {
+        Intent intent = new Intent(this, Tab_fragment1_Search_Account.class);
+>>>>>>> d7162a6... 0719 jiyoon
         startActivity(intent);
     }
     private void loginFunc(){
@@ -307,6 +341,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 
+<<<<<<< HEAD
 =======
     public void onClickedAdd(View v) {
         Intent intent = new Intent(this, Tab_fragment1_Search_Account.class);
@@ -388,4 +423,6 @@ public class LoginActivity extends AppCompatActivity {
 
 
 >>>>>>> ddd2025... 색변경
+=======
+>>>>>>> d7162a6... 0719 jiyoon
 }

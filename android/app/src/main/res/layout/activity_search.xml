@@ -156,15 +156,19 @@
             android:layout_weight="1"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             android:layout_margin="20dp"
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 =======
 >>>>>>> ddd2025... 색변경
+=======
+>>>>>>> d7162a6... 0719 jiyoon
             >
             <ListView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 android:id="@+id/List_garden"
@@ -176,6 +180,10 @@
                 android:id="@+id/List_garden"
                 android:dividerHeight="5dp"></ListView>
 >>>>>>> ddd2025... 색변경
+=======
+                android:id="@+id/List_garden"
+                android:dividerHeight="5dp"></ListView>
+>>>>>>> d7162a6... 0719 jiyoon
 
         </LinearLayout>
     </LinearLayout>

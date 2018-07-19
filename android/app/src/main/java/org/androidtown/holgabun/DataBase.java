@@ -2,6 +2,7 @@ package org.androidtown.holgabun;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> ddd2025... 색변경
@@ -9,6 +10,10 @@ package org.androidtown.holgabun;
 =======
 import android.provider.BaseColumns;
 >>>>>>> dadf8b2... test
+=======
+
+        import android.provider.BaseColumns;
+>>>>>>> d7162a6... 0719 jiyoon
 
 
 public final class DataBase {

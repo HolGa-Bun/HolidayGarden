@@ -133,6 +133,7 @@
             </LinearLayout>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
             <TextView
                 android:id="@+id/textView"
@@ -145,6 +146,8 @@
 >>>>>>> 6fa82f6... 이미지 업로드 완성
 =======
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+>>>>>>> d7162a6... 0719 jiyoon
         </LinearLayout>
     </ScrollView>
 

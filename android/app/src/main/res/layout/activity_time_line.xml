@@ -47,6 +47,7 @@
         <Button
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:layout_width="60dp"
 =======
             android:layout_width="50dp"
@@ -54,6 +55,9 @@
 =======
             android:layout_width="60dp"
 >>>>>>> ddd2025... 색변경
+=======
+            android:layout_width="60dp"
+>>>>>>> d7162a6... 0719 jiyoon
             android:layout_height="50dp"
             android:padding="0dp"
             android:background="@drawable/icon" />
@@ -68,10 +72,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ebc2413... 0709 [feature/android/writeButton] ProfileFragment.java onCreateView method에 onClick method 생성
 =======
 >>>>>>> 490ec72... 0709[feature/android] Search_Account, Change_Password
+=======
+>>>>>>> d7162a6... 0719 jiyoon
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -91,6 +98,7 @@
             </RelativeLayout>
 
         </FrameLayout>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -123,6 +131,9 @@
 =======
     </LinearLayout>
 >>>>>>> 301d1f1... 0713 [feature/android]생성
+=======
+    </LinearLayout>
+>>>>>>> d7162a6... 0719 jiyoon
 
 
     <LinearLayout

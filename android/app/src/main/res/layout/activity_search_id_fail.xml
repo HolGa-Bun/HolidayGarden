@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     tools:context=".Tab_fragment1_Search_Account"
     android:orientation="vertical">
 =======
@@ -18,11 +19,16 @@
     android:orientation="vertical">
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 =======
+=======
+>>>>>>> d7162a6... 0719 jiyoon
 
     android:orientation="vertical"
     tools:context=".Search_ID_Fail">
 
+<<<<<<< HEAD
 >>>>>>> ddd2025... 색변경
+=======
+>>>>>>> d7162a6... 0719 jiyoon
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -51,6 +57,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <TextView
 =======
         <Button
@@ -62,6 +69,10 @@
         <Button
 
 >>>>>>> ddd2025... 색변경
+=======
+        <Button
+
+>>>>>>> d7162a6... 0719 jiyoon
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
@@ -77,6 +88,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <TextView
 =======
         <Button
@@ -89,6 +101,11 @@
         <Button
 
 >>>>>>> ddd2025... 색변경
+=======
+
+        <Button
+
+>>>>>>> d7162a6... 0719 jiyoon
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"

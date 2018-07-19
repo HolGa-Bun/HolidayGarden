@@ -26,6 +26,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.text.SimpleDateFormat;
 import java.util.Date;
 =======
@@ -34,6 +35,10 @@ import java.util.Date;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 >>>>>>> ddd2025... 색변경
+=======
+import java.text.SimpleDateFormat;
+import java.util.Date;
+>>>>>>> d7162a6... 0719 jiyoon
 import java.util.HashMap;
 
 public class WriteActivity extends AppCompatActivity implements View.OnClickListener{
@@ -48,6 +53,7 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
     private EditText edittext;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     DbOpenHelper h;
     String sql_id;
 =======
@@ -57,6 +63,10 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
     DbOpenHelper h;
     String sql_id;
 >>>>>>> ddd2025... 색변경
+=======
+    DbOpenHelper h;
+    String sql_id;
+>>>>>>> d7162a6... 0719 jiyoon
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,18 +75,24 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ddd2025... 색변경
+=======
+>>>>>>> d7162a6... 0719 jiyoon
         DbOpenHelper h=new DbOpenHelper(this);
         h.open();
 
         sql_id=h.returnId();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 =======
 >>>>>>> ddd2025... 색변경
+=======
+>>>>>>> d7162a6... 0719 jiyoon
         RequestURL=(Button)findViewById(R.id.checkButton);
         TimelineButton=(Button)findViewById(R.id.timeline_img);
         findViewById(R.id.browsePictureButton)
@@ -91,6 +107,7 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
                                 "Select Picture"), SELECT_PICTURE);
                     }
                 });
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -125,6 +142,16 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
 
 
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+
+        edittext=(EditText)findViewById(R.id.write);
+        image=(ImageView)findViewById(R.id.img_date2);
+        RequestURL.setOnClickListener(this);
+
+
+
+
+>>>>>>> d7162a6... 0719 jiyoon
     }
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {//선택한 사진 가져오기
@@ -163,6 +190,7 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
                 super.onPreExecute();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                loading = ProgressDialog.show(WriteActivity.this, "Uploading...", null,true,true);
 =======
                 loading = ProgressDialog.show(WriteActivity.this, "Uploading...", null,true,true);
@@ -170,6 +198,9 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
 =======
                loading = ProgressDialog.show(WriteActivity.this, "Uploading...", null,true,true);
 >>>>>>> ddd2025... 색변경
+=======
+               loading = ProgressDialog.show(WriteActivity.this, "Uploading...", null,true,true);
+>>>>>>> d7162a6... 0719 jiyoon
             }
 
             @Override
@@ -179,12 +210,16 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
                 Toast.makeText(getApplicationContext(),s, Toast.LENGTH_LONG).show();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 finish();
 =======
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 =======
                 finish();
 >>>>>>> ddd2025... 색변경
+=======
+                finish();
+>>>>>>> d7162a6... 0719 jiyoon
             }
 
             @Override
@@ -192,6 +227,7 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
                 Bitmap bitmap = params[0];
                 String uploadImage = getStringImage(bitmap);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
                 HashMap<String,String> data = new HashMap<>();
 
@@ -214,15 +250,20 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
                 data.put("time",sdf.format(date));
                 String result = rh.sendPostRequest("http://ec2-13-209-68-163.ap-northeast-2.compute.amazonaws.com/upload.php",data);
 =======
+=======
+>>>>>>> d7162a6... 0719 jiyoon
 
                 HashMap<String,String> data = new HashMap<>();
 
                 data.put("image", uploadImage);//php에서 POST값으로 들어감
 <<<<<<< HEAD
+<<<<<<< HEAD
                 data.put("mean",edittext.getText().toString());
                 String result = rh.sendPostRequest("http://ec2-13-209-68-163.ap-northeast-2.compute.amazonaws.com/PhotoUpload/upload.php",data);
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 =======
+=======
+>>>>>>> d7162a6... 0719 jiyoon
                data.put("text",edittext.getText().toString());
 
                try{
@@ -240,7 +281,10 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
 
                 data.put("time",sdf.format(date));
                 String result = rh.sendPostRequest("http://ec2-13-209-68-163.ap-northeast-2.compute.amazonaws.com/upload.php",data);
+<<<<<<< HEAD
 >>>>>>> ddd2025... 색변경
+=======
+>>>>>>> d7162a6... 0719 jiyoon
 
                 return result;
             }

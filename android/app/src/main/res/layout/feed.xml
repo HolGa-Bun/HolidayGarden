@@ -85,10 +85,14 @@
                 android:layout_height="wrap_content"
                 android:minHeight="100dp"
 <<<<<<< HEAD
+<<<<<<< HEAD
                 android:layout_marginLeft="25dp"
 =======
                 android:layout_marginLeft="20dp"
 >>>>>>> ddd2025... 색변경
+=======
+                android:layout_marginLeft="20dp"
+>>>>>>> d7162a6... 0719 jiyoon
                 android:layout_marginBottom="5dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="5dp">
@@ -96,6 +100,7 @@
 
                 <TextView
                     android:layout_width="wrap_content"
+<<<<<<< HEAD
 <<<<<<< HEAD
                     android:layout_marginTop="15dp"
                     android:id="@+id/bolder_text"
@@ -107,6 +112,11 @@
                     android:layout_height="wrap_content"
                     android:maxLines="3"
 >>>>>>> ddd2025... 색변경
+=======
+                    android:id="@+id/bolder_text"
+                    android:layout_height="wrap_content"
+                    android:maxLines="3"
+>>>>>>> d7162a6... 0719 jiyoon
                     android:textSize="16sp"/>
             </LinearLayout>
 

@@ -2,7 +2,10 @@ package org.androidtown.holgabun;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+<<<<<<< HEAD
 import android.content.Intent;
+=======
+>>>>>>> d7162a6... 0719 jiyoon
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
@@ -13,12 +16,18 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+<<<<<<< HEAD
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
+=======
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
+>>>>>>> d7162a6... 0719 jiyoon
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -56,7 +65,10 @@ public class LikeFragment extends Fragment {
     EditText editText;
     Button button;
     String s1,s2,s3;
+<<<<<<< HEAD
     InputMethodManager imm;
+=======
+>>>>>>> d7162a6... 0719 jiyoon
     private OnFragmentInteractionListener mListener;
 
     public LikeFragment() {
@@ -99,6 +111,7 @@ public class LikeFragment extends Fragment {
 
         listview=(ListView)view.findViewById(R.id.user_list);
         adapter=new SearchUserAdapter();
+<<<<<<< HEAD
         listview.setAdapter(adapter);
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -113,6 +126,8 @@ public class LikeFragment extends Fragment {
             }
         });
 
+=======
+>>>>>>> d7162a6... 0719 jiyoon
 
         button=(Button)view.findViewById(R.id.user_Search);
         editText=(EditText)view.findViewById(R.id.SU);
@@ -121,6 +136,7 @@ public class LikeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 List();
+<<<<<<< HEAD
                 imm.hideSoftInputFromWindow(editText.getWindowToken(), 0);
             }
         });
@@ -130,6 +146,11 @@ public class LikeFragment extends Fragment {
 
 
 
+=======
+            }
+        });
+
+>>>>>>> d7162a6... 0719 jiyoon
         return view;
     }
 
@@ -184,6 +205,7 @@ public class LikeFragment extends Fragment {
                 try{
 
 
+<<<<<<< HEAD
                     JSONObject j=new JSONObject(s);
 
                     listview.setAdapter(null);
@@ -198,6 +220,30 @@ public class LikeFragment extends Fragment {
 
                     }
                     listview.setAdapter(adapter);
+=======
+                    JSONArray j=new JSONArray(s);
+
+                    SearchUserAdapter feedAdapter=new SearchUserAdapter();
+
+
+                   for(int i=0;i<j.length();i++)
+                   {
+                       JSONObject h=j.getJSONObject(i);
+                       if(i==0)
+                       {
+                           s1=h.getString("Search_name");
+                       }
+                       else if(i==1)
+                       {
+                           s2=h.getString("count");
+                       }
+                       else{
+                           s3=h.getString("recent");
+                       }
+                   }
+
+                   feedAdapter.addItem(s1,s2,s3);
+>>>>>>> d7162a6... 0719 jiyoon
 
                 }catch(JSONException e){
                     e.printStackTrace();

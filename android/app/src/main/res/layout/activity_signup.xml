@@ -89,6 +89,7 @@
             <EditText
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 android:id="@+id/ids"
                 android:layout_width="200dp"
 =======
@@ -99,11 +100,16 @@
                 android:id="@+id/ids"
                 android:layout_width="200dp"
 >>>>>>> ddd2025... 색변경
+=======
+                android:id="@+id/ids"
+                android:layout_width="200dp"
+>>>>>>> d7162a6... 0719 jiyoon
                 android:layout_height="40dp"
                 android:hint="아이디" />
 
             <EditText
                 android:id="@+id/pw_1"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 android:layout_width="200dp"
@@ -113,6 +119,9 @@
 =======
                 android:layout_width="200dp"
 >>>>>>> ddd2025... 색변경
+=======
+                android:layout_width="200dp"
+>>>>>>> d7162a6... 0719 jiyoon
                 android:layout_height="40dp"
                 android:hint="비밀번호"
                 android:inputType="textPassword" />
@@ -121,6 +130,7 @@
                 android:id="@+id/pw_2"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 android:layout_width="200dp"
 =======
                 android:layout_width="match_parent"
@@ -128,6 +138,9 @@
 =======
                 android:layout_width="200dp"
 >>>>>>> ddd2025... 색변경
+=======
+                android:layout_width="200dp"
+>>>>>>> d7162a6... 0719 jiyoon
                 android:layout_height="40dp"
                 android:hint="비밀번호"
                 android:inputType="textPassword" />
@@ -136,16 +149,28 @@
                 android:id="@+id/nickname"
                 android:layout_width="200dp"
                 android:layout_height="40dp"
+<<<<<<< HEAD
                 android:hint="닉네임"
                 android:inputType="textPassword" />
 
             <TextView
+=======
+                android:hint="닉네임"/>
+
+            <TextView
+                android:id="@+id/passwordcorrect"
+>>>>>>> d7162a6... 0719 jiyoon
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:drawableStart="@drawable/ic_warning_black_24dp"
                 android:gravity="right"
+<<<<<<< HEAD
                 android:text="비밀번호가 일치하지 않습니다." />
+=======
+                android:text="비밀번호가 일치하지 않습니다."
+                android:visibility="gone" />
+>>>>>>> d7162a6... 0719 jiyoon
 
         </LinearLayout>
     </LinearLayout>
@@ -157,6 +182,7 @@
         android:gravity="center"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:layout_marginTop="20dp"
 =======
         android:layout_marginTop="10dp"
@@ -164,10 +190,14 @@
 =======
         android:layout_marginTop="20dp"
 >>>>>>> ddd2025... 색변경
+=======
+        android:layout_marginTop="20dp"
+>>>>>>> d7162a6... 0719 jiyoon
         android:layout_marginBottom="10dp"
        >
 
         <Spinner
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             android:layout_width="280dp"
@@ -185,6 +215,9 @@
 =======
             android:layout_width="280dp"
 >>>>>>> ddd2025... 색변경
+=======
+            android:layout_width="280dp"
+>>>>>>> d7162a6... 0719 jiyoon
             android:layout_height="wrap_content"
             android:id="@+id/Question"
 
@@ -194,7 +227,10 @@
         <EditText
             android:layout_width="230dp"
             android:layout_height="wrap_content"
+<<<<<<< HEAD
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+>>>>>>> d7162a6... 0719 jiyoon
             android:layout_marginTop="20dp"
             android:hint="answer"
             android:textSize="16sp"

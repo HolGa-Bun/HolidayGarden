@@ -8,11 +8,20 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+<<<<<<< HEAD
+=======
+import android.text.Editable;
+import android.text.TextWatcher;
+>>>>>>> d7162a6... 0719 jiyoon
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+<<<<<<< HEAD
+=======
+import android.widget.TextView;
+>>>>>>> d7162a6... 0719 jiyoon
 import android.widget.Toast;
 
 import org.androidtown.holgabun.SignupActivity;
@@ -34,11 +43,20 @@ import okhttp3.Response;
 
 public class SignupActivity extends AppCompatActivity {
     EditText editText;
+<<<<<<< HEAD
+=======
+    EditText editText2;
+    EditText editText3;
+>>>>>>> d7162a6... 0719 jiyoon
     Button button;
     Spinner spinner;
     private ArrayAdapter adapter;
     private static final String TAG = "TestActivity";
+<<<<<<< HEAD
 
+=======
+    TextView passwordcorrect;
+>>>>>>> d7162a6... 0719 jiyoon
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,10 +65,17 @@ public class SignupActivity extends AppCompatActivity {
 
         button = (Button) findViewById(R.id.Signup);
         editText = (EditText) findViewById(R.id.id);
+<<<<<<< HEAD
+=======
+        editText2 =(EditText) findViewById(R.id.pw_1);
+        editText3=(EditText)findViewById(R.id.pw_2);
+        passwordcorrect=(TextView) findViewById(R.id.passwordcorrect);
+>>>>>>> d7162a6... 0719 jiyoon
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 singupFunc();
@@ -63,6 +88,9 @@ public class SignupActivity extends AppCompatActivity {
 =======
                 singupFunc();
 >>>>>>> ddd2025... 색변경
+=======
+                singupFunc();
+>>>>>>> d7162a6... 0719 jiyoon
             }
         });
 
@@ -70,6 +98,7 @@ public class SignupActivity extends AppCompatActivity {
         adapter = ArrayAdapter.createFromResource(this, R.array.Question, android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
 
+<<<<<<< HEAD
     }
 
 
@@ -85,6 +114,50 @@ public class SignupActivity extends AppCompatActivity {
     private void singupFunc(){
         class SingupAsync extends AsyncTask<String,Void,String> {
 >>>>>>> ddd2025... 색변경
+=======
+
+        editText3.addTextChangedListener(new TextWatcher() {
+
+
+
+            @Override
+
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+                // 입력되는 텍스트에 변화가 있을 때
+
+            }
+
+
+
+            @Override
+
+            public void afterTextChanged(Editable arg0) {
+
+                if(!editText2.getText().toString().equals("")&&!editText2.getText().toString().equals(editText3.getText().toString()))
+                    passwordcorrect.setVisibility(View.VISIBLE);
+                else if(editText2.getText().toString().equals(editText3.getText().toString()))
+                    passwordcorrect.setVisibility(View.GONE);
+            }
+
+
+
+            @Override
+
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+                // 입력하기 전에
+
+            }
+
+        });
+
+    }
+
+
+    private void singupFunc(){
+        class SingupAsync extends AsyncTask<String,Void,String> {
+>>>>>>> d7162a6... 0719 jiyoon
 
             ProgressDialog loading;
             RequestHandler rh = new RequestHandler();
@@ -94,6 +167,7 @@ public class SignupActivity extends AppCompatActivity {
                 super.onPreExecute();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                loading = ProgressDialog.show(SignupActivity.this, "Uploading...", null,true,true);
 =======
                 loading = ProgressDialog.show(SignupActivity.this, "Uploading...", null,true,true);
@@ -101,6 +175,9 @@ public class SignupActivity extends AppCompatActivity {
 =======
                loading = ProgressDialog.show(SignupActivity.this, "Uploading...", null,true,true);
 >>>>>>> ddd2025... 색변경
+=======
+               loading = ProgressDialog.show(SignupActivity.this, "Uploading...", null,true,true);
+>>>>>>> d7162a6... 0719 jiyoon
             }
 
             @Override
@@ -109,8 +186,11 @@ public class SignupActivity extends AppCompatActivity {
                 loading.dismiss();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ddd2025... 색변경
+=======
+>>>>>>> d7162a6... 0719 jiyoon
                if(s.equals("login success!"))
                {
                     Intent intent =new Intent(SignupActivity.this,LoginActivity.class);
@@ -118,15 +198,19 @@ public class SignupActivity extends AppCompatActivity {
                     finish();
                }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                 Toast.makeText(getApplicationContext(),s, Toast.LENGTH_LONG).show();
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 =======
 >>>>>>> ddd2025... 색변경
+=======
+>>>>>>> d7162a6... 0719 jiyoon
             }
 
             @Override
             protected String doInBackground(String... params) {
+<<<<<<< HEAD
 
 
 <<<<<<< HEAD
@@ -137,11 +221,19 @@ public class SignupActivity extends AppCompatActivity {
                 data.put("ID",editText.getText().toString());
                 editText=(EditText)findViewById(R.id.pw_1);
                 data.put("PWD",editText.getText().toString());
+=======
+                HashMap<String,String> data = new HashMap<>();
+                editText=(EditText)findViewById(R.id.ids);
+                data.put("ID",editText.getText().toString());
+                    editText = (EditText) findViewById(R.id.pw_1);
+                    data.put("PWD", editText.getText().toString());
+>>>>>>> d7162a6... 0719 jiyoon
                 editText=(EditText)findViewById(R.id.nickname);
                 data.put("NAME",editText.getText().toString());
                 data.put("QUEST",spinner.getSelectedItem().toString());
                 editText=(EditText)findViewById(R.id.answer);
                 data.put("ASW",editText.getText().toString());
+<<<<<<< HEAD
 =======
                 HashMap<String,String> data = new HashMap<>();
 
@@ -159,6 +251,8 @@ public class SignupActivity extends AppCompatActivity {
                 editText=(EditText)findViewById(R.id.answer);
                 data.put("ASW",editText.getText().toString());
 >>>>>>> ddd2025... 색변경
+=======
+>>>>>>> d7162a6... 0719 jiyoon
 
                 String result = rh.sendPostRequest("http://ec2-13-209-68-163.ap-northeast-2.compute.amazonaws.com/requestLogin.php",data);
 
@@ -168,6 +262,7 @@ public class SignupActivity extends AppCompatActivity {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         SingupAsync ui = new SingupAsync();
 =======
         UploadImage ui = new UploadImage();
@@ -175,6 +270,9 @@ public class SignupActivity extends AppCompatActivity {
 =======
         SingupAsync ui = new SingupAsync();
 >>>>>>> ddd2025... 색변경
+=======
+        SingupAsync ui = new SingupAsync();
+>>>>>>> d7162a6... 0719 jiyoon
         ui.execute("");
     }
 }
