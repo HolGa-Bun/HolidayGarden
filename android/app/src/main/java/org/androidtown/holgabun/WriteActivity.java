@@ -25,10 +25,15 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.text.SimpleDateFormat;
 import java.util.Date;
 =======
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+import java.text.SimpleDateFormat;
+import java.util.Date;
+>>>>>>> ddd2025... 색변경
 import java.util.HashMap;
 
 public class WriteActivity extends AppCompatActivity implements View.OnClickListener{
@@ -42,11 +47,16 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
     private Button TimelineButton;
     private EditText edittext;
 <<<<<<< HEAD
+<<<<<<< HEAD
     DbOpenHelper h;
     String sql_id;
 =======
 
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+    DbOpenHelper h;
+    String sql_id;
+>>>>>>> ddd2025... 색변경
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,13 +64,19 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_write);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ddd2025... 색변경
         DbOpenHelper h=new DbOpenHelper(this);
         h.open();
 
         sql_id=h.returnId();
 
+<<<<<<< HEAD
 =======
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+>>>>>>> ddd2025... 색변경
         RequestURL=(Button)findViewById(R.id.checkButton);
         TimelineButton=(Button)findViewById(R.id.timeline_img);
         findViewById(R.id.browsePictureButton)
@@ -101,7 +117,7 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
 
 =======
 
-        edittext=(EditText)findViewById(R.id.edittext);
+        edittext=(EditText)findViewById(R.id.write);
         image=(ImageView)findViewById(R.id.img_date2);
         RequestURL.setOnClickListener(this);
 
@@ -146,10 +162,14 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
             protected void onPreExecute() {
                 super.onPreExecute();
 <<<<<<< HEAD
+<<<<<<< HEAD
                loading = ProgressDialog.show(WriteActivity.this, "Uploading...", null,true,true);
 =======
                 loading = ProgressDialog.show(WriteActivity.this, "Uploading...", null,true,true);
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+               loading = ProgressDialog.show(WriteActivity.this, "Uploading...", null,true,true);
+>>>>>>> ddd2025... 색변경
             }
 
             @Override
@@ -158,9 +178,13 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
                 loading.dismiss();
                 Toast.makeText(getApplicationContext(),s, Toast.LENGTH_LONG).show();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 finish();
 =======
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+                finish();
+>>>>>>> ddd2025... 색변경
             }
 
             @Override
@@ -194,9 +218,29 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
                 HashMap<String,String> data = new HashMap<>();
 
                 data.put("image", uploadImage);//php에서 POST값으로 들어감
+<<<<<<< HEAD
                 data.put("mean",edittext.getText().toString());
                 String result = rh.sendPostRequest("http://ec2-13-209-68-163.ap-northeast-2.compute.amazonaws.com/PhotoUpload/upload.php",data);
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+               data.put("text",edittext.getText().toString());
+
+               try{
+                   data.put("id",sql_id);
+               }catch (NullPointerException e)
+               {
+                   data.put("id","test");
+                   e.printStackTrace();
+
+               }
+
+               long now=System.currentTimeMillis();
+               Date date=new Date(now);
+                SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm");
+
+                data.put("time",sdf.format(date));
+                String result = rh.sendPostRequest("http://ec2-13-209-68-163.ap-northeast-2.compute.amazonaws.com/upload.php",data);
+>>>>>>> ddd2025... 색변경
 
                 return result;
             }

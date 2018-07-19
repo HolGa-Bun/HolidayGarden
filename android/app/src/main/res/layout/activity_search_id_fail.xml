@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     tools:context=".Tab_fragment1_Search_Account"
     android:orientation="vertical">
 =======
@@ -16,6 +17,12 @@
     tools:context=".Tab_fragment1_Search_Account"
     android:orientation="vertical">
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+
+    android:orientation="vertical"
+    tools:context=".Search_ID_Fail">
+
+>>>>>>> ddd2025... 색변경
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -43,6 +50,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <TextView
 =======
         <Button
@@ -50,6 +58,10 @@
 =======
         <TextView
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+        <Button
+
+>>>>>>> ddd2025... 색변경
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
@@ -64,6 +76,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <TextView
 =======
         <Button
@@ -71,6 +84,11 @@
 =======
         <TextView
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+
+        <Button
+
+>>>>>>> ddd2025... 색변경
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"

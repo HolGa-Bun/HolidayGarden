@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 package org.androidtown.holgabun;
 
 import java.io.BufferedReader;
@@ -82,18 +83,24 @@ public class RequestHandler {
     }
 }
 =======
+=======
+
+>>>>>>> ddd2025... 색변경
 package org.androidtown.holgabun;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStream;
+<<<<<<< HEAD
 =======
 package org.androidtown.holgabun;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+>>>>>>> ddd2025... 색변경
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
@@ -117,10 +124,14 @@ public class RequestHandler {
 
         URL url;
 <<<<<<< HEAD
+<<<<<<< HEAD
         BufferedReader br = null;
 =======
 
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+        BufferedReader br = null;
+>>>>>>> ddd2025... 색변경
         StringBuilder sb = new StringBuilder();
         try {
             url = new URL(requestURL);
@@ -145,6 +156,9 @@ public class RequestHandler {
 
             if (responseCode == HttpsURLConnection.HTTP_OK) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ddd2025... 색변경
 
                 InputStream in = new BufferedInputStream(conn.getInputStream());
 
@@ -154,6 +168,7 @@ public class RequestHandler {
 
                     sb.append(line);
 
+<<<<<<< HEAD
 =======
                 BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
                 sb = new StringBuilder();
@@ -161,6 +176,8 @@ public class RequestHandler {
                 while ((response = br.readLine()) != null){
                     sb.append(response);
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+>>>>>>> ddd2025... 색변경
                 }
             }
 

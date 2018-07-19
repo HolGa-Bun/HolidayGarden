@@ -32,6 +32,7 @@ package org.androidtown.holgabun;
         import android.widget.LinearLayout;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import android.app.Activity;
 import android.content.Context;
@@ -52,6 +53,9 @@ import android.widget.LinearLayout;
 =======
         import android.widget.ListView;
 >>>>>>> 1f118c6...  게시글 내려받기 성공
+=======
+        import android.widget.ListView;
+>>>>>>> ddd2025... 색변경
         import android.widget.TextView;
         import android.widget.Toast;
 
@@ -68,11 +72,15 @@ import android.widget.LinearLayout;
         import java.util.ArrayList;
         import java.util.Date;
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 85581eb... 0713 [feature/android/tutorial]생성
 =======
         import java.util.HashMap;
 >>>>>>> 1f118c6...  게시글 내려받기 성공
 
+=======
+        import java.util.HashMap;
+>>>>>>> ddd2025... 색변경
 
 
 /**
@@ -101,7 +109,10 @@ public class ProfileFragment extends Fragment{
     String url;
 
     ImageView img;
+<<<<<<< HEAD
     Button b;
+=======
+>>>>>>> ddd2025... 색변경
     private OnFragmentInteractionListener mListener;
 
     public ProfileFragment() {
@@ -148,6 +159,7 @@ public class ProfileFragment extends Fragment{
             }
         });
 
+<<<<<<< HEAD
         b=(Button)view.findViewById(R.id.logout);
 
         b.setOnClickListener(new View.OnClickListener() {
@@ -177,6 +189,8 @@ public class ProfileFragment extends Fragment{
             }
         });
 
+=======
+>>>>>>> ddd2025... 색변경
 
         listView=(ListView)view.findViewById(R.id.myfeed);
 

@@ -88,22 +88,31 @@
 
             <EditText
 <<<<<<< HEAD
+<<<<<<< HEAD
                 android:id="@+id/ids"
                 android:layout_width="200dp"
 =======
                 android:id="@+id/id"
                 android:layout_width="match_parent"
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+                android:id="@+id/ids"
+                android:layout_width="200dp"
+>>>>>>> ddd2025... 색변경
                 android:layout_height="40dp"
                 android:hint="아이디" />
 
             <EditText
                 android:id="@+id/pw_1"
 <<<<<<< HEAD
+<<<<<<< HEAD
                 android:layout_width="200dp"
 =======
                 android:layout_width="match_parent"
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+                android:layout_width="200dp"
+>>>>>>> ddd2025... 색변경
                 android:layout_height="40dp"
                 android:hint="비밀번호"
                 android:inputType="textPassword" />
@@ -111,10 +120,14 @@
             <EditText
                 android:id="@+id/pw_2"
 <<<<<<< HEAD
+<<<<<<< HEAD
                 android:layout_width="200dp"
 =======
                 android:layout_width="match_parent"
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+                android:layout_width="200dp"
+>>>>>>> ddd2025... 색변경
                 android:layout_height="40dp"
                 android:hint="비밀번호"
                 android:inputType="textPassword" />
@@ -143,14 +156,19 @@
         android:orientation="vertical"
         android:gravity="center"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:layout_marginTop="20dp"
 =======
         android:layout_marginTop="10dp"
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+        android:layout_marginTop="20dp"
+>>>>>>> ddd2025... 색변경
         android:layout_marginBottom="10dp"
        >
 
         <Spinner
+<<<<<<< HEAD
 <<<<<<< HEAD
             android:layout_width="280dp"
             android:layout_height="wrap_content"
@@ -164,8 +182,10 @@
             android:layout_height="wrap_content"
 =======
             android:layout_width="230dp"
+=======
+            android:layout_width="280dp"
+>>>>>>> ddd2025... 색변경
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:id="@+id/Question"
 
             ></Spinner>

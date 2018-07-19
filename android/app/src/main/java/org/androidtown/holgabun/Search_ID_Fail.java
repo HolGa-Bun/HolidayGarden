@@ -14,6 +14,7 @@ public class Search_ID_Fail extends AppCompatActivity {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
     public void onClickedMain(View v) {
@@ -25,6 +26,9 @@ public class Search_ID_Fail extends AppCompatActivity {
 >>>>>>> dadf8b2... test
 =======
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+
+>>>>>>> ddd2025... 색변경
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +36,7 @@ public class Search_ID_Fail extends AppCompatActivity {
         setContentView(R.layout.activity_search_id_fail);
 
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -49,4 +54,10 @@ public class Search_ID_Fail extends AppCompatActivity {
 >>>>>>> dadf8b2... test
 =======
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+
+
+
+
+>>>>>>> ddd2025... 색변경
 }

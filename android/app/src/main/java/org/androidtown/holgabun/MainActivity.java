@@ -5,9 +5,13 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import android.support.v7.app.AlertDialog;
 =======
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+import android.support.v7.app.AlertDialog;
+>>>>>>> ddd2025... 색변경
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.ViewUtils;
@@ -152,6 +156,7 @@ public class MainActivity extends AppCompatActivity {
 <<<<<<< HEAD
 
 
+
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -197,9 +202,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         ArrayList<Integer> data = new ArrayList<>(); //이미지 url를 저장하는 arraylist
-        data.add(R.drawable.t1);
-        data.add(R.drawable.t2);
-        data.add(R.drawable.t3);
+        data.add(R.drawable.main_image1);
+        data.add(R.drawable.main_image2);
 
 
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
@@ -216,6 +220,7 @@ public class MainActivity extends AppCompatActivity {
         spinner_si.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+<<<<<<< HEAD
 <<<<<<< HEAD
                 check_si = position;
                 switch (position) {
@@ -263,6 +268,50 @@ public class MainActivity extends AppCompatActivity {
                 check = position;
                 switch (position) {
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+                check_si = position;
+                switch (position) {
+                    case 0:
+                        spinner_gu = (Spinner) findViewById(R.id.gu);
+                        adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.Seo_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 1:
+                        spinner_gu = (Spinner) findViewById(R.id.gu);
+                        adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.Bu_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 2:
+                        spinner_gu = (Spinner) findViewById(R.id.gu);
+                        adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.Degu_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 3:
+                        spinner_gu = (Spinner) findViewById(R.id.gu);
+                        adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.Inchean_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 4:
+                        spinner_gu = (Spinner) findViewById(R.id.gu);
+                        adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.Kang_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 5:
+                        spinner_gu = (Spinner) findViewById(R.id.gu);
+                        adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.De_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 6:
+                        spinner_gu = (Spinner) findViewById(R.id.gu);
+                        adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.Ul_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 7:
+                        spinner_gu = (Spinner) findViewById(R.id.gu);
+                        adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.Se_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+>>>>>>> ddd2025... 색변경
                     case 8:
                         spinner_gu = (Spinner) findViewById(R.id.gu);
                         adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.Gung_si, android.R.layout.simple_spinner_dropdown_item);
@@ -272,6 +321,7 @@ public class MainActivity extends AppCompatActivity {
                         spinner_gu = (Spinner) findViewById(R.id.gu);
                         adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.Gang_si, android.R.layout.simple_spinner_dropdown_item);
                         spinner_gu.setAdapter(adapter);
+<<<<<<< HEAD
                         break;
                     case 10:
                         spinner_gu = (Spinner) findViewById(R.id.gu);
@@ -289,6 +339,25 @@ public class MainActivity extends AppCompatActivity {
                         adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.JunlabUK_si, android.R.layout.simple_spinner_dropdown_item);
                         spinner_gu.setAdapter(adapter);
                         break;
+=======
+                        break;
+                    case 10:
+                        spinner_gu = (Spinner) findViewById(R.id.gu);
+                        adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.ChungBuk_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 11:
+                        spinner_gu = (Spinner) findViewById(R.id.gu);
+                        adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.ChungNam_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+
+                    case 12:
+                        spinner_gu = (Spinner) findViewById(R.id.gu);
+                        adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.JunlabUK_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+>>>>>>> ddd2025... 색변경
                     case 13:
                         spinner_gu = (Spinner) findViewById(R.id.gu);
                         adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.JunlaNAM_si, android.R.layout.simple_spinner_dropdown_item);
@@ -309,6 +378,10 @@ public class MainActivity extends AppCompatActivity {
                         spinner_gu = (Spinner) findViewById(R.id.gu);
                         adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.not, android.R.layout.simple_spinner_dropdown_item);
                         spinner_gu.setAdapter(adapter);
+<<<<<<< HEAD
+=======
+
+>>>>>>> ddd2025... 색변경
 
                 }
             }
@@ -321,6 +394,9 @@ public class MainActivity extends AppCompatActivity {
         });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ddd2025... 색변경
         spinner_gu.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -341,6 +417,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
                 Intent intent = new Intent(MainActivity.this, Search.class);
                 intent.putExtra("si", check_si);
@@ -349,6 +426,12 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, Search.class);
                 intent.putExtra("si", check);
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+
+                Intent intent = new Intent(MainActivity.this, Search.class);
+                intent.putExtra("si", check_si);
+                intent.putExtra("gu",check_gu);
+>>>>>>> ddd2025... 색변경
                 editText = (EditText) findViewById(R.id.tutname);
                 try {
                     intent.putExtra("name", editText.getText().toString());
@@ -394,9 +477,23 @@ public class MainActivity extends AppCompatActivity {
 =======
 
     public void onClickedTimeLine(View v){
+<<<<<<< HEAD
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
         Intent intent = new Intent(this, TimeLine.class);
         startActivity(intent);
+=======
+
+        DbOpenHelper h=new DbOpenHelper(this);
+        h.open();
+
+        if(h.returnOnOff()==1 ||h.returnOnOff()==2) {
+            Intent intent = new Intent(this, TimeLine.class);
+            startActivity(intent);
+        }
+        else{
+            show();
+        }
+>>>>>>> ddd2025... 색변경
     }
 >>>>>>> 3202c5d... 통신 미구현
 =======
@@ -489,9 +586,26 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void onClickedLogin(View v){
-        Intent intent = new Intent(this, LoginActivity.class);
-        startActivity(intent);
+    void show()
+    {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("주의");
+        builder.setMessage("SNS를 사용하시려면 로그인이 필요합니다. 로그인 하시겠습니까?");
+        builder.setPositiveButton("예",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent intent= new Intent(MainActivity.this,LoginActivity.class);
+                        startActivity(intent);
+                        finish();
+                    }
+                });
+        builder.setNegativeButton("아니오",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        Toast.makeText(getApplicationContext(),"아니오를 선택했습니다.",Toast.LENGTH_LONG).show();
+                    }
+                });
+        builder.show();
     }
 
 

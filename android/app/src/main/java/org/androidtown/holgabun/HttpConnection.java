@@ -61,6 +61,7 @@ public class HttpConnection extends AsyncTask<String, Void, String>
 
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     final static String openWeatherURL = "http://211.237.50.150:7080/openapi/abf160159dcc1880ee2a7c68af142681cc72667378a51204b6d47167fd28add6/json/Grid_20171122000000000552_1/1/10";
 
     String Server_url = "http://ec2-13-209-68-163.ap-northeast-2.compute.amazonaws.com/";
@@ -75,6 +76,9 @@ public class HttpConnection extends AsyncTask<String, Void, String>
 >>>>>>> 5df8494... test
 =======
     final static String openWeatherURL = "http://211.237.50.150:7080/openapi/abf160159dcc1880ee2a7c68af142681cc72667378a51204b6d47167fd28add6/json/Grid_20171122000000000552_1/1/5";
+=======
+    final static String openWeatherURL = "http://211.237.50.150:7080/openapi/abf160159dcc1880ee2a7c68af142681cc72667378a51204b6d47167fd28add6/json/Grid_20171122000000000552_1/1/10";
+>>>>>>> ddd2025... 색변경
 
     String Server_url = "http://ec2-13-209-68-163.ap-northeast-2.compute.amazonaws.com/";
 
@@ -209,6 +213,7 @@ public class HttpConnection extends AsyncTask<String, Void, String>
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 <<<<<<< HEAD
@@ -222,3 +227,5 @@ public class HttpConnection extends AsyncTask<String, Void, String>
 
 
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+>>>>>>> ddd2025... 색변경

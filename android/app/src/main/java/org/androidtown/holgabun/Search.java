@@ -16,9 +16,13 @@ import android.widget.Button;
 import android.widget.EditText;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import android.widget.ListAdapter;
 =======
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+import android.widget.ListAdapter;
+>>>>>>> ddd2025... 색변경
 import android.widget.ListView;
 import android.widget.Spinner;
 import org.json.JSONArray;
@@ -39,6 +43,7 @@ public class Search extends AppCompatActivity {
 
     private final String CLIENT_ID = "eE9eLsg6dk9r3z8mqjKr";
 <<<<<<< HEAD
+<<<<<<< HEAD
     Button button;
 
 
@@ -53,6 +58,13 @@ public class Search extends AppCompatActivity {
 
 
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+    Button button;
+
+
+    private static final String TAG = "TestActivity";
+    ListView listview ;
+>>>>>>> ddd2025... 색변경
 
 
     @Override
@@ -61,6 +73,7 @@ public class Search extends AppCompatActivity {
         setContentView(R.layout.activity_search);
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
         // 리스트뷰 참조 및 Adapter달기
@@ -73,6 +86,12 @@ public class Search extends AppCompatActivity {
         listview = (ListView) findViewById(R.id.List_garden);
         listview.setAdapter(adapter1);
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+
+        // 리스트뷰 참조 및 Adapter달기
+        listview = (ListView) findViewById(R.id.List_garden);
+
+>>>>>>> ddd2025... 색변경
 
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -89,6 +108,7 @@ public class Search extends AppCompatActivity {
             }
         }) ;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         button=(Button)findViewById(R.id.gotoHome);
         button.setOnClickListener(new View.OnClickListener() {
@@ -133,17 +153,54 @@ public class Search extends AppCompatActivity {
         });
 =======
         new Thread(new Runnable() {
+=======
+        button=(Button)findViewById(R.id.gotoHome);
+        button.setOnClickListener(new View.OnClickListener() {
+>>>>>>> ddd2025... 색변경
             @Override
-            public void run() {
-                runOnUiThread(new Runnable(){
+            public void onClick(View v) {
+                Intent intent=new Intent(Search.this,MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        button=(Button)findViewById(R.id.gotoTime);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Search.this,TimeLine.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+
+        button=(Button)findViewById(R.id.search_bun);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                new Thread(new Runnable() {
                     @Override
                     public void run() {
-                        sendtoData();
+
+                        runOnUiThread(new Runnable(){
+                            @Override
+                            public void run() {
+                                sendtoData();
+                            }
+                        });
                     }
-                });
+                }).start();
             }
+<<<<<<< HEAD
         }).start();
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+        });
+>>>>>>> ddd2025... 색변경
 
 
 
@@ -166,6 +223,9 @@ public class Search extends AppCompatActivity {
         spinner_si.setAdapter(adapter);
         spinner_si.setSelection(intent.getIntExtra("si", 0));
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ddd2025... 색변경
 
 
         switch (intent.getIntExtra("gu",16)) {
@@ -256,6 +316,7 @@ public class Search extends AppCompatActivity {
                 adapter = ArrayAdapter.createFromResource(Search.this, R.array.not, android.R.layout.simple_spinner_dropdown_item);
                 spinner_gu.setAdapter(adapter);
 
+<<<<<<< HEAD
 
         }
 
@@ -268,11 +329,20 @@ public class Search extends AppCompatActivity {
 
         }
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+
+        }
+
+
+>>>>>>> ddd2025... 색변경
         spinner_si.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ddd2025... 색변경
                     case 0:
                         spinner_gu = (Spinner) findViewById(R.id.search_gu);
                         adapter = ArrayAdapter.createFromResource(Search.this, R.array.Seo_si, android.R.layout.simple_spinner_dropdown_item);
@@ -313,6 +383,7 @@ public class Search extends AppCompatActivity {
                         adapter = ArrayAdapter.createFromResource(Search.this, R.array.Se_si, android.R.layout.simple_spinner_dropdown_item);
                         spinner_gu.setAdapter(adapter);
                         break;
+<<<<<<< HEAD
                     case 8:
                         spinner_gu = (Spinner) findViewById(R.id.search_gu);
                         adapter = ArrayAdapter.createFromResource(Search.this, R.array.Gung_si, android.R.layout.simple_spinner_dropdown_item);
@@ -333,8 +404,10 @@ public class Search extends AppCompatActivity {
                         adapter = ArrayAdapter.createFromResource(Search.this, R.array.ChungNam_si, android.R.layout.simple_spinner_dropdown_item);
                         spinner_gu.setAdapter(adapter);
 =======
+=======
+>>>>>>> ddd2025... 색변경
                     case 8:
-
+                        spinner_gu = (Spinner) findViewById(R.id.search_gu);
                         adapter = ArrayAdapter.createFromResource(Search.this, R.array.Gung_si, android.R.layout.simple_spinner_dropdown_item);
                         spinner_gu.setAdapter(adapter);
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
@@ -360,6 +433,7 @@ public class Search extends AppCompatActivity {
                         adapter = ArrayAdapter.createFromResource(Search.this, R.array.GuengNam_si, android.R.layout.simple_spinner_dropdown_item);
                         spinner_gu.setAdapter(adapter);
                         break;
+<<<<<<< HEAD
 
                     default:
 <<<<<<< HEAD
@@ -367,6 +441,47 @@ public class Search extends AppCompatActivity {
 =======
 
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+                    case 9:
+                        spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                        adapter = ArrayAdapter.createFromResource(Search.this, R.array.Gang_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 10:
+                        spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                        adapter = ArrayAdapter.createFromResource(Search.this, R.array.ChungBuk_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 11:
+                        spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                        adapter = ArrayAdapter.createFromResource(Search.this, R.array.ChungNam_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+
+                    case 12:
+                        spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                        adapter = ArrayAdapter.createFromResource(Search.this, R.array.JunlabUK_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 13:
+                        spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                        adapter = ArrayAdapter.createFromResource(Search.this, R.array.JunlaNAM_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 14:
+                        spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                        adapter = ArrayAdapter.createFromResource(Search.this, R.array.GuengBuk_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+                    case 15:
+                        spinner_gu = (Spinner) findViewById(R.id.search_gu);
+                        adapter = ArrayAdapter.createFromResource(Search.this, R.array.GuengNam_si, android.R.layout.simple_spinner_dropdown_item);
+                        spinner_gu.setAdapter(adapter);
+                        break;
+
+                    default:
+                        spinner_gu = (Spinner) findViewById(R.id.search_gu);
+>>>>>>> ddd2025... 색변경
                         adapter = ArrayAdapter.createFromResource(Search.this, R.array.not, android.R.layout.simple_spinner_dropdown_item);
                         spinner_gu.setAdapter(adapter);
 
@@ -386,6 +501,9 @@ public class Search extends AppCompatActivity {
         //-----------------위치 검색
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ddd2025... 색변경
         Runnable a=new Runnable() {
             @Override
             public void run() {
@@ -395,8 +513,11 @@ public class Search extends AppCompatActivity {
 
         a.run();
 
+<<<<<<< HEAD
 =======
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+>>>>>>> ddd2025... 색변경
 
     }//oncrete
 
@@ -406,6 +527,7 @@ public class Search extends AppCompatActivity {
         HttpConnection h=new HttpConnection();
         String body = null;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
         try {
@@ -420,6 +542,17 @@ public class Search extends AppCompatActivity {
         try {
             body = h.execute("Search",spinner_si.getSelectedItem().toString(),spinner_gu.getSelectedItem().toString()).get();
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+
+        try {
+
+            if(editText.getText().toString().equals(""))
+            {
+                body = h.execute("Search",spinner_si.getSelectedItem().toString(),spinner_gu.getSelectedItem().toString()).get();}
+            else{
+                body=h.execute("Garden",editText.getText().toString()).get();
+            }
+>>>>>>> ddd2025... 색변경
             // String 으로 들어온 값 JSONObject 로 1차 파싱
             JSONObject wrapObject = new JSONObject(body);
             wrapObject= new JSONObject(wrapObject.getString("Grid_20171122000000000552_1"));
@@ -428,12 +561,18 @@ public class Search extends AppCompatActivity {
             JSONArray jsonArray = new JSONArray(wrapObject.getString("row"));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ddd2025... 색변경
             listview.setAdapter(null);
 
             ListViewAdapter reload =new ListViewAdapter();
 
+<<<<<<< HEAD
 =======
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+>>>>>>> ddd2025... 색변경
 
             // set POI data
 
@@ -442,6 +581,7 @@ public class Search extends AppCompatActivity {
                 JSONObject dataJsonObject = jsonArray.getJSONObject(i);
                 // 추출한 Object 에서 필요한 데이터를 표시할 방법을 정해서 화면에 표시
 
+<<<<<<< HEAD
 <<<<<<< HEAD
                     reload.addItem(BitmapFactory.decodeResource(getResources(),R.drawable.icon),
                             dataJsonObject.getString("FARM_NM"), dataJsonObject.getString("ADDRESS1")) ;
@@ -455,6 +595,14 @@ public class Search extends AppCompatActivity {
 
             }
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+                    reload.addItem(BitmapFactory.decodeResource(getResources(),R.drawable.icon),
+                            dataJsonObject.getString("FARM_NM"), dataJsonObject.getString("ADDRESS1")) ;
+
+            }
+            listview.setAdapter(reload);
+
+>>>>>>> ddd2025... 색변경
 
 
           // NMapPOIdata poiData = new NMapPOIdata(test.size(), nMapResourceProvider);

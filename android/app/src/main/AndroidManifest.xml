@@ -33,6 +33,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <activity android:name=".SignupActivity" />
         <activity android:name=".AddInformationActivity" />
 <<<<<<< HEAD
@@ -64,6 +65,11 @@
     </intent-filter>
     </activity>
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".AddInformationActivity" />
+        <activity android:name=".LoginActivity" />
+>>>>>>> ddd2025... 색변경
         <activity android:name=".Search" />
         <activity
             android:name=".PopupActivity"
@@ -72,13 +78,22 @@
             android:theme="@android:style/Theme.Dialog" />
         <activity android:name=".TimeLine" />
 <<<<<<< HEAD
+<<<<<<< HEAD
         <activity android:name=".Loading">
             <intent-filter>
         <action android:name="android.intent.action.MAIN" />
 =======
         <activity android:name=".SignupActivity"/>
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+        <activity android:name=".Loading">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+>>>>>>> ddd2025... 색변경
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".WriteActivity" />
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -132,12 +147,12 @@
 =======
         <activity android:name=".Search_Account" />
         <activity android:name=".Garden_IM" />
-        <activity android:name=".BackPopupActivity"></activity>
-
+        <activity android:name=".BackPopupActivity" />
         <activity
             android:name=".SignupSuccess"
             android:theme="@android:style/Theme.Dialog" />
         <activity android:name=".Tab_fragment1_Search_Account" />
+<<<<<<< HEAD
 
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
         <activity
@@ -161,6 +176,13 @@
 =======
 
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
+=======
+        <activity
+            android:name=".Change_Password"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".Search_ID_Fail" />
+        <activity android:name=".MainActivity"></activity>
+>>>>>>> ddd2025... 색변경
     </application>
 
 </manifest>
