@@ -1,12 +1,32 @@
 package org.androidtown.holgabun;
 
+import android.app.ProgressDialog;
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 
 /**
@@ -27,6 +47,11 @@ public class LikeFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
+    ListView listview;
+    SearchUserAdapter adapter;
+    EditText editText;
+    Button button;
+    String s1,s2,s3;
     private OnFragmentInteractionListener mListener;
 
     public LikeFragment() {
@@ -47,6 +72,7 @@ public class LikeFragment extends Fragment {
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
+
         fragment.setArguments(args);
         return fragment;
     }
@@ -64,7 +90,22 @@ public class LikeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_like, container, false);
+        View view= inflater.inflate(R.layout.fragment_like, container, false);
+
+        listview=(ListView)view.findViewById(R.id.user_list);
+        adapter=new SearchUserAdapter();
+
+        button=(Button)view.findViewById(R.id.user_Search);
+        editText=(EditText)view.findViewById(R.id.SU);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                List();
+            }
+        });
+
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -96,4 +137,77 @@ public class LikeFragment extends Fragment {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
+    private void List(){
+        class ListSaw extends AsyncTask<String,Void,String> {
+
+            ProgressDialog loading;
+            RequestHandler rh = new RequestHandler();
+
+            @Override
+            protected void onPreExecute() {
+                super.onPreExecute();
+                loading = ProgressDialog.show(getContext(), "Uploading...", null,true,true);
+            }
+
+            @Override
+            protected void onPostExecute(String s) {
+                super.onPostExecute(s);
+                loading.dismiss();
+                Log.d("THIS",s);
+
+
+                try{
+
+
+                    JSONArray j=new JSONArray(s);
+
+                    SearchUserAdapter feedAdapter=new SearchUserAdapter();
+
+
+                   for(int i=0;i<j.length();i++)
+                   {
+                       JSONObject h=j.getJSONObject(i);
+                       if(i==0)
+                       {
+                           s1=h.getString("Search_name");
+                       }
+                       else if(i==1)
+                       {
+                           s2=h.getString("count");
+                       }
+                       else{
+                           s3=h.getString("recent");
+                       }
+                   }
+
+                   feedAdapter.addItem(s1,s2,s3);
+
+                }catch(JSONException e){
+                    e.printStackTrace();
+                }
+
+
+            }
+
+            @Override
+            protected String doInBackground(String... params) {
+
+
+
+                HashMap<String,String> data = new HashMap<>();
+
+
+                data.put("ID",editText.getText().toString());
+
+                String result = rh.sendPostRequest("http://ec2-13-209-68-163.ap-northeast-2.compute.amazonaws.com/SearchUser.php",data);
+
+
+                return result;
+            }
+        }
+
+        ListSaw ui = new ListSaw();
+        ui.execute("");
+    }
+
 }

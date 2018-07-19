@@ -4,6 +4,7 @@ package org.androidtown.holgabun;
         import android.app.Activity;
         import android.app.ProgressDialog;
         import android.content.Context;
+        import android.content.DialogInterface;
         import android.content.Intent;
         import android.graphics.Bitmap;
         import android.graphics.BitmapFactory;
@@ -15,6 +16,7 @@ package org.androidtown.holgabun;
         import android.support.v4.app.Fragment;
         import android.support.v4.app.FragmentManager;
         import android.support.v4.app.FragmentTransaction;
+        import android.support.v7.app.AlertDialog;
         import android.util.Log;
         import android.view.LayoutInflater;
         import android.view.View;
@@ -94,6 +96,7 @@ public class ProfileFragment extends Fragment{
     String url;
 
     ImageView img;
+    Button b;
     private OnFragmentInteractionListener mListener;
 
     public ProfileFragment() {
@@ -137,6 +140,35 @@ public class ProfileFragment extends Fragment{
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), WriteActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        b=(Button)view.findViewById(R.id.logout);
+
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+                builder.setTitle("주의");
+                builder.setMessage("로그아웃을 하시면 SNS을 이용하실 수 없어 홈으로 돌아갑니다.");
+                builder.setPositiveButton("예",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                DbOpenHelper h=new DbOpenHelper(getContext());
+                                h.open();
+                                h.logOut();
+                                Intent intent= new Intent(getContext(),MainActivity.class);
+                                startActivity(intent);
+                                getActivity().finish();
+                            }
+                        });
+                builder.setNegativeButton("아니오",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+
+                            }
+                        });
+                builder.show();
             }
         });
 
