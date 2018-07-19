@@ -2,6 +2,7 @@ package org.androidtown.holgabun;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
@@ -12,9 +13,12 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -52,6 +56,7 @@ public class LikeFragment extends Fragment {
     EditText editText;
     Button button;
     String s1,s2,s3;
+    InputMethodManager imm;
     private OnFragmentInteractionListener mListener;
 
     public LikeFragment() {
@@ -94,6 +99,20 @@ public class LikeFragment extends Fragment {
 
         listview=(ListView)view.findViewById(R.id.user_list);
         adapter=new SearchUserAdapter();
+        listview.setAdapter(adapter);
+        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                user item = (user) parent.getItemAtPosition(position) ;
+
+
+                Intent Serch_i=new Intent(getActivity(),another_profile.class);
+                Serch_i.putExtra("name",item.getName());
+                startActivity(Serch_i);
+
+            }
+        });
+
 
         button=(Button)view.findViewById(R.id.user_Search);
         editText=(EditText)view.findViewById(R.id.SU);
@@ -102,8 +121,14 @@ public class LikeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 List();
+                imm.hideSoftInputFromWindow(editText.getWindowToken(), 0);
             }
         });
+
+        imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+
+
+
 
         return view;
     }
@@ -159,28 +184,20 @@ public class LikeFragment extends Fragment {
                 try{
 
 
-                    JSONArray j=new JSONArray(s);
+                    JSONObject j=new JSONObject(s);
 
-                    SearchUserAdapter feedAdapter=new SearchUserAdapter();
+                    listview.setAdapter(null);
+
+                    adapter=new SearchUserAdapter();
 
 
-                   for(int i=0;i<j.length();i++)
-                   {
-                       JSONObject h=j.getJSONObject(i);
-                       if(i==0)
-                       {
-                           s1=h.getString("Search_name");
-                       }
-                       else if(i==1)
-                       {
-                           s2=h.getString("count");
-                       }
-                       else{
-                           s3=h.getString("recent");
-                       }
-                   }
+                    if(j.getString("result").equals("true")) {
 
-                   feedAdapter.addItem(s1,s2,s3);
+
+                        adapter.addItem(editText.getText().toString(), j.getString("count"), j.getString("recent"));
+
+                    }
+                    listview.setAdapter(adapter);
 
                 }catch(JSONException e){
                     e.printStackTrace();

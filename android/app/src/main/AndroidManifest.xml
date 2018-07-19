@@ -119,8 +119,13 @@
             android:name=".Change_Password"
             android:theme="@android:style/Theme.Dialog" />
         <activity android:name=".Search_ID_Fail" />
+<<<<<<< HEAD
         <activity android:name=".MainActivity"></activity>
 >>>>>>> 85cc7df... 내부 sql 정비 게시글 올리기 성공
+=======
+        <activity android:name=".MainActivity" />
+        <activity android:name=".another_profile"></activity>
+>>>>>>> 3331bbc... anther feed 구현
     </application>
 
 </manifest>
