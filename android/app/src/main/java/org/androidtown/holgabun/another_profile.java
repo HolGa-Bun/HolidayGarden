@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -32,6 +33,7 @@ public class another_profile extends AppCompatActivity {
     String id;
     Button b;
     DbOpenHelper h;
+    TextView t;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,12 +46,25 @@ public class another_profile extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                follow("");
+
+                if(b.getText().toString().equals("Follow"))
+                {
+                    follow("");
+                    b.setText("unFollow");
+                }
+                else {
+                    follow("un");
+                    b.setText("Follow");
+                }
 
             }
         });
         h=new DbOpenHelper(this);
         h.open();
+        t=(TextView)findViewById(R.id.nickname_anotherprofile);
+        t.setText(feed_id);
+
+        follow("is");
     }
     private void follow(String request){
         class Follow extends AsyncTask<String,Void,String> {
@@ -72,21 +87,17 @@ public class another_profile extends AppCompatActivity {
 
 
                 try{
-                    JSONArray jsonArray = new JSONArray(s);
+                    JSONObject j = new JSONObject(s);
 
-                    FeedAdapter feedAdapter=new FeedAdapter();
-
-
-                    for (int i = 0; i < jsonArray.length(); i++) {
-                        // Array 에서 하나의 JSONObject 를 추출
-                        JSONObject dataJsonObject = jsonArray.getJSONObject(i);
-                        // 추출한 Object 에서 필요한 데이터를 표시할 방법을 정해서 화면에 표시
-
-                        feedAdapter.addItem(BitmapFactory.decodeResource(getResources(),R.drawable.icon),dataJsonObject.getString("id"),please.get(i),dataJsonObject.getString("text"),
-                                dataJsonObject.getString("bolderNum"),dataJsonObject.getString("time"));
-
+                    if(j.getString("result").equals("true"))
+                    {
+                        b.setText("UnFollow");
                     }
-                    listView.setAdapter(feedAdapter);
+                    else{
+                        b.setText("Follow");
+                    }
+
+
 
 
                 }catch(JSONException e){
