@@ -183,6 +183,7 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             protected void onPostExecute(String s) {
                 super.onPostExecute(s);
+                Log.d("login",s);
                 loading.dismiss();
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -199,6 +200,7 @@ public class SignupActivity extends AppCompatActivity {
                }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                 Toast.makeText(getApplicationContext(),s, Toast.LENGTH_LONG).show();
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
@@ -206,6 +208,11 @@ public class SignupActivity extends AppCompatActivity {
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+               else {
+                   Toast.makeText(SignupActivity.this,"아이디나 닉네임이 동일한 유저가 존재합니다.",Toast.LENGTH_LONG).show();
+               }
+>>>>>>> 32fdcbc... ㅜㅜ
             }
 
             @Override

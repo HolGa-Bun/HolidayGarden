@@ -286,6 +286,8 @@ public class LoginActivity extends AppCompatActivity {
                 super.onPostExecute(s);
                 loading.dismiss();
 
+
+
                     if(s.equals("true")) {
                         String p;
                         editText=(EditText)findViewById(R.id.login);

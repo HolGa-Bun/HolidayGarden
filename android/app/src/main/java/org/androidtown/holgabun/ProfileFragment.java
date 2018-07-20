@@ -250,7 +250,10 @@ public class ProfileFragment extends Fragment{
             @Override
             protected void onPostExecute(String s) {
                 super.onPostExecute(s);
-                loading.dismiss();
+                if (loading != null && loading.isShowing()) {
+                    loading.dismiss();
+                    loading = null;
+                }
                 Log.d("THIS",s);
 
 
