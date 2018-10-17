@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#eeeeee"
+    android:orientation="vertical">
+
+
+    <!-- 타이틀바 -->
+    <!-- //end 타이틀바 -->
+
+    <!-- Notice -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:alpha="0.87"
+            android:gravity="center"
+            android:text="회원가입이 완료되었습니다."
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:visibility="visible" />
+    </LinearLayout>
+    <!-- Notice -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#66bdbdbd" />
+
+
+    <!-- 닫기 버튼 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_dark"
+                android:gravity="center"
+                android:onClick="onClickedToLogin"
+                android:padding="16dp"
+                android:text="OK"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--// 닫기 버튼 -->
+</LinearLayout>

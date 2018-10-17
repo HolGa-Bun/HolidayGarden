@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:layout_gravity="left"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_menu_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="80dp"
+                android:paddingLeft="10dp"
+                android:layout_gravity="center"
+                android:text="홀가분"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="26dp"
+                android:textStyle="bold" />
+
+
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="0dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/home"
+                android:background="@drawable/ic_home_black_24dp" />
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="0dp"
+                android:background="@drawable/icon_grey"
+                android:onClick="onClickedTimeLine"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/test"
+            android:layout_weight="1">
+
+            <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_marginBottom="20dp">
+
+            </cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="분양 정보"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                 <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="30dp"
+                        android:paddingLeft="40dp">
+
+
+                        <Spinner
+                            android:id="@+id/si"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/outline"
+                            ></Spinner>
+
+                        <Spinner
+                            android:id="@+id/gu"
+                            android:layout_width="130dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/outline">
+
+                        </Spinner>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="40dp">
+
+                        <EditText
+                            android:layout_width="230dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="50dp"
+                            android:background="@drawable/outline"
+                            android:id="@+id/tutname"
+                            android:hint="생략"
+                            android:paddingLeft="20dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="right">
+
+                        <Button
+                            android:layout_width="80dp"
+                            android:layout_height="35dp"
+                            android:layout_marginRight="30dp"
+                            android:background="#45fc"
+                            android:text="검색"
+                            android:textColor="#ffff"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:id="@+id/search_bun"/>
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_margin="30dp"
+                    android:background="@color/colorPrimaryDark"></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="새로운 분양"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:paddingBottom="15dp"
+                    />
+
+                <GridView
+                    android:id="@+id/grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_margin="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/tofhdnsqnsdid"
+                    android:horizontalSpacing="10dp"
+                    android:numColumns="2"
+                    android:verticalSpacing="10dp"
+                   android:gravity="center"></GridView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

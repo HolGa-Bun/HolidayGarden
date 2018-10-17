@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name = "Question">
+        <item>당신의 고향은 어딘가요?</item>
+        <item>당신의 애완동물의 이름은 무엇인가요?</item>
+    </string-array>
+</resources>

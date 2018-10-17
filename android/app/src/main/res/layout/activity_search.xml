@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:padding="0dp"
+                android:src="@drawable/ic_menu_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="80dp"
+                android:paddingLeft="10dp"
+                android:text="홀가분"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/main_search"
+                android:layout_width="5dp"
+                android:layout_height="5dp" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/gotoHome"
+                android:padding="0dp"
+                android:background="@drawable/ic_home_green_24dp" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="0dp"
+                android:id="@+id/gotoTime"
+                android:background="@drawable/main_image" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="10dp">
+
+
+                    <Spinner
+                        android:id="@+id/search_si"
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+                       ></Spinner>
+
+                    <Spinner
+                        android:id="@+id/search_gu"
+                        android:layout_width="130dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp">
+
+                    </Spinner>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="40dp">
+
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:background="@null"
+                        android:id="@+id/search_tutname"
+                        android:hint="이름으로 검색"
+                        android:paddingLeft="20dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right">
+
+                    <Button
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@color/colorMain"
+                        android:text="검색"
+                        android:textColor="#ffff"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:id="@+id/search_bun"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/List_garden"
+                android:dividerHeight="5dp"></ListView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

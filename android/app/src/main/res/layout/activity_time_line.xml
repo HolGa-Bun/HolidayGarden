@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TimeLine"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:layout_gravity="left"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_menu_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dp"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center"
+            android:text="홀가분"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+
+            <Button
+            android:onClick="MainClicked"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="0dp"
+            android:id="@+id/home"
+            android:background="@drawable/ic_home_green_24dp" />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:padding="0dp"
+            android:background="@drawable/icon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/notice">
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/fragment"
+                tools:layout="@layout/fragment_feed">
+            </RelativeLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/feedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:text="FEED" />
+
+        <Button
+            android:id="@+id/likeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:text="LIKE" />
+
+        <Button
+            android:id="@+id/profileButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:text="PROFILE" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.androidtown.holgabun">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- WIFI 상태활용시 추가 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- WIFI 상태활용시 추가 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:largeHeap="true"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".AddInformationActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".Search" />
+        <activity
+            android:name=".PopupActivity"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".TimeLine" />
+        <activity android:name=".WriteActivity" />
+        <activity android:name=".Search_Account" />
+        <activity android:name=".Garden_IM" />
+        <activity android:name=".BackPopupActivity" />
+        <activity
+            android:name=".SignupSuccess"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".Tab_fragment1_Search_Account" />
+        <activity
+            android:name=".Change_Password"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".Search_ID_Fail" />
+        <activity android:name=".MainActivity" />
+
+        <activity android:name=".another_profile"></activity>
+
+        <activity android:name=".SplashActivity"
+            android:theme="@style/SplashTheme"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
