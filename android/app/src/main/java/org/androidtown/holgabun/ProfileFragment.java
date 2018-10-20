@@ -3,12 +3,16 @@ package org.androidtown.holgabun;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 =======
 
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
         import android.app.Activity;
         import android.app.ProgressDialog;
         import android.content.Context;
@@ -34,6 +38,7 @@ package org.androidtown.holgabun;
         import android.widget.ImageButton;
         import android.widget.ImageView;
         import android.widget.LinearLayout;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -64,6 +69,9 @@ import android.widget.LinearLayout;
 =======
         import android.widget.ListView;
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+        import android.widget.ListView;
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
         import android.widget.TextView;
         import android.widget.Toast;
 
@@ -82,6 +90,7 @@ import android.widget.LinearLayout;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 85581eb... 0713 [feature/android/tutorial]생성
 =======
         import java.util.HashMap;
@@ -93,6 +102,9 @@ import android.widget.LinearLayout;
 =======
         import java.util.HashMap;
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+        import java.util.HashMap;
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
 
 /**
@@ -117,6 +129,7 @@ public class ProfileFragment extends Fragment{
     ListView listView;
     FeedAdapter feedAdapter;
     String feed_id;
+<<<<<<< HEAD
     ArrayList<Bitmap> please;
     String url;
     TextView t;
@@ -130,6 +143,15 @@ public class ProfileFragment extends Fragment{
 =======
     Button b;
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+
+    String url;
+    ProgressDialog loading;
+    TextView t;
+
+    ImageView img;
+    Button b;
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
     private OnFragmentInteractionListener mListener;
 
     public ProfileFragment() {
@@ -178,8 +200,11 @@ public class ProfileFragment extends Fragment{
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
         b=(Button)view.findViewById(R.id.logout);
 
         b.setOnClickListener(new View.OnClickListener() {
@@ -210,10 +235,13 @@ public class ProfileFragment extends Fragment{
         });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
         listView=(ListView)view.findViewById(R.id.myfeed);
 
@@ -238,8 +266,14 @@ public class ProfileFragment extends Fragment{
     private void List(){
         class ListSaw extends AsyncTask<String,Void,String> {
 
+<<<<<<< HEAD
             ProgressDialog loading;
             RequestHandler rh = new RequestHandler();
+=======
+
+            RequestHandler rh = new RequestHandler();
+            FeedAdapter feedAdapter=new FeedAdapter();
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
             @Override
             protected void onPreExecute() {
@@ -254,6 +288,7 @@ public class ProfileFragment extends Fragment{
                     loading.dismiss();
                     loading = null;
                 }
+<<<<<<< HEAD
                 Log.d("THIS",s);
 
 
@@ -282,6 +317,12 @@ public class ProfileFragment extends Fragment{
 
 
                 }
+=======
+                Log.d("THIS", s);
+
+                listView.setAdapter(feedAdapter);
+            }
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
             @Override
             protected String doInBackground(String... params) {
@@ -299,12 +340,23 @@ public class ProfileFragment extends Fragment{
                 try {
                     JSONArray j = new JSONArray(result);
 
+<<<<<<< HEAD
                     please=new ArrayList<Bitmap>();
                     for (int i = 0; i < j.length(); i++) {
 
                         // Array 에서 하나의 JSONObject 를 추출
                         JSONObject dataJsonObject = j.getJSONObject(i);
                         // 추출한 Object 에서 필요한 데이터를 표시할 방법을 정해서 화면에 표시
+=======
+
+                    for (int i = 0; i < j.length(); i++) {
+
+                        feedAdapter=new FeedAdapter();
+                        // Array 에서 하나의 JSONObject 를 추출
+                        JSONObject dataJsonObject = j.getJSONObject(i);
+                        // 추출한 Object 에서 필요한 데이터를 표시할 방법을 정해서 화면에 표시
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
                         URL url=new URL(dataJsonObject.getString("image").replace("\\",""));
 
                         HttpURLConnection conn=(HttpURLConnection)url.openConnection();
@@ -312,7 +364,12 @@ public class ProfileFragment extends Fragment{
                         conn.connect();
                         InputStream is=conn.getInputStream();
 
+<<<<<<< HEAD
                         please.add(BitmapFactory.decodeStream(is));
+=======
+                        feedAdapter.addItem(dataJsonObject.getString("id"),BitmapFactory.decodeStream(is),dataJsonObject.getString("text"),
+                                dataJsonObject.getString("bolderNum"),dataJsonObject.getString("time"));
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
 
                     }
@@ -323,11 +380,17 @@ public class ProfileFragment extends Fragment{
                 }catch(JSONException e)
                 {
                     e.printStackTrace();
+<<<<<<< HEAD
                 }catch (MalformedURLException e)
                 {
                     e.printStackTrace();
                 }catch(IOException e)
                 {
+=======
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
                     e.printStackTrace();
                 }
                 return result;
@@ -347,6 +410,17 @@ public class ProfileFragment extends Fragment{
         }
     }
 
+<<<<<<< HEAD
+=======
+    @Override
+    public void onStop() {
+        super.onStop();
+        if (loading != null) {
+            loading.dismiss();
+            loading = null;
+        }
+    }
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
     @Override
     public void onDetach() {
@@ -372,17 +446,22 @@ public class ProfileFragment extends Fragment{
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 =======
 
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 //    public void onButtonWrite(View v){ //write 페이지로 이동
 //        Intent intent = new Intent(getActivity(), MainActivity.class);
 //        startActivity(intent);
 //    }
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     public void onButtonWrite(View v){ //write 페이지로 이동
@@ -393,3 +472,5 @@ public class ProfileFragment extends Fragment{
 >>>>>>> 490ec72... 0709[feature/android] Search_Account, Change_Password
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a

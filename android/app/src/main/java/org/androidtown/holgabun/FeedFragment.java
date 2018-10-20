@@ -53,7 +53,12 @@ public class FeedFragment extends Fragment {
     ListView listView;
     FeedAdapter feedAdapter;
     String feed_id;
+<<<<<<< HEAD
     ArrayList<Bitmap> please;
+=======
+
+    ProgressDialog loading;
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
     public FeedFragment() {
         // Required empty public constructor
@@ -108,12 +113,31 @@ public class FeedFragment extends Fragment {
          return view;
     }
 
+<<<<<<< HEAD
     private void List(){
         class ListSaw extends AsyncTask<String,Void,String> {
 
             ProgressDialog loading;
             RequestHandler rh = new RequestHandler();
 
+=======
+    @Override
+    public void onStop() {
+        super.onStop();
+        if (loading != null) {
+            loading.dismiss();
+            loading = null;
+        }
+    }
+
+    private void List(){
+        class ListSaw extends AsyncTask<String,Void,String> {
+
+
+            RequestHandler rh = new RequestHandler();
+
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
             @Override
             protected void onPreExecute() {
                 super.onPreExecute();
@@ -130,6 +154,7 @@ public class FeedFragment extends Fragment {
 
                 Log.d("THIS",s);
 
+<<<<<<< HEAD
 
 
                 try{
@@ -153,6 +178,9 @@ public class FeedFragment extends Fragment {
                 }catch(JSONException e){
                     e.printStackTrace();
                 }
+=======
+                listView.setAdapter(feedAdapter);
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
 
             }
@@ -166,14 +194,26 @@ public class FeedFragment extends Fragment {
                 HashMap<String,String> data = new HashMap<>();
 
 
+<<<<<<< HEAD
                 data.put("ID",feed_id);
 
+=======
+
+                data.put("ID",feed_id);
+
+
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
                 String result = rh.sendPostRequest("http://ec2-13-209-68-163.ap-northeast-2.compute.amazonaws.com/AllBolder.php",data);
 
                 try {
                     JSONArray j = new JSONArray(result);
 
+<<<<<<< HEAD
                     please=new ArrayList<Bitmap>();
+=======
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
                     for (int i = 0; i < j.length(); i++) {
 
                         // Array 에서 하나의 JSONObject 를 추출
@@ -186,7 +226,12 @@ public class FeedFragment extends Fragment {
                         conn.connect();
                         InputStream is=conn.getInputStream();
 
+<<<<<<< HEAD
                         please.add(BitmapFactory.decodeStream(is));
+=======
+                        feedAdapter.addItem(dataJsonObject.getString("id"),BitmapFactory.decodeStream(is),dataJsonObject.getString("text"),
+                                dataJsonObject.getString("bolderNum"),dataJsonObject.getString("time"));
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
                     }
 

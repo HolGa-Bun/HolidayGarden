@@ -3,6 +3,7 @@ package org.androidtown.holgabun;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import org.androidtown.holgabun.R;
 =======
 import android.graphics.Bitmap;
@@ -13,11 +14,15 @@ import android.graphics.Bitmap;
 =======
 import android.graphics.Bitmap;
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+import android.graphics.Bitmap;
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
 public class Garden {
     String name;
     Bitmap imgno;
     String address;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -28,6 +33,8 @@ public class Garden {
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
 
     public Garden (String name, Bitmap imgno, String address){

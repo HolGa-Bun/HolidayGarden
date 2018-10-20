@@ -63,6 +63,7 @@ public class HttpConnection extends AsyncTask<String, Void, String>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     final static String openWeatherURL = "http://211.237.50.150:7080/openapi/abf160159dcc1880ee2a7c68af142681cc72667378a51204b6d47167fd28add6/json/Grid_20171122000000000552_1/1/10";
 
     String Server_url = "http://ec2-13-209-68-163.ap-northeast-2.compute.amazonaws.com/";
@@ -86,12 +87,17 @@ public class HttpConnection extends AsyncTask<String, Void, String>
 
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 =======
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
     final static String openWeatherURL = "http://211.237.50.150:7080/openapi/abf160159dcc1880ee2a7c68af142681cc72667378a51204b6d47167fd28add6/json/Grid_20171122000000000552_1/1/10";
 
     String Server_url = "\"http://ec2-13-209-35-109.ap-northeast-2.compute.amazonaws.com/";
 
 
+<<<<<<< HEAD
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
     @Override
     public String doInBackground(String... params) {
 
@@ -100,6 +106,7 @@ public class HttpConnection extends AsyncTask<String, Void, String>
 
 
 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -115,6 +122,9 @@ public class HttpConnection extends AsyncTask<String, Void, String>
 =======
 
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
 
 
@@ -148,6 +158,7 @@ public class HttpConnection extends AsyncTask<String, Void, String>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 94887fb... 0713[feature/android]
 =======
 
@@ -158,6 +169,8 @@ public class HttpConnection extends AsyncTask<String, Void, String>
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
             }
 
 
@@ -230,6 +243,7 @@ public class HttpConnection extends AsyncTask<String, Void, String>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 <<<<<<< HEAD
@@ -247,3 +261,5 @@ public class HttpConnection extends AsyncTask<String, Void, String>
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a

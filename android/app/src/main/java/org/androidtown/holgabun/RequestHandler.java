@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 package org.androidtown.holgabun;
 
 import java.io.BufferedReader;
@@ -90,12 +91,16 @@ public class RequestHandler {
 =======
 
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 package org.androidtown.holgabun;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStream;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -108,6 +113,8 @@ import java.io.BufferedWriter;
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
@@ -133,6 +140,7 @@ public class RequestHandler {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         BufferedReader br = null;
 =======
 
@@ -143,6 +151,9 @@ public class RequestHandler {
 =======
         BufferedReader br = null;
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+        BufferedReader br = null;
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
         StringBuilder sb = new StringBuilder();
         try {
             url = new URL(requestURL);
@@ -169,10 +180,13 @@ public class RequestHandler {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
                 InputStream in = new BufferedInputStream(conn.getInputStream());
 
@@ -184,6 +198,7 @@ public class RequestHandler {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                 BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
                 sb = new StringBuilder();
@@ -195,6 +210,8 @@ public class RequestHandler {
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
                 }
             }
 
@@ -223,8 +240,11 @@ public class RequestHandler {
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> dadf8b2... test
 =======
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a

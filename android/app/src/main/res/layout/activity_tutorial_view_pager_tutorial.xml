@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
@@ -15,6 +16,8 @@
 >>>>>>> dadf8b2... test
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
@@ -23,6 +26,7 @@
         android:id="@+id/viewpager_image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -39,11 +43,16 @@
 =======
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
 </LinearLayout>
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a

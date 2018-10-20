@@ -18,6 +18,7 @@ import android.widget.EditText;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import android.widget.ListAdapter;
 =======
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
@@ -27,6 +28,9 @@ import android.widget.ListAdapter;
 =======
 import android.widget.ListAdapter;
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+import android.widget.ListAdapter;
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 import android.widget.ListView;
 import android.widget.Spinner;
 import org.json.JSONArray;
@@ -49,6 +53,7 @@ public class Search extends AppCompatActivity {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d7162a6... 0719 jiyoon
     Button button;
@@ -67,14 +72,19 @@ public class Search extends AppCompatActivity {
 
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 =======
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
     Button button;
 
 
     private static final String TAG = "TestActivity";
     ListView listview ;
+<<<<<<< HEAD
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
 
     @Override
@@ -86,12 +96,16 @@ public class Search extends AppCompatActivity {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
         // 리스트뷰 참조 및 Adapter달기
         listview = (ListView) findViewById(R.id.List_garden);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
         adapter1 = new ListViewAdapter() ;
@@ -108,6 +122,8 @@ public class Search extends AppCompatActivity {
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -127,8 +143,11 @@ public class Search extends AppCompatActivity {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
         button=(Button)findViewById(R.id.gotoHome);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -170,6 +189,7 @@ public class Search extends AppCompatActivity {
                 }).start();
             }
         });
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
         new Thread(new Runnable() {
@@ -224,6 +244,9 @@ public class Search extends AppCompatActivity {
 =======
 
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
 
 
@@ -231,6 +254,7 @@ public class Search extends AppCompatActivity {
 
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 <<<<<<< HEAD
@@ -241,6 +265,9 @@ public class Search extends AppCompatActivity {
 =======
         // / -------검색 값 받기-------------------------
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+        // / -------검색 값 받기-------------------------
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
         intent = getIntent();
         editText = (EditText) findViewById(R.id.search_tutname);
         editText.setText(intent.getStringExtra("name"));
@@ -252,10 +279,13 @@ public class Search extends AppCompatActivity {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
 
         switch (intent.getIntExtra("gu",16)) {
@@ -348,6 +378,7 @@ public class Search extends AppCompatActivity {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         }
 
@@ -361,10 +392,13 @@ public class Search extends AppCompatActivity {
         }
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 =======
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
         }
 
 
+<<<<<<< HEAD
 >>>>>>> ddd2025... 색변경
 =======
 
@@ -372,6 +406,8 @@ public class Search extends AppCompatActivity {
 
 
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
         spinner_si.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -379,10 +415,13 @@ public class Search extends AppCompatActivity {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
                     case 0:
                         spinner_gu = (Spinner) findViewById(R.id.search_gu);
                         adapter = ArrayAdapter.createFromResource(Search.this, R.array.Seo_si, android.R.layout.simple_spinner_dropdown_item);
@@ -425,6 +464,7 @@ public class Search extends AppCompatActivity {
                         break;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     case 8:
                         spinner_gu = (Spinner) findViewById(R.id.search_gu);
                         adapter = ArrayAdapter.createFromResource(Search.this, R.array.Gung_si, android.R.layout.simple_spinner_dropdown_item);
@@ -449,10 +489,13 @@ public class Search extends AppCompatActivity {
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
                     case 8:
                         spinner_gu = (Spinner) findViewById(R.id.search_gu);
                         adapter = ArrayAdapter.createFromResource(Search.this, R.array.Gung_si, android.R.layout.simple_spinner_dropdown_item);
                         spinner_gu.setAdapter(adapter);
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
                         break;
@@ -489,6 +532,9 @@ public class Search extends AppCompatActivity {
 =======
                         break;
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+                        break;
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
                     case 9:
                         spinner_gu = (Spinner) findViewById(R.id.search_gu);
                         adapter = ArrayAdapter.createFromResource(Search.this, R.array.Gang_si, android.R.layout.simple_spinner_dropdown_item);
@@ -529,9 +575,12 @@ public class Search extends AppCompatActivity {
                     default:
                         spinner_gu = (Spinner) findViewById(R.id.search_gu);
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
                         adapter = ArrayAdapter.createFromResource(Search.this, R.array.not, android.R.layout.simple_spinner_dropdown_item);
                         spinner_gu.setAdapter(adapter);
 
@@ -553,10 +602,13 @@ public class Search extends AppCompatActivity {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
         Runnable a=new Runnable() {
             @Override
             public void run() {
@@ -568,12 +620,15 @@ public class Search extends AppCompatActivity {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 =======
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
     }//oncrete
 
@@ -583,6 +638,7 @@ public class Search extends AppCompatActivity {
         HttpConnection h=new HttpConnection();
         String body = null;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -602,6 +658,8 @@ public class Search extends AppCompatActivity {
 =======
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
         try {
 
@@ -612,9 +670,12 @@ public class Search extends AppCompatActivity {
                 body=h.execute("Garden",editText.getText().toString()).get();
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
             // String 으로 들어온 값 JSONObject 로 1차 파싱
             JSONObject wrapObject = new JSONObject(body);
             wrapObject= new JSONObject(wrapObject.getString("Grid_20171122000000000552_1"));
@@ -625,14 +686,18 @@ public class Search extends AppCompatActivity {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
             listview.setAdapter(null);
 
             ListViewAdapter reload =new ListViewAdapter();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -641,6 +706,8 @@ public class Search extends AppCompatActivity {
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
             // set POI data
 
@@ -649,6 +716,7 @@ public class Search extends AppCompatActivity {
                 JSONObject dataJsonObject = jsonArray.getJSONObject(i);
                 // 추출한 Object 에서 필요한 데이터를 표시할 방법을 정해서 화면에 표시
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -667,6 +735,8 @@ public class Search extends AppCompatActivity {
 =======
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
                     reload.addItem(BitmapFactory.decodeResource(getResources(),R.drawable.icon),
                             dataJsonObject.getString("FARM_NM"), dataJsonObject.getString("ADDRESS1")) ;
 
@@ -674,9 +744,12 @@ public class Search extends AppCompatActivity {
             listview.setAdapter(reload);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
 
           // NMapPOIdata poiData = new NMapPOIdata(test.size(), nMapResourceProvider);

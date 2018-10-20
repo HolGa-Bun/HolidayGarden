@@ -3,9 +3,15 @@ package org.androidtown.holgabun;
 import android.app.ProgressDialog;
 import android.content.Context;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import android.content.Intent;
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+
+import android.content.Intent;
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
@@ -17,17 +23,25 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
+<<<<<<< HEAD
 =======
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -64,11 +78,19 @@ public class LikeFragment extends Fragment {
     SearchUserAdapter adapter;
     EditText editText;
     Button button;
+<<<<<<< HEAD
     String s1,s2,s3;
 <<<<<<< HEAD
     InputMethodManager imm;
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+    ProgressDialog loading;
+    String s1,s2,s3;
+
+    InputMethodManager imm;
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
     private OnFragmentInteractionListener mListener;
 
     public LikeFragment() {
@@ -112,6 +134,10 @@ public class LikeFragment extends Fragment {
         listview=(ListView)view.findViewById(R.id.user_list);
         adapter=new SearchUserAdapter();
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
         listview.setAdapter(adapter);
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -126,8 +152,12 @@ public class LikeFragment extends Fragment {
             }
         });
 
+<<<<<<< HEAD
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
         button=(Button)view.findViewById(R.id.user_Search);
         editText=(EditText)view.findViewById(R.id.SU);
@@ -137,6 +167,10 @@ public class LikeFragment extends Fragment {
             public void onClick(View v) {
                 List();
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
                 imm.hideSoftInputFromWindow(editText.getWindowToken(), 0);
             }
         });
@@ -146,6 +180,7 @@ public class LikeFragment extends Fragment {
 
 
 
+<<<<<<< HEAD
 =======
             }
         });
@@ -154,6 +189,13 @@ public class LikeFragment extends Fragment {
         return view;
     }
 
+=======
+        return view;
+    }
+
+
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
         if (mListener != null) {
@@ -161,12 +203,31 @@ public class LikeFragment extends Fragment {
         }
     }
 
+<<<<<<< HEAD
+=======
+    @Override
+    public void onStop() {
+        super.onStop();
+        if (loading != null) {
+            loading.dismiss();
+            loading = null;
+        }
+    }
+
+
+
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
 
     @Override
     public void onDetach() {
         super.onDetach();
         mListener = null;
+<<<<<<< HEAD
+=======
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
     }
 
     /**
@@ -186,7 +247,11 @@ public class LikeFragment extends Fragment {
     private void List(){
         class ListSaw extends AsyncTask<String,Void,String> {
 
+<<<<<<< HEAD
             ProgressDialog loading;
+=======
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
             RequestHandler rh = new RequestHandler();
 
             @Override
@@ -209,6 +274,9 @@ public class LikeFragment extends Fragment {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
                     JSONObject j=new JSONObject(s);
 
                     listview.setAdapter(null);
@@ -223,6 +291,7 @@ public class LikeFragment extends Fragment {
 
                     }
                     listview.setAdapter(adapter);
+<<<<<<< HEAD
 =======
                     JSONArray j=new JSONArray(s);
 
@@ -247,6 +316,9 @@ public class LikeFragment extends Fragment {
 
                    feedAdapter.addItem(s1,s2,s3);
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
                 }catch(JSONException e){
                     e.printStackTrace();
@@ -276,4 +348,8 @@ public class LikeFragment extends Fragment {
         ui.execute("");
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 }

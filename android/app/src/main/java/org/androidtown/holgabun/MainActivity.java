@@ -7,6 +7,7 @@ import android.graphics.BitmapFactory;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import android.support.v7.app.AlertDialog;
 =======
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
@@ -16,10 +17,17 @@ import android.support.v7.app.AlertDialog;
 =======
 import android.support.v7.app.AlertDialog;
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+import android.support.v7.app.AlertDialog;
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.ViewUtils;
 import android.util.Log;
+<<<<<<< HEAD
+=======
+import android.view.MotionEvent;
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -27,6 +35,10 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.GridView;
+<<<<<<< HEAD
+=======
+import android.widget.LinearLayout;
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -53,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 94887fb... 0713[feature/android]
@@ -62,16 +75,24 @@ public class MainActivity extends AppCompatActivity {
 =======
 
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
     AutoScrollViewPager autoViewPager;
     Button button;
     EditText editText;
     int check_si;
     int check_gu;
+<<<<<<< HEAD
+=======
+    LinearLayout l;
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
     ArrayList<Garden> Garden = new ArrayList<>();
 
     org.androidtown.holgabun.GridAdapter adapter2;
     GridView gridView;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -89,6 +110,10 @@ public class MainActivity extends AppCompatActivity {
 =======
 
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -96,6 +121,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         setTitle("Garden Information");
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -176,6 +202,14 @@ public class MainActivity extends AppCompatActivity {
 
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+
+
+        gridView = (GridView)findViewById(R.id.grid);
+        adapter2 = new GridAdapter(this, Garden);
+        l=(LinearLayout)findViewById(R.id.test);
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
 
         new Thread(new Runnable() {
@@ -190,6 +224,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }).start();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 9837d2f... [7/13]feature/가든 상세정보창 구현
         gridView.setAdapter(adapter2);
@@ -216,6 +251,10 @@ public class MainActivity extends AppCompatActivity {
 
 
 =======
+=======
+        gridView.setAdapter(adapter2);
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
@@ -230,6 +269,7 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<Integer> data = new ArrayList<>(); //이미지 url를 저장하는 arraylist
         data.add(R.drawable.main_image1);
         data.add(R.drawable.main_image2);
+<<<<<<< HEAD
 
 
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
@@ -238,12 +278,22 @@ public class MainActivity extends AppCompatActivity {
 
 
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+        data.add(R.drawable.main_image3);
+
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
         autoViewPager = (AutoScrollViewPager) findViewById(R.id.view_pager);
         AutoScrollAdapter scrollAdapter = new AutoScrollAdapter(this, data);
         autoViewPager.setAdapter(scrollAdapter); //Auto Viewpager에 Adapter 장착
         autoViewPager.setInterval(5000); // 페이지 넘어갈 시간 간격 설정
         autoViewPager.startAutoScroll(); //Auto Scroll 시작
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
         spinner_si = (Spinner) findViewById(R.id.si);
         adapter = ArrayAdapter.createFromResource(this, R.array.si_do, android.R.layout.simple_spinner_dropdown_item);
         spinner_si.setAdapter(adapter);
@@ -251,6 +301,7 @@ public class MainActivity extends AppCompatActivity {
         spinner_si.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -304,6 +355,8 @@ public class MainActivity extends AppCompatActivity {
                 switch (position) {
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 =======
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
                 check_si = position;
                 switch (position) {
                     case 0:
@@ -346,9 +399,12 @@ public class MainActivity extends AppCompatActivity {
                         adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.Se_si, android.R.layout.simple_spinner_dropdown_item);
                         spinner_gu.setAdapter(adapter);
                         break;
+<<<<<<< HEAD
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
                     case 8:
                         spinner_gu = (Spinner) findViewById(R.id.gu);
                         adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.Gung_si, android.R.layout.simple_spinner_dropdown_item);
@@ -360,6 +416,7 @@ public class MainActivity extends AppCompatActivity {
                         spinner_gu.setAdapter(adapter);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d7162a6... 0719 jiyoon
                         break;
@@ -381,6 +438,8 @@ public class MainActivity extends AppCompatActivity {
                         break;
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
                         break;
                     case 10:
                         spinner_gu = (Spinner) findViewById(R.id.gu);
@@ -398,9 +457,12 @@ public class MainActivity extends AppCompatActivity {
                         adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.JunlabUK_si, android.R.layout.simple_spinner_dropdown_item);
                         spinner_gu.setAdapter(adapter);
                         break;
+<<<<<<< HEAD
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
                     case 13:
                         spinner_gu = (Spinner) findViewById(R.id.gu);
                         adapter = ArrayAdapter.createFromResource(MainActivity.this, R.array.JunlaNAM_si, android.R.layout.simple_spinner_dropdown_item);
@@ -423,12 +485,16 @@ public class MainActivity extends AppCompatActivity {
                         spinner_gu.setAdapter(adapter);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> ddd2025... 색변경
 =======
 
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
                 }
             }
@@ -443,10 +509,13 @@ public class MainActivity extends AppCompatActivity {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
         spinner_gu.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -461,10 +530,13 @@ public class MainActivity extends AppCompatActivity {
         });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
         button = (Button) findViewById(R.id.search_bun);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -472,12 +544,16 @@ public class MainActivity extends AppCompatActivity {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
                 Intent intent = new Intent(MainActivity.this, Search.class);
                 intent.putExtra("si", check_si);
                 intent.putExtra("gu",check_gu);
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
                 Intent intent = new Intent(MainActivity.this, Search.class);
@@ -491,6 +567,8 @@ public class MainActivity extends AppCompatActivity {
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
                 editText = (EditText) findViewById(R.id.tutname);
                 try {
                     intent.putExtra("name", editText.getText().toString());
@@ -505,6 +583,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -546,6 +625,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickedTimeLine(View v){
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+
+    public void onClickedTimeLine(View v){
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
         DbOpenHelper h=new DbOpenHelper(this);
         h.open();
@@ -557,6 +640,7 @@ public class MainActivity extends AppCompatActivity {
         else{
             show();
         }
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> ddd2025... 색변경
     }
@@ -655,6 +739,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+    }
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
     void show()
     {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);

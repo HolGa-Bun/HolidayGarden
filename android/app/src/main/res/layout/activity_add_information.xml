@@ -90,6 +90,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     android:layout_gravity="center"
                     android:layout_weight="2"
                     android:gravity="center"
@@ -102,6 +103,8 @@
 =======
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
                     android:text="시/군/구"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="16dp"
@@ -122,9 +125,12 @@
                     android:orientation="horizontal">
                     <RadioButton
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="도로명 주소"
@@ -139,6 +145,7 @@
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="12dp"
                         android:textStyle="bold" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 </LinearLayout>
@@ -268,6 +275,10 @@
                 </RadioGroup>
             </LinearLayout>
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+                </RadioGroup>
+            </LinearLayout>
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
             <LinearLayout
                 android:layout_weight="1"
@@ -305,10 +316,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="34dp"
@@ -378,9 +392,12 @@
     </LinearLayout>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -419,9 +436,12 @@
     </LinearLayout>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> a10b136... 0710[feature/android]Search_Account
 =======
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 </LinearLayout>

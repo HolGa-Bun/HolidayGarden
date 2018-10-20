@@ -86,6 +86,7 @@
                 android:minHeight="100dp"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 android:layout_marginLeft="25dp"
 =======
                 android:layout_marginLeft="20dp"
@@ -93,6 +94,9 @@
 =======
                 android:layout_marginLeft="20dp"
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+                android:layout_marginLeft="25dp"
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
                 android:layout_marginBottom="5dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="5dp">
@@ -102,11 +106,15 @@
                     android:layout_width="wrap_content"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
                     android:layout_marginTop="15dp"
                     android:id="@+id/bolder_text"
                     android:layout_height="wrap_content"
                     android:maxLines="3"
 
+<<<<<<< HEAD
 =======
                     android:id="@+id/bolder_text"
                     android:layout_height="wrap_content"
@@ -117,6 +125,8 @@
                     android:layout_height="wrap_content"
                     android:maxLines="3"
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
                     android:textSize="16sp"/>
             </LinearLayout>
 

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 package org.androidtown.holgabun;
 
 
@@ -92,6 +93,9 @@ public class SearchUserAdapter extends BaseAdapter {
 }
 
 =======
+=======
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 package org.androidtown.holgabun;
 
 
@@ -184,4 +188,7 @@ public class SearchUserAdapter extends BaseAdapter {
     }
 }
 
+<<<<<<< HEAD
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a

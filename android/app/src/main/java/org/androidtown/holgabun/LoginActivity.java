@@ -24,6 +24,7 @@ import java.io.IOException;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.util.HashMap;
 =======
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
@@ -33,6 +34,9 @@ import java.util.HashMap;
 =======
 import java.util.HashMap;
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+import java.util.HashMap;
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 import java.util.concurrent.ExecutionException;
 
 import okhttp3.Call;
@@ -45,6 +49,7 @@ public class LoginActivity extends AppCompatActivity {
     EditText editText;
     Button button;
     private static final String TAG = "TestActivity";
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -65,6 +70,9 @@ public class LoginActivity extends AppCompatActivity {
 =======
     DbOpenHelper h;
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+    DbOpenHelper h;
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
 
     @Override
@@ -74,6 +82,7 @@ public class LoginActivity extends AppCompatActivity {
 
         button = (Button) findViewById(R.id.su);
         editText = (EditText) findViewById(R.id.login);
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -108,6 +117,8 @@ public class LoginActivity extends AppCompatActivity {
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
         h=new DbOpenHelper(this);
         h.open();
@@ -143,14 +154,18 @@ public class LoginActivity extends AppCompatActivity {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
 
             loginFunc();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -191,6 +206,12 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+            }
+        });
+    }
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
     public void Checked()
     {
 
@@ -210,6 +231,7 @@ public class LoginActivity extends AppCompatActivity {
         else{
             h.N_ID_Save();
         }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
         h.close();
@@ -249,11 +271,20 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+        h.close();
+
+        h.close();
+
+    }
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
     public void onButton1Clicked(View v) {
         Intent intent = new Intent(this, SignupActivity.class);
         startActivity(intent);
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -267,6 +298,10 @@ public class LoginActivity extends AppCompatActivity {
     public void onClickedAdd(View v) {
         Intent intent = new Intent(this, Tab_fragment1_Search_Account.class);
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+    public void onClickedAdd(View v) {
+        Intent intent = new Intent(this, Tab_fragment1_Search_Account.class);
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
         startActivity(intent);
     }
     private void loginFunc(){
@@ -343,6 +378,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     public void onClickedAdd(View v) {
@@ -427,4 +463,6 @@ public class LoginActivity extends AppCompatActivity {
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 }

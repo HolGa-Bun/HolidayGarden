@@ -27,6 +27,7 @@ import java.io.IOException;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.text.SimpleDateFormat;
 import java.util.Date;
 =======
@@ -39,6 +40,10 @@ import java.util.Date;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+import java.text.SimpleDateFormat;
+import java.util.Date;
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 import java.util.HashMap;
 
 public class WriteActivity extends AppCompatActivity implements View.OnClickListener{
@@ -54,6 +59,7 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     DbOpenHelper h;
     String sql_id;
 =======
@@ -67,6 +73,10 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
     DbOpenHelper h;
     String sql_id;
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+    DbOpenHelper h;
+    String sql_id;
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,15 +86,19 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
         DbOpenHelper h=new DbOpenHelper(this);
         h.open();
 
         sql_id=h.returnId();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -93,6 +107,8 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
         RequestURL=(Button)findViewById(R.id.checkButton);
         TimelineButton=(Button)findViewById(R.id.timeline_img);
         findViewById(R.id.browsePictureButton)
@@ -107,6 +123,7 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
                                 "Select Picture"), SELECT_PICTURE);
                     }
                 });
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -143,6 +160,8 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
 
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 =======
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
         edittext=(EditText)findViewById(R.id.write);
         image=(ImageView)findViewById(R.id.img_date2);
@@ -151,7 +170,10 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
 
 
 
+<<<<<<< HEAD
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
     }
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {//선택한 사진 가져오기
@@ -191,6 +213,7 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                loading = ProgressDialog.show(WriteActivity.this, "Uploading...", null,true,true);
 =======
                 loading = ProgressDialog.show(WriteActivity.this, "Uploading...", null,true,true);
@@ -201,6 +224,9 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
 =======
                loading = ProgressDialog.show(WriteActivity.this, "Uploading...", null,true,true);
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+               loading = ProgressDialog.show(WriteActivity.this, "Uploading...", null,true,true);
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
             }
 
             @Override
@@ -211,6 +237,7 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 finish();
 =======
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
@@ -220,12 +247,16 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
 =======
                 finish();
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+                finish();
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
             }
 
             @Override
             protected String doInBackground(Bitmap... params) {
                 Bitmap bitmap = params[0];
                 String uploadImage = getStringImage(bitmap);
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -252,10 +283,13 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
 =======
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
                 HashMap<String,String> data = new HashMap<>();
 
                 data.put("image", uploadImage);//php에서 POST값으로 들어감
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 data.put("mean",edittext.getText().toString());
@@ -264,6 +298,8 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
 =======
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
                data.put("text",edittext.getText().toString());
 
                try{
@@ -280,6 +316,7 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
                 SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm");
 
                 data.put("time",sdf.format(date));
+<<<<<<< HEAD
 <<<<<<< HEAD
                 String result = rh.sendPostRequest("http://ec2-13-209-68-163.ap-northeast-2.compute.amazonaws.com/upload.php",data);
 <<<<<<< HEAD
@@ -289,6 +326,9 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
 =======
                 String result = rh.sendPostRequest("http://ec2-13-209-35-109.ap-northeast-2.compute.amazonaws.com/upload.php",data);
 >>>>>>> b7837f6... 마침표2
+=======
+                String result = rh.sendPostRequest("http://ec2-13-209-35-109.ap-northeast-2.compute.amazonaws.com/upload.php",data);
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
                 return result;
             }

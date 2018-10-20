@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 package org.androidtown.holgabun;
 
 public class user {
@@ -37,6 +38,9 @@ public class user {
     }
 }
 =======
+=======
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 package org.androidtown.holgabun;
 
 public class user {
@@ -73,5 +77,9 @@ public class user {
     public void setAddress(String recently_time){
         this.recently_time = recently_time;
     }
+<<<<<<< HEAD
 }
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+}
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a

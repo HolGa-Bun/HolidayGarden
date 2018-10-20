@@ -35,6 +35,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <TextView
 =======
         <Button
@@ -52,6 +53,11 @@
         <Button
 
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+
+        <Button
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
@@ -68,6 +74,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <TextView
 =======
         <Button
@@ -85,6 +92,11 @@
         <Button
 
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+
+        <Button
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"

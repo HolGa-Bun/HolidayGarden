@@ -12,17 +12,49 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RadioGroup;
 import android.widget.RadioButton;
+<<<<<<< HEAD
 
 public class Tab_fragment1_Search_Account extends AppCompatActivity {
 
+=======
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class Tab_fragment1_Search_Account extends AppCompatActivity {
+
+
+    DbOpenHelper h;
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tab_fragment1_search_account);
+<<<<<<< HEAD
     }
 
     public void onClickedFailId(View v){
         Intent intent = new Intent(this, Search_ID_Fail.class);
         startActivity(intent);
     }
+=======
+
+        DbOpenHelper h=new  DbOpenHelper(this);
+        h.open();
+
+        TextView t=(TextView)findViewById(R.id.real_ID);
+        t.setText("최근 로그인한 계정의 ID는 "+h.returnId()+"입니다");
+
+        Button b=(Button)findViewById(R.id.a);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(Tab_fragment1_Search_Account.this,Tab_fragment2_Search_Account.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+    }
+
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 }

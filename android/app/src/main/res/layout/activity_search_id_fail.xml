@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     tools:context=".Tab_fragment1_Search_Account"
     android:orientation="vertical">
 =======
@@ -21,14 +22,19 @@
 =======
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
     android:orientation="vertical"
     tools:context=".Search_ID_Fail">
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -58,6 +64,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <TextView
 =======
         <Button
@@ -73,6 +80,10 @@
         <Button
 
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+        <Button
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
@@ -89,6 +100,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <TextView
 =======
         <Button
@@ -106,6 +118,11 @@
         <Button
 
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+
+        <Button
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"

@@ -28,7 +28,11 @@ import java.util.HashMap;
 public class another_profile extends AppCompatActivity {
 
     ListView listView;
+<<<<<<< HEAD
     ArrayList<Bitmap> please;
+=======
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
     String feed_id;
     String id;
     Button b;
@@ -65,6 +69,10 @@ public class another_profile extends AppCompatActivity {
         t.setText(feed_id);
 
         follow("is");
+<<<<<<< HEAD
+=======
+        List();
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
     }
     private void follow(String request){
         class Follow extends AsyncTask<String,Void,String> {
@@ -135,6 +143,11 @@ public class another_profile extends AppCompatActivity {
 
             ProgressDialog loading;
             RequestHandler rh = new RequestHandler();
+<<<<<<< HEAD
+=======
+            FeedAdapter feedAdapter=new FeedAdapter();
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
             @Override
             protected void onPreExecute() {
@@ -146,6 +159,7 @@ public class another_profile extends AppCompatActivity {
             protected void onPostExecute(String s) {
                 super.onPostExecute(s);
                 loading.dismiss();
+<<<<<<< HEAD
                 Log.d("THIS",s);
 
 
@@ -171,6 +185,16 @@ public class another_profile extends AppCompatActivity {
                 }catch(JSONException e){
                     e.printStackTrace();
                 }
+=======
+
+
+
+
+
+
+                listView.setAdapter(feedAdapter);
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
 
             }
@@ -180,12 +204,18 @@ public class another_profile extends AppCompatActivity {
 
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
                 HashMap<String,String> data = new HashMap<>();
 
 
                 data.put("ID",feed_id);
 
 
+<<<<<<< HEAD
                 String res = rh.sendPostRequest("http://ec2-13-209-68-163.ap-northeast-2.compute.amazonaws.com/getID.php",data);
 
                 try{
@@ -221,11 +251,52 @@ public class another_profile extends AppCompatActivity {
                         please.add(BitmapFactory.decodeStream(is));
 
 
+=======
+                    String result = rh.sendPostRequest("http://ec2-13-209-68-163.ap-northeast-2.compute.amazonaws.com/AnoBolder.php",data);
+
+                    try {
+                        JSONArray j = new JSONArray(result);
+
+
+                        for (int i = 0; i < j.length(); i++) {
+
+                            // Array 에서 하나의 JSONObject 를 추출
+                            JSONObject dataJsonObject = j.getJSONObject(i);
+                            // 추출한 Object 에서 필요한 데이터를 표시할 방법을 정해서 화면에 표시
+
+                            URL url=new URL(dataJsonObject.getString("image").replace("\\",""));
+
+                            HttpURLConnection conn=(HttpURLConnection)url.openConnection();
+                            conn.setDoInput(true);
+                            conn.connect();
+                            InputStream is=conn.getInputStream();
+                            // 추출한 Object 에서 필요한 데이터를 표시할 방법을 정해서 화면에 표시
+
+                            feedAdapter.addItem(dataJsonObject.getString("id"),BitmapFactory.decodeStream(is),dataJsonObject.getString("text"),
+                                    dataJsonObject.getString("bolderNum"),dataJsonObject.getString("time"));
+
+                        }
+
+
+                            return result;
+
+
+                    }catch(JSONException e)
+                    {
+                        e.printStackTrace();
+                    }catch (MalformedURLException e)
+                    {
+                        e.printStackTrace();
+                    }catch(IOException e)
+                    {
+                        e.printStackTrace();
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
                     }
 
 
 
 
+<<<<<<< HEAD
                 }catch(JSONException e)
                 {
                     e.printStackTrace();
@@ -237,6 +308,10 @@ public class another_profile extends AppCompatActivity {
                     e.printStackTrace();
                 }
                 return result;
+=======
+
+         return null;
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
             }
         }
 

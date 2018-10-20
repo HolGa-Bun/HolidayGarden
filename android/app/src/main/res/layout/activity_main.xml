@@ -15,6 +15,7 @@
         android:gravity="center"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:orientation="vertical">
 =======
         android:orientation="horizontal">
@@ -59,6 +60,9 @@
 =======
         android:orientation="vertical">
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+        android:orientation="vertical">
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -95,6 +99,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 android:layout_marginRight="10dp"
 =======
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
@@ -104,10 +109,14 @@
 =======
                 android:layout_marginRight="10dp"
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+                android:layout_marginRight="10dp"
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
                 android:id="@+id/home"
                 android:background="@drawable/ic_home_black_24dp" />
 
             <Button
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -127,10 +136,13 @@
                 android:background="@drawable/icon"
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 =======
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:padding="0dp"
                 android:background="@drawable/icon_grey"
+<<<<<<< HEAD
 >>>>>>> ddd2025... 색변경
 =======
                 android:layout_width="40dp"
@@ -138,12 +150,18 @@
                 android:padding="0dp"
                 android:background="@drawable/icon_grey"
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
                 android:onClick="onClickedTimeLine"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+<<<<<<< HEAD
+=======
+            android:id="@+id/test"
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
             android:layout_weight="1">
 
             <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
@@ -166,11 +184,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
+<<<<<<< HEAD
 =======
             <LinearLayout
                 android:layout_width="match_parent"
@@ -189,6 +211,8 @@
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -210,6 +234,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <LinearLayout
 =======
 
@@ -223,6 +248,10 @@
 
                  <LinearLayout
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+
+                 <LinearLayout
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -240,6 +269,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                         <TextView
                             android:layout_width="wrap_content"
@@ -253,11 +283,14 @@
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
                         <Spinner
                             android:id="@+id/si"
                             android:layout_width="150dp"
                             android:layout_height="30dp"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -278,15 +311,20 @@
                             android:layout_width="150dp"
 >>>>>>> 9b40e82... 0716 [feature/android/Main 수정]
 =======
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
                             android:background="@drawable/outline"
                             ></Spinner>
 
                         <Spinner
                             android:id="@+id/gu"
                             android:layout_width="130dp"
+<<<<<<< HEAD
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
                             android:layout_height="30dp"
                             android:layout_marginLeft="20dp"
                             android:background="@drawable/outline">
@@ -299,6 +337,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                         android:orientation="horizontal"
@@ -328,6 +367,8 @@
 =======
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
                         android:paddingBottom="8dp"
                         android:paddingLeft="40dp">
 
@@ -337,9 +378,12 @@
                             android:layout_marginLeft="50dp"
                             android:background="@drawable/outline"
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
                             android:id="@+id/tutname"
                             android:hint="생략"
                             android:paddingLeft="20dp" />
@@ -415,6 +459,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 </ScrollView>
 =======
 </ScrollView>
@@ -425,3 +470,6 @@
 =======
 </ScrollView>
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+</ScrollView>
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a

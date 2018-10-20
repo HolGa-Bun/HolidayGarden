@@ -50,6 +50,7 @@ public class DbOpenHelper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public int returnOnOff()d
 =======
 =======
@@ -57,6 +58,8 @@ public class DbOpenHelper {
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
 
     public void login(String id,String pwd)
@@ -74,6 +77,7 @@ public class DbOpenHelper {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 9418ce1... Main Search 수정
     public int returnOnOff()
 >>>>>>> dadf8b2... test
@@ -82,6 +86,8 @@ public class DbOpenHelper {
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
     public int returnIDSAVE(){
         try {
@@ -99,6 +105,7 @@ public class DbOpenHelper {
         }
     }
     public int returnOnOff()
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 15adacd... feature/내부sql구현 메인이미지
     {
@@ -132,6 +139,15 @@ public class DbOpenHelper {
 
                 return cursor.getInt(0);
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+    {
+        try {
+            Cursor cursor = mDB.rawQuery("select onoff from Log", null);
+
+            while (cursor.moveToNext()) {
+
+                return cursor.getInt(0);
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
 
             }
             return -1;
@@ -140,16 +156,20 @@ public class DbOpenHelper {
             return -1;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 15adacd... feature/내부sql구현 메인이미지
 =======
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
         }
     }
 
     public void automaticLogin()
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -167,6 +187,11 @@ public class DbOpenHelper {
         mDB.execSQL("UPDATE Log set onOff=" + 1 + ";");
 
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+
+        mDB.execSQL("UPDATE Log set onOff=" + 1 + ";");
+
+>>>>>>> d1dfbf9238f85c1096f89daad4c6cefac028047a
     }
 
     public void logOut()
