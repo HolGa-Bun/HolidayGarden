@@ -144,7 +144,7 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
                 SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm");
 
                 data.put("time",sdf.format(date));
-                String result = rh.sendPostRequest("http://ec2-13-209-68-163.ap-northeast-2.compute.amazonaws.com/upload.php",data);
+                String result = rh.sendPostRequest("http://ec2-13-209-35-109.ap-northeast-2.compute.amazonaws.com/upload.php",data);
 
                 return result;
             }
