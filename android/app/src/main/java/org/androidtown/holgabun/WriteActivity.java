@@ -280,11 +280,15 @@ public class WriteActivity extends AppCompatActivity implements View.OnClickList
                 SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm");
 
                 data.put("time",sdf.format(date));
+<<<<<<< HEAD
                 String result = rh.sendPostRequest("http://ec2-13-209-68-163.ap-northeast-2.compute.amazonaws.com/upload.php",data);
 <<<<<<< HEAD
 >>>>>>> ddd2025... 색변경
 =======
 >>>>>>> d7162a6... 0719 jiyoon
+=======
+                String result = rh.sendPostRequest("http://ec2-13-209-35-109.ap-northeast-2.compute.amazonaws.com/upload.php",data);
+>>>>>>> b7837f6... 마침표2
 
                 return result;
             }
